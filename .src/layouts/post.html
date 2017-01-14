@@ -1,9 +1,17 @@
 {{> header }}
-    <article>
-      <h1>{{ title }}</h1>
-      <div class="meta">
-          {{#if date}}Published: {{ date }}{{/if}}
-      </div>
-      {{{ contents }}}
-    </article>
+<div class="container">
+	<div class="row">
+		<div class="twelve columns">
+			<article>
+				<header>
+					<h2>{{ title }}</h2>
+					<time datetime="{{moment date 'YYYY-MM-DD'}}">{{moment date 'LL'}}</time>
+				</header>
+				<div class="article">
+					{{{ contents }}}
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
 {{> footer }}

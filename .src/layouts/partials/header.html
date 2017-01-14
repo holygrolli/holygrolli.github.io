@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{#if title }}{ {title }} - {{/if}}{{ site.name }}</title>
-    <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>{{#if title }}{{  title  }} - {{/if}}{{ site.name }}</title>
+	<meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- FONT -->
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/skeleton.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+	<header>
+		<div class="title u-center-block">
+				<h1><a href="/">ChaosBlog</a></h1>
+				Ich hasse das Chaos, aber das Chaos liebt mich. <a href="https://www.aphorismen.de/zitat/48718"><i class="fa fa-copyright" aria-hidden="true"></i></a>
+		</div>
+		<div class="nav">
+			<div class="container u-full-width">
+				<div class="ten columns">
+					<nav class="left">
+						<a href="/"><i class="fa fa-home" aria-hidden="true"></i> ChaosBlog</a>
+						{{#each pages }}
+						<a href="/{{ path }}">{{  title  }}</a>
+						{{/each}}
+					</nav>
+				</div>
+				<div class="two columns">
+					<nav class="right u-pull-right">
+						<a href="https://plus.google.com/+AndreasGroll"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+						<a href="https://github.com/adulescentulus"><i class="fa fa-github" aria-hidden="true"></i></a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>

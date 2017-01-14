@@ -1,7 +1,7 @@
 ---
 title: "Wordpress is gone"
 date: 2017-01-07
-blurb: I moved to metalsmith
+excerpt: I moved to metalsmith
 ---
 
 *ChaosBlog* moved from Wordpress to [metalsmith](metalsmith.io).
