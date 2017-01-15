@@ -1,5 +1,6 @@
 var metalsmith = require('metalsmith');
 var markdown = require('metalsmith-markdown');
+var jquery = require('metalsmith-jquery');
 var layouts = require('metalsmith-layouts');
 var handlebars = require('handlebars');
 var collections = require('metalsmith-collections');
@@ -34,6 +35,9 @@ metalsmith(__dirname)
   },
 }))
 .use(markdown({
+}))
+.use(jquery('**/*.html', function($) {
+  $('table').addClass('table table-hover');
 }))
 .use(permalinks({
   relative: false,

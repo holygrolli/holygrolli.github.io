@@ -1,45 +1,16 @@
-/* Reset Skeleton Defaults */
-a, a:target {
-	color: inherit;
-	text-decoration: none;
-}
-
-/* Personal Flavour */
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-/* Typography */
-
 body {
-	font-size: 16px;
 	letter-spacing: .05em;
 	color: #222222;
 	font-family: "amblelight", "Raleway", Helvetica, Arial, sans-serif;
 }
 
-h1, h3{
-	font-family: "big_johnregular", "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.intro-header .page-heading .subheading, .intro-header .post-heading .subheading, .intro-header .site-heading .subheading, .navbar-custom, h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
 }
 
-h4 {
-	font-size: 22px;
-}
-
-h3 {
-	font-size: 28px;
-}
-
-body {
-	background: #bbb;
-}
-
-body>header {
-	padding-top: 30px;
-	background-color: #646974;
+.header-bg {
+	background: none;
+	background: rgba(0,0,0,0.3);
 }
 
 body>header h1 {
@@ -49,71 +20,24 @@ body>header h1 {
 }
 
 body>header div.title {
-	text-align: center;
 	color: #fff;
-	padding: 20px;
 	border: 2px solid #fff;
-	background-color: #3a404c;
-	display: block;
-	max-width: 800px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
 }
 
-body>header div.nav {
-	margin-top: 30px;
-	background-color: #dfd9d6;
+body>header div.title a {
+	color: inherit;
 }
 
-body>header div.nav a {
-	padding-left: 5px;
-	border-left: 1px solid black;
-}
-
-body>header div.nav a:first-of-type {
-	padding-left: 0px;
-	border-left: none;
-}
-
-body>header nav.left {
-	margin-left: 25px;
-}
-
-body>header nav.right {
-	margin-right: 25px;
-}
-
-article {
-	padding: 20px 5px 20px 5px;
-	margin: 5px 0 5px 0;
-	background: whitesmoke;
-}
-
-article header h2 {
-	margin-bottom: 5px;
+body>header a:focus, body>header a:hover {
 	text-decoration: none;
 }
 
-article header {
-	border-bottom: 1px solid black;
+.intro-header .page-heading .subheading, .intro-header .site-heading .subheading {
+	font-size: 20px;
 }
 
-div.article {
-	margin-top: 2rem;
-}
-
-div.article a:target {
-	text-decoration: none;
-}
-
-div.article a {
-	text-decoration: underline;
-}
-
-blockquote {
-	padding: 0 1em;
-	color: #777;
-	border-left: 0.25em solid #ddd;
-}
-
-code {
-	background: #888;
+p {
+	margin: 0 0 10px;
 }

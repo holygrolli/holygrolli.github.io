@@ -1,20 +1,27 @@
 {{> header }}
 <div class="container">
 	<div class="row">
-		<div class="twelve columns">
-			{{#each posts }}
-			<article>
-				<header>
-					<h2><a href="{{ path }}">{{ title }}</a></h2>
-					<time datetime="{{moment date 'YYYY-MM-DD'}}">{{moment date 'LL'}}</time>
-				</header>
-				<div class="article">
-					{{ excerpt }}
-					<br/><br/><a href="{{ path }}">Lesen ...</a>
-				</div>
-			</article>
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			{{#each posts}}
+			<div class="post-preview">
+				<a href="/{{ path }}">
+					<h2 class="post-title">
+						{{title}}
+					</h2>
+				</a>
+				<p class="post-meta"><time datetime="{{moment date 'YYYY-MM-DD'}}">{{moment date 'LL'}}</time></p>
+				<p>{{excerpt}}</p>
+			</div>
+			<hr>
 			{{/each}}
+			<!-- Pager -->
+			<ul class="pager">
+				<li class="next">
+					<a href="#">Older Posts &rarr;</a>
+				</li>
+			</ul>
 		</div>
 	</div>
+</div>
 </div>
 {{> footer }}

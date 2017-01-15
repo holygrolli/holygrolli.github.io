@@ -1,17 +1,18 @@
 {{> header }}
-<div class="container">
-	<div class="row">
-		<div class="twelve columns">
-			<article>
+<article>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 				<header>
 					<h2>{{ title }}</h2>
 					<time datetime="{{moment date 'YYYY-MM-DD'}}">{{moment date 'LL'}}</time>
 				</header>
+				<hr>
 				<div class="article">
 					{{{ contents }}}
 				</div>
-			</article>
+			</div>
 		</div>
 	</div>
-</div>
+</article>
 {{> footer }}
