@@ -15,8 +15,8 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<title>{{#if title }}{{  title  }} - {{/if}}{{ site.name }}</title>
-	<meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
+	<title>404 - ChaosBlog</title>
+	<meta name="description" content="ChaosBlog is the blog of Andreas Groll and (chaotic) life." />
 	<!-- FONT -->
 	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
@@ -34,9 +34,7 @@
 
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
 	<!-- End Cookie Consent plugin -->
-	{{#if is_error}}
 	<meta http-equiv="refresh" content="3; URL=/">
-	{{/if}}
   </head>
   <body>
   	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -53,11 +51,12 @@
   			<!-- Collect the nav links, forms, and other content for toggling -->
   			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   				<ul class="nav navbar-nav navbar-right">
-  					{{#each pages }}
   					<li>
-  						<a href="/{{ path }}">{{  title  }}</a>
+  						<a href="/pages/about">About</a>
   					</li>
-  					{{/each}}
+  					<li>
+  						<a href="/pages/about">About</a>
+  					</li>
   				</ul>
   			</div>
   			<!-- /.navbar-collapse -->
@@ -75,10 +74,7 @@
   							<div class="title">
   								<h1><a href="/">ChaosBlog</a></h1>
   								<hr class="small">
-  								<span class="subheading">{{#if alt_subheading }}{{  alt_subheading  }}
-  								{{else}}
-  								Ich hasse das Chaos, aber das Chaos liebt mich. <a href="https://www.aphorismen.de/zitat/48718"><i class="fa fa-copyright" aria-hidden="true"></i></a></span>
-  								{{/if}}
+  								<span class="subheading">Fehler 404 - Seite nicht gefunden
   							</div>
   						</div>
   					</div>
@@ -86,3 +82,39 @@
   			</div>
   		</div>
   	</header>
+		<hr>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+						<ul class="list-inline text-center">
+							<li>
+								<a href="https://plus.google.com/+AndreasGroll">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-google-plus-official fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/adulescentulus">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-github fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
+						<p class="copyright text-muted">Copyright &copy; ChaosBlog 2017</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="/js/bootstrap.min.js"></script>
+		<!-- Theme JavaScript -->
+		<script src="/js/clean-blog.min.js"></script>
+	</body>
+</html>
