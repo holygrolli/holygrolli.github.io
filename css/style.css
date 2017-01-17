@@ -10,7 +10,7 @@ body {
 
 .header-bg {
 	background: none;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.2);
 }
 
 body>header h1 {
@@ -23,7 +23,7 @@ body>header div.title {
 	color: #fff;
 	border: 2px solid #fff;
 	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.4);
 }
 
 body>header div.title a {
