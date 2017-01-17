@@ -1,6 +1,8 @@
 ---
-title: "About"
+title: "Über"
 blurb: "Andreas Groll is ...."
 ---
 
-Andreas is a DevOps Engineer grown up with Java. Very enthusiastic about new gadgets and new technology.
+Andreas ist von Beruf DevOps Engineer und als Java-Entwickler groß geworden. Er hat eine Vorliebe für Gadgets und probiert gern neue Technologien aus. Falls dann noch Zeit ist er gern beim Sport, in der Küche und mit Freunden unterwegs.
+
+Dieser Blog hat (aktuell) keine Schwerpunkte. Alles was sein chaotisches Leben hergibt und Zeit findet, erwähnt zu werden. 

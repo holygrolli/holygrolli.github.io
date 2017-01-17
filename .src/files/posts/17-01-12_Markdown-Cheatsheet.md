@@ -1,7 +1,7 @@
 ---
 title: "Markdown Cheatsheet"
 date: 2017-01-12
-excerpt: "cheatsheet"
+excerpt: "Ein Markdown Spickzettel oder \"Wie verfasse ich eine Seite\"?"
 ---
 
 Based on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
