@@ -19,7 +19,7 @@ metalsmith(__dirname)
 .metadata({
   site: {
     name: 'ChaosBlog',
-    description: "ChaosBlog is the blog of Andreas Groll and (chaotic) life."
+    description: "ChaosBlog ist der Blog von Andreas Groll und das (chaotische) Leben"
   }
 })
 .use(collections({
@@ -55,6 +55,7 @@ metalsmith(__dirname)
 }))
 .source('./files')
 .destination('../.')
+.clean(false)
 .use(serve({
   port: 8080,
   host: "0.0.0.0",
