@@ -2,6 +2,7 @@
 title: "Erster Post und wo ist Wordpress"
 date: 2017-01-17
 excerpt: Eine Einleitung ohne Anspruch auf Vollständigkeit.
+tags: [metalsmith]
 ---
 
 Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf [Blogger](http://blogger.com) gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist. 

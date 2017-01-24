@@ -2,6 +2,7 @@
 title: "Markdown Cheatsheet"
 date: 2017-01-12
 excerpt: "Ein Markdown Spickzettel oder \"Wie verfasse ich eine Seite\"?"
+tags: [metalsmith, markdown]
 ---
 
 Based on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).

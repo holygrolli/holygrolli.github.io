@@ -7,6 +7,8 @@ var collections = require('metalsmith-collections');
 var permalinks = require('metalsmith-permalinks');
 var moment = require('moment');
 var env = require('metalsmith-env');
+var _ = require('lodash');
+//var debug = require('metalsmith-debug');
 
 moment.locale('de');
 
@@ -43,6 +45,37 @@ handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
   }
 });
 
+tags = function(opts){
+  opts = _.defaults(opts||{},{path:"tags/",yaml:{layout:"tag.html"}});
+  return function(files, metalsmith, done){
+    meta = metalsmith.metadata();
+    var tags = _.reduce(meta[opts.collection]||files,function(memo,file,path){
+      file.tags = file.tags ? _.map(file.tags,function(t){return t.toLowerCase();}) : [];
+      _.each(file.tags,function(tag){
+        key = opts.path+tag+"/index.html";
+        memo[key] = _.defaults({},memo[key],{tag:tag,posts:[],contents:"",title:tag},opts.yaml);
+        memo[key].posts = _.sortBy(memo[key].posts.concat(file),"date").reverse();
+      });
+      return memo;
+    },{});
+    _.extend(files,tags);
+    (meta[opts.collection]||meta).taglist = _.sortBy(_.reduce(tags,function(memo,tag){
+      return memo.concat({tag:tag.tag,count:tag.posts.length,posts:tag.posts});
+    },[]),"count").reverse();
+    (meta[opts.collection]||meta).tags = _.reduce(tags,function(memo,tag){
+      memo[tag.tag] = {tag:tag.tag,count:tag.posts.length,posts:tag.posts};
+      return memo;
+    },{});
+    done();
+  };
+};
+
+handlebars.registerHelper('tagPosts', function(tagname, options) {
+  return _.reduce(this.tags[tagname].posts,function(memo,f){
+    return memo+options.fn(f);
+  },"");
+});
+
 var m = metalsmith(__dirname)
 .metadata({
   site: {
@@ -63,6 +96,8 @@ var m = metalsmith(__dirname)
     reverse: false
   },
 }))
+.use(tags({path:"tags/"}))
+//.use(debug())
 .use(markdown({
 }))
 .use(jquery('**/*.html', function($) {
