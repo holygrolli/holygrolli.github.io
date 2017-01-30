@@ -41,3 +41,17 @@ body>header a:focus, body>header a:hover {
 p {
 	margin: 0 0 10px;
 }
+
+div.post-preview hr.small {
+	border-color: #eee;
+	border-width: 1px;
+}
+
+body>header div.page-heading div.title {
+	text-align: left;
+	padding: 10px;
+}
+
+.gap-right {
+	margin-right: 10px;
+}

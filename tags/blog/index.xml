@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on ChaosBlog</title>
+    <link>http://blog.networkchallenge.de/tags/blog/index.xml</link>
+    <description>Recent content in Blog on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2017</copyright>
+    <atom:link href="http://blog.networkchallenge.de/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Erster Post und wo ist Wordpress</title>
+      <link>http://blog.networkchallenge.de/post/erster_post</link>
+      <pubDate>Tue, 17 Jan 2017 20:59:17 +0100</pubDate>
+      
+      <guid>http://blog.networkchallenge.de/post/erster_post</guid>
+      <description>&lt;p&gt;Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf &lt;a href=&#34;http://blogger.com&#34;&gt;Blogger&lt;/a&gt; gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist.&lt;/p&gt;
+
+&lt;p&gt;Nun starte ich einen neuen Versuch mit &lt;a href=&#34;^http://metalsmith.io&#34;&gt;metalsmith&lt;/a&gt;, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte). Da für nächstes Jahr eine Weltreise geplant ist male ich mir einige Vorteile aus.&lt;/p&gt;
+
+&lt;p&gt;Die technische Seite von &lt;em&gt;metalsmith&lt;/em&gt; werde ich dann die Tage einmal beleuchten. Jetzt muss das hier für den Anfang erstmal genug sein.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

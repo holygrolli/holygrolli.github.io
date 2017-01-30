@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/post/sie_ist_da_mavic</loc>
+    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/about/</loc>
+    <lastmod>2017-01-25T17:50:22+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/post/erster_post</loc>
+    <lastmod>2017-01-17T20:59:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/post/markdown_cheatsheet</loc>
+    <lastmod>2017-01-12T20:59:17+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/categories/allgemein/</loc>
+    <lastmod>2017-01-17T20:59:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/tags/blog/</loc>
+    <lastmod>2017-01-17T20:59:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/</loc>
+    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/tags/drohne/</loc>
+    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/tags/fotos/</loc>
+    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/tags/mavic/</loc>
+    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/tags/metalsmith/</loc>
+    <lastmod>2017-01-17T20:59:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/post/</loc>
+    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/categories/vonoben/</loc>
+    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

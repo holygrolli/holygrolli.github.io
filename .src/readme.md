@@ -1,1 +1,0 @@
-Blog template. Simply run `npm start`!
