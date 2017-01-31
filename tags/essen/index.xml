@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essen on ChaosBlog</title>
+    <link>http://blog.networkchallenge.de/tags/essen/index.xml</link>
+    <description>Recent content in Essen on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2017</copyright>
+    <atom:link href="http://blog.networkchallenge.de/tags/essen/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Die Zucchini-Preise</title>
+      <link>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017</link>
+      <pubDate>Tue, 31 Jan 2017 17:00:49 +0100</pubDate>
+      
+      <guid>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017</guid>
+      <description>&lt;p&gt;Mir ist schon letzte Woche im Discounter aufgefallen, dass die Zucchini-Preise unerwartet hoch sind. Dabei habe ich mich gefragt, wie es dazu kommt. Schließlich kostet Fleisch ja weiterhin unverschämt wenig. Und für 5,99 Euro pro Kilo Zucchini bekommt man wahrscheinlich 3 Kilo Hack. Wenn ich dachte, dass der Preis im Discounter schon hoch war, wurde ich beim Supermarkt um die Ecke gleich eines besseren belehrt, dort kostete das Kilo gleich 7,99 Euro.&lt;/p&gt;
+
+&lt;p&gt;Interessanterweise findet sich bei einer Google-Suche für den Zeitraum der letzten Woche nur ein &lt;a href=&#34;http://www.mdr.de/nachrichten/vermischtes/teure-gemuese-preise-nach-frost-in-suedeuropa-100.html&#34;&gt;Artikel&lt;/a&gt; des MDR. Sonst wird das nirgends erwähnt. Im Artikel wird als Ursache die extreme Kälte in den Mittelmeerländern genannt, ohne konkrete Zahlen zu nennen. Daher dachte ich mir, sowas muss doch recherchierbar sein.&lt;/p&gt;
+
+&lt;p&gt;Tatsächlich bietet &lt;a href=&#34;http://www.wetteronline.de/&#34;&gt;wetteronline&lt;/a&gt; eine schöne &lt;a href=&#34;http://www.wetteronline.de/?month=01&amp;amp;year=2017&amp;amp;pcid=pc_rueckblick_data&amp;amp;gid=euro&amp;amp;pid=p_rueckblick_colormap&amp;amp;sid=ColorMap&amp;amp;metparaid=TXA&amp;amp;iid=euro&#34;&gt;Farbkarte&lt;/a&gt; für Europa an, mit der man auch historische Werte anzeigen kann. Tatsächlich zeigt dann der Monat Januar ein sehr kaltes Bild von Südeuropa.&lt;/p&gt;
+
+&lt;p&gt;Schaut man sich die &lt;a href=&#34;http://www.wetteronline.de/wetterdaten/trikala?pcid=pc_rueckblick_data&amp;amp;gid=16645&amp;amp;pid=p_rueckblick_diagram&amp;amp;sid=StationHistory&amp;amp;iid=16648&amp;amp;month=01&amp;amp;year=2017&amp;amp;period=4&amp;amp;metparaid=TXLD&#34;&gt;Details&lt;/a&gt; für Griechenland an, sind die Temperaturen schon extrem niedrig im Vergleich zu letztem Jahr:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Januar&lt;/th&gt;
+&lt;th&gt;2016&lt;/th&gt;
+&lt;th&gt;2017&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Höchstwert&lt;/td&gt;
+&lt;td&gt;22°C&lt;/td&gt;
+&lt;td&gt;13°C&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Tiefstwert&lt;/td&gt;
+&lt;td&gt;-6°C&lt;/td&gt;
+&lt;td&gt;-18°C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Interessant in dem Zusammenhang fand ich den zweiten Kommentar im &lt;a href=&#34;http://www.mdr.de/nachrichten/vermischtes/teure-gemuese-preise-nach-frost-in-suedeuropa-100.html&#34;&gt;MDR-Artikel&lt;/a&gt;, wo explizit darauf hingewiesen wird, dass Zucchini im Winter schon Luxus sind. Da dort als Hinweis u.a. Keimlinge erwähnt wurden, hatte ich kurz &lt;a href=&#34;http://vollwert-blog.de/getreidesprossen-ziehen/&#34;&gt;diese Seite&lt;/a&gt; gefunden, die mich daran erinnert hat, mal wieder meine Keimgläser aus dem Schrank zu holen.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

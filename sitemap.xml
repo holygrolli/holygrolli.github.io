@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017</loc>
+    <lastmod>2017-01-31T17:00:49+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.networkchallenge.de/post/sie_ist_da_mavic</loc>
     <lastmod>2017-01-29T17:52:46+01:00</lastmod>
   </url>
@@ -23,7 +28,7 @@
   
   <url>
     <loc>http://blog.networkchallenge.de/categories/allgemein/</loc>
-    <lastmod>2017-01-17T20:59:17+01:00</lastmod>
+    <lastmod>2017-01-31T17:00:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -40,13 +45,19 @@
   
   <url>
     <loc>http://blog.networkchallenge.de/</loc>
-    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <lastmod>2017-01-31T17:00:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.networkchallenge.de/tags/drohne/</loc>
     <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.networkchallenge.de/tags/essen/</loc>
+    <lastmod>2017-01-31T17:00:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -70,7 +81,7 @@
   
   <url>
     <loc>http://blog.networkchallenge.de/post/</loc>
-    <lastmod>2017-01-29T17:52:46+01:00</lastmod>
+    <lastmod>2017-01-31T17:00:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   
