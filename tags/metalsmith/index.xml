@@ -17,7 +17,7 @@
       <guid>http://blog.networkchallenge.de/post/erster_post</guid>
       <description>&lt;p&gt;Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf &lt;a href=&#34;http://blogger.com&#34;&gt;Blogger&lt;/a&gt; gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist.&lt;/p&gt;
 
-&lt;p&gt;Nun starte ich einen neuen Versuch mit &lt;a href=&#34;^http://metalsmith.io&#34;&gt;metalsmith&lt;/a&gt;, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte). Da für nächstes Jahr eine Weltreise geplant ist male ich mir einige Vorteile aus.&lt;/p&gt;
+&lt;p&gt;Nun starte ich einen neuen Versuch mit &lt;a href=&#34;http://metalsmith.io&#34;&gt;metalsmith&lt;/a&gt;, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte). Da für nächstes Jahr eine Weltreise geplant ist male ich mir einige Vorteile aus.&lt;/p&gt;
 
 &lt;p&gt;Die technische Seite von &lt;em&gt;metalsmith&lt;/em&gt; werde ich dann die Tage einmal beleuchten. Jetzt muss das hier für den Anfang erstmal genug sein.&lt;/p&gt;
 </description>
@@ -35,7 +35,7 @@
 
 &lt;p&gt;This is intended as a quick reference and showcase. For more complete info, see &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;John Gruber&amp;rsquo;s original spec&lt;/a&gt; and the &lt;a href=&#34;http://github.github.com/github-flavored-markdown/&#34;&gt;Github-flavored Markdown info page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Note that there is also a &lt;a href=&#34;./Markdown-Here-Cheatsheet&#34;&gt;Cheatsheet specific to Markdown Here&lt;/a&gt; if that&amp;rsquo;s what you&amp;rsquo;re looking for. You can also check out &lt;a href=&#34;./Other-Markdown-Tools&#34;&gt;more Markdown tools&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note that there is also a &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet&#34;&gt;Cheatsheet specific to Markdown Here&lt;/a&gt; if that&amp;rsquo;s what you&amp;rsquo;re looking for. You can also check out &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Other-Markdown-Tools&#34;&gt;more Markdown tools&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h5 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h5&gt;
 
