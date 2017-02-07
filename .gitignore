@@ -30,3 +30,4 @@ nbdist/
 ### other ###
 #Dockerfile
 #docker-compose.yml
+/.gitkeep

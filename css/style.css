@@ -55,3 +55,8 @@ body>header div.page-heading div.title {
 .gap-right {
 	margin-right: 10px;
 }
+
+.margin {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
