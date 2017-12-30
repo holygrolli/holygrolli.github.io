@@ -2,160 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ChaosBlog</title>
-    <link>http://blog.networkchallenge.de/index.xml</link>
+    <link>http://blog.networkchallenge.de/</link>
     <description>Recent content on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2017</copyright>
-    <lastBuildDate>Wed, 22 Feb 2017 09:22:51 +0100</lastBuildDate>
-    <atom:link href="http://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Dec 2017 13:18:51 +0530</lastBuildDate>
+    
+	<atom:link href="http://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo auf einem Android Tablet</title>
+      <link>http://blog.networkchallenge.de/post/hugo_on_android/</link>
+      <pubDate>Fri, 29 Dec 2017 13:18:51 +0530</pubDate>
+      
+      <guid>http://blog.networkchallenge.de/post/hugo_on_android/</guid>
+      <description>Gerade beginnt Woche 3 in Sri Lanka und während wir auf unseren Fahrer warten habe ich 2 Stunden Zeit zum Basteln. Durch Zufall bin ich gestern auf die Android-App termux gestoßen. Damit bekommt man eine minimale Linuxinstallation auf sein Gerät und kann Pakete mittels apt nachinstallieren.
+Zuerst installiert man mit apt install wget das vollständige wget-Paket (default ist nur eine abgespeckte Busybox-Version), dann lädt man sich das Linux ARM Paket von Hugo.</description>
+    </item>
     
     <item>
       <title>Automatische Docker-Mounts in Windows</title>
-      <link>http://blog.networkchallenge.de/post/automatische-docker-mounts-win</link>
+      <link>http://blog.networkchallenge.de/post/automatische-docker-mounts-win/</link>
       <pubDate>Wed, 22 Feb 2017 09:22:51 +0100</pubDate>
       
-      <guid>http://blog.networkchallenge.de/post/automatische-docker-mounts-win</guid>
-      <description>
-
-&lt;p&gt;Standardmäßig wird bei der Installation der &lt;em&gt;Docker Toolbox&lt;/em&gt; die freie Virtualisierungssoftware &lt;em&gt;VirtualBox&lt;/em&gt; installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad &lt;code&gt;/c/Users&lt;/code&gt; im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. &lt;code&gt;c:\dev&lt;/code&gt; arbeitet.&lt;/p&gt;
-
-&lt;p&gt;Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden. Da ich unter Windows primär mit der &lt;em&gt;GitBash&lt;/em&gt; arbeite, hier nun die einzelnen Schritte. (Vorraussetzung die Maschine &lt;em&gt;default&lt;/em&gt; ist gestoppt)&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Prüfung der aktuellen SharedFolder-Einstellungen&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;VBoxManage showvminfo default
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Dies sollte folgende Standardausgabe weit am Ende liefern:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Shared folders:
-Name: &#39;c/Users&#39;, Host path: &#39;\\?\c:\Users&#39; (machine mapping), writable
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hinzufügen eines neuen SharedFolder&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;VBoxManage sharedfolder add default --name /c/dev --hostpath &amp;quot;C:\\dev&amp;quot; --automount
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Starten der Docker-Machine mit &lt;code&gt;docker-machine start default&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Per ssh mit der Docker-Machine verbinden &lt;code&gt;docker-machine ssh default&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;eine neue Datei für den &amp;ldquo;Autostart&amp;rdquo; erzeugen und editieren&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo vi /mnt/sda1/var/lib/boot2docker/bootlocal.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Der folgende Dateiinhalt erzeugt den Mount-Pfad und hängt das SharedFolder ein&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mkdir -p /c/dev
-mount -t vboxsf -o defaults,uid=`id -u docker`,gid=`id -g docker` c/dev /c/dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Nach dem Verlassen der VM zurück in der GitBash verhilft ein schnelles &lt;code&gt;docker-machine restart default&lt;/code&gt; zum Neustart der VM.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Verbindet man sich nun erneut mit der VM mittels &lt;code&gt;docker-machine ssh default&lt;/code&gt; sollte ein &lt;code&gt;ls /c/dev&lt;/code&gt; den Inhalt des Host-Verzeichnisses anzeigen.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;zusatzinfo&#34;&gt;Zusatzinfo&lt;/h3&gt;
-
-&lt;p&gt;Da ich nicht nur mit der GitBash sondern auch mit &lt;a href=&#34;https://babun.github.io&#34;&gt;Babun&lt;/a&gt; arbeite ist es auch noch interessant, wenn man die Cygwin-typischen Pfade mountet. Das bedeutet man bindet das Verzeichnis &lt;code&gt;c:\dev&lt;/code&gt; zusätzlich als &lt;code&gt;/cygdrive/c/dev&lt;/code&gt; ein und man kann dann ebenso aus der Cygwin-Shell heraus Pfade einbinden.&lt;/p&gt;
-</description>
+      <guid>http://blog.networkchallenge.de/post/automatische-docker-mounts-win/</guid>
+      <description>Standardmäßig wird bei der Installation der Docker Toolbox die freie Virtualisierungssoftware VirtualBox installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad /c/Users im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. c:\dev arbeitet.
+Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden.</description>
     </item>
     
     <item>
       <title>Von oben im Südraum von Leipzig</title>
-      <link>http://blog.networkchallenge.de/post/suedraum_leipzig_von_oben</link>
+      <link>http://blog.networkchallenge.de/post/suedraum_leipzig_von_oben/</link>
       <pubDate>Tue, 07 Feb 2017 18:18:29 +0100</pubDate>
       
-      <guid>http://blog.networkchallenge.de/post/suedraum_leipzig_von_oben</guid>
-      <description>&lt;p&gt;Das zweite Wochenende ist mit der DJI Mavic Pro verbracht. Ich habe immer noch nicht wirklich alle Details der Mavic ausprobieren können. Dafür sind es zu viele Optionen und zu wenig Zeit. Eins ist für mich aber ein Fakt: die Kamera liefert ein Spitzenergebnis.&lt;/p&gt;
-
-&lt;p&gt;Wir haben wieder super Wetter gehabt (zumindest am Samstag). Der erste Versuch an der Westseite des Zwenkauer Sees ans Wasser ranzukommen ist leider gescheitert. Die Mavic kam zwar ran, aber die Fotos waren jetzt nicht so besonders. Mit dem Ergebnis, dass wir zum Hainer See gefahren sind. Auf dem Weg bei Rötha sind dann folgende Shots entstanden.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.networkchallenge.de/img/DJI_0157-HDR.jpg&#34; class=&#34;img-responsive&#34; &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.networkchallenge.de/img/DJI_0171-HDR.jpg&#34; class=&#34;img-responsive&#34; &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.networkchallenge.de/img/DJI_0172-HDR.jpg&#34; class=&#34;img-responsive&#34; &gt;&lt;/p&gt;
-</description>
+      <guid>http://blog.networkchallenge.de/post/suedraum_leipzig_von_oben/</guid>
+      <description>Das zweite Wochenende ist mit der DJI Mavic Pro verbracht. Ich habe immer noch nicht wirklich alle Details der Mavic ausprobieren können. Dafür sind es zu viele Optionen und zu wenig Zeit. Eins ist für mich aber ein Fakt: die Kamera liefert ein Spitzenergebnis.
+Wir haben wieder super Wetter gehabt (zumindest am Samstag). Der erste Versuch an der Westseite des Zwenkauer Sees ans Wasser ranzukommen ist leider gescheitert. Die Mavic kam zwar ran, aber die Fotos waren jetzt nicht so besonders.</description>
     </item>
     
     <item>
       <title>Die Zucchini-Preise</title>
-      <link>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017</link>
+      <link>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017/</link>
       <pubDate>Tue, 31 Jan 2017 17:00:49 +0100</pubDate>
       
-      <guid>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017</guid>
-      <description>&lt;p&gt;Mir ist schon letzte Woche im Discounter aufgefallen, dass die Zucchini-Preise unerwartet hoch sind. Dabei habe ich mich gefragt, wie es dazu kommt. Schließlich kostet Fleisch ja weiterhin unverschämt wenig. Und für 5,99 Euro pro Kilo Zucchini bekommt man wahrscheinlich 3 Kilo Hack. Wenn ich dachte, dass der Preis im Discounter schon hoch war, wurde ich beim Supermarkt um die Ecke gleich eines besseren belehrt, dort kostete das Kilo gleich 7,99 Euro.&lt;/p&gt;
-
-&lt;p&gt;Interessanterweise findet sich bei einer Google-Suche für den Zeitraum der letzten Woche nur ein &lt;a href=&#34;http://www.mdr.de/nachrichten/vermischtes/teure-gemuese-preise-nach-frost-in-suedeuropa-100.html&#34;&gt;Artikel&lt;/a&gt; des MDR. Sonst wird das nirgends erwähnt. Im Artikel wird als Ursache die extreme Kälte in den Mittelmeerländern genannt, ohne konkrete Zahlen zu nennen. Daher dachte ich mir, sowas muss doch recherchierbar sein.&lt;/p&gt;
-
-&lt;p&gt;Tatsächlich bietet &lt;a href=&#34;http://www.wetteronline.de/&#34;&gt;wetteronline&lt;/a&gt; eine schöne &lt;a href=&#34;http://www.wetteronline.de/?month=01&amp;amp;year=2017&amp;amp;pcid=pc_rueckblick_data&amp;amp;gid=euro&amp;amp;pid=p_rueckblick_colormap&amp;amp;sid=ColorMap&amp;amp;metparaid=TXA&amp;amp;iid=euro&#34;&gt;Farbkarte&lt;/a&gt; für Europa an, mit der man auch historische Werte anzeigen kann. Tatsächlich zeigt dann der Monat Januar ein sehr kaltes Bild von Südeuropa.&lt;/p&gt;
-
-&lt;p&gt;Schaut man sich die &lt;a href=&#34;http://www.wetteronline.de/wetterdaten/trikala?pcid=pc_rueckblick_data&amp;amp;gid=16645&amp;amp;pid=p_rueckblick_diagram&amp;amp;sid=StationHistory&amp;amp;iid=16648&amp;amp;month=01&amp;amp;year=2017&amp;amp;period=4&amp;amp;metparaid=TXLD&#34;&gt;Details&lt;/a&gt; für Griechenland an, sind die Temperaturen schon extrem niedrig im Vergleich zu letztem Jahr:&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Januar&lt;/th&gt;
-&lt;th&gt;2016&lt;/th&gt;
-&lt;th&gt;2017&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Höchstwert&lt;/td&gt;
-&lt;td&gt;22°C&lt;/td&gt;
-&lt;td&gt;13°C&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Tiefstwert&lt;/td&gt;
-&lt;td&gt;-6°C&lt;/td&gt;
-&lt;td&gt;-18°C&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Interessant in dem Zusammenhang fand ich den zweiten Kommentar im &lt;a href=&#34;http://www.mdr.de/nachrichten/vermischtes/teure-gemuese-preise-nach-frost-in-suedeuropa-100.html&#34;&gt;MDR-Artikel&lt;/a&gt;, wo explizit darauf hingewiesen wird, dass Zucchini im Winter schon Luxus sind. Da dort als Hinweis u.a. Keimlinge erwähnt wurden, hatte ich kurz &lt;a href=&#34;http://vollwert-blog.de/getreidesprossen-ziehen/&#34;&gt;diese Seite&lt;/a&gt; gefunden, die mich daran erinnert hat, mal wieder meine Keimgläser aus dem Schrank zu holen.&lt;/p&gt;
-</description>
+      <guid>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017/</guid>
+      <description>Mir ist schon letzte Woche im Discounter aufgefallen, dass die Zucchini-Preise unerwartet hoch sind. Dabei habe ich mich gefragt, wie es dazu kommt. Schließlich kostet Fleisch ja weiterhin unverschämt wenig. Und für 5,99 Euro pro Kilo Zucchini bekommt man wahrscheinlich 3 Kilo Hack. Wenn ich dachte, dass der Preis im Discounter schon hoch war, wurde ich beim Supermarkt um die Ecke gleich eines besseren belehrt, dort kostete das Kilo gleich 7,99 Euro.</description>
     </item>
     
     <item>
       <title>Sie ist da</title>
-      <link>http://blog.networkchallenge.de/post/sie_ist_da_mavic</link>
+      <link>http://blog.networkchallenge.de/post/sie_ist_da_mavic/</link>
       <pubDate>Sun, 29 Jan 2017 17:52:46 +0100</pubDate>
       
-      <guid>http://blog.networkchallenge.de/post/sie_ist_da_mavic</guid>
-      <description>&lt;p&gt;Seit der Vorstellung der DJI Mavic Pro im September 2016 war ich, wie wahrscheinlich viele andere auch, begeistert von der Konzept einer faltbaren, reisetauglichen Drohne. Es gab zwar schon lange gute Modelle, diese hatten aber Maße, die waren einfach nichts für einen Backpacking-Urlaub. Somit Bestand das Equipment der letzten Jahre &amp;ldquo;nur&amp;rdquo; aus Travelzoom-Cam und GoPro.
-Die Mavic sollte dem nun die Krone aufsetzen: tolle Landschaftsaufnahmen aus Perspektiven, die vorher nicht möglich waren.&lt;/p&gt;
-
-&lt;p&gt;Ende Oktober, einen Monat nach dem Verkaufsstart im offiziellen DJI-Shop, war die Mavic auf Amazon.de gelistet und ich dachte mir: jetzt oder nie! Grundsätzlich hatte ich schon gelesen, dass Vorbesteller seit September warten mussten, daher war mir Amazon ganz recht. Das Geld würde erst abgebucht werden, wenn das Paket auch verschickt wird. Leider hat sich bei Amazon seit meiner Bestellung nichts getan. Das &lt;a href=&#34;http://amzn.to/2jKPAWi&#34;&gt;DJI Mavic Pro Fly More Combo&lt;/a&gt; ist weiterhin noch nicht lieferbar.&lt;/p&gt;
-
-&lt;p&gt;Als ich dann Anfang Januar las, dass im offziellen &lt;a href=&#34;http://store.dji.com/de/product/mavic-pro&#34;&gt;DJI Shop&lt;/a&gt; von zwei Wochen Lieferzeit gesprochen wurde und tatsächlich die Produktions-/Lieferzeiten eingehalten werden sollten, habe ich dann am 11. Januar bestellt. Völlig überraschend habe ich dann am 23. Januar eine DHL-Ankündigungsmail bekommen, dass eine Sendung in London Heathrow zum Transport nach Leipzig entgegengenommen wurde. Der tollen Logistik von DHL ist es dann zu verdanken, dass ich tatsächlich am 25. Januar, genau 14 Tage nach Bestellung, meine Mavic vom Kurier entgegen nehmen konnte.&lt;/p&gt;
-
-&lt;p&gt;Da die Mavic erst am Abend ankahm, musste ich mich noch einen vollen Tag gedulden, bis ich sie in die freie Wildbahn entlassen konnte. Am Anfang hat man ein echt komisches Gefühl, dass man gleich ein kleines Vermögen kaputt machen könnte. (Und ehrlich gesagt ist das Gefühl nach fast einer Woche noch nicht wirklich weg.) Zuerst einmal habe ich die Mavic im &lt;em&gt;Beginner Mode&lt;/em&gt; gesteuert, aber in der gleichen Session noch in dem normalen &lt;em&gt;GPS Mode&lt;/em&gt;. Die Erkenntnis dabei: ein krasses Stück Technik! Gleich in der ersten Session habe ich die Möglichkeiten der &amp;ldquo;maximalen&amp;rdquo; Höhe ausgereizt (es wird erstmal per Software auf 120 Höhenmeter begrenzt).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.networkchallenge.de/img/DJI_0051-HDR.jpg&#34; class=&#34;img-responsive&#34; &gt;&lt;/p&gt;
-
-&lt;p&gt;Ich bin mit dem Ergebnis sehr zufrieden, zumal die Mavic alle möglichen Aufnahmeeinstellungen unterstützt, die auch eine &amp;ldquo;große&amp;rdquo; Kamera bieten würde.&lt;/p&gt;
-
-&lt;p&gt;Mit diesem Bild eröffne ich auch die Kategorie &amp;ldquo;vonoben&amp;rdquo; hier im Blog. Diese Perspektive ist schon einzigartig, da sie ein völlig anderes Bild der Umgebung zeigt.&lt;/p&gt;
-
-&lt;p&gt;Alle Tage des vergangenen Wochenendes haben wir also dann an den Leipziger Seen verbracht, um unsere Flugfähigkeiten weiter zu trainieren. Auch Katrin fand die Steuerung angenehm für jemanden, der sonst fast nie einen Controller in der Hand hält. Am Ende haben wir dann auf schlechtem Boden auch mehrere Hand Takeoffs und Landings hinbekommen und alle Finger sind noch dran. Das Ergebnis des Wochenendes in einer minimalen Auswahl:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.networkchallenge.de/img/DJI_0060-HDR.jpg&#34; class=&#34;img-responsive&#34; &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.networkchallenge.de/img/DJI_0083-HDR-2.jpg&#34; class=&#34;img-responsive&#34; &gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.networkchallenge.de/img/DJI_0106-HDR.jpg&#34; class=&#34;img-responsive&#34; &gt;&lt;/p&gt;
-
-&lt;p&gt;In einem folgenden Post werde ich dann noch weiter berichten. Auch möchte ich kurz was zum Thema Versicherung schreiben, etwas was mich zuvor schon mehrere Wochen beschäftigt hat.&lt;/p&gt;
-</description>
+      <guid>http://blog.networkchallenge.de/post/sie_ist_da_mavic/</guid>
+      <description>Seit der Vorstellung der DJI Mavic Pro im September 2016 war ich, wie wahrscheinlich viele andere auch, begeistert von der Konzept einer faltbaren, reisetauglichen Drohne. Es gab zwar schon lange gute Modelle, diese hatten aber Maße, die waren einfach nichts für einen Backpacking-Urlaub. Somit Bestand das Equipment der letzten Jahre &amp;ldquo;nur&amp;rdquo; aus Travelzoom-Cam und GoPro. Die Mavic sollte dem nun die Krone aufsetzen: tolle Landschaftsaufnahmen aus Perspektiven, die vorher nicht möglich waren.</description>
     </item>
     
     <item>
@@ -164,460 +66,38 @@ Die Mavic sollte dem nun die Krone aufsetzen: tolle Landschaftsaufnahmen aus Per
       <pubDate>Wed, 25 Jan 2017 17:50:22 +0100</pubDate>
       
       <guid>http://blog.networkchallenge.de/about/</guid>
-      <description>&lt;p&gt;Andreas ist von Beruf DevOps Engineer und als Java-Entwickler groß geworden. Er hat eine Vorliebe für Gadgets und probiert gern neue Technologien aus. Falls dann noch Zeit ist, dann ist er gern beim Sport, in der Küche und mit Freunden unterwegs. Ohne Katrin wäre dieses Leben aber trotzdem noch viel zu langweilig ;-)&lt;/p&gt;
-
-&lt;p&gt;Dieser Blog hat (aktuell) keine Schwerpunkte. Alles was sein chaotisches Leben hergibt und Zeit findet, erwähnt zu werden.&lt;/p&gt;
-</description>
+      <description>Andreas ist von Beruf DevOps Engineer und als Java-Entwickler groß geworden. Er hat eine Vorliebe für Gadgets und probiert gern neue Technologien aus. Falls dann noch Zeit ist, dann ist er gern beim Sport, in der Küche und mit Freunden unterwegs. Ohne Katrin wäre dieses Leben aber trotzdem noch viel zu langweilig ;-)
+Dieser Blog hat (aktuell) keine Schwerpunkte. Alles was sein chaotisches Leben hergibt und Zeit findet, erwähnt zu werden.</description>
     </item>
     
     <item>
       <title>Erster Post und wo ist Wordpress</title>
-      <link>http://blog.networkchallenge.de/post/erster_post</link>
+      <link>http://blog.networkchallenge.de/post/erster_post/</link>
       <pubDate>Tue, 17 Jan 2017 20:59:17 +0100</pubDate>
       
-      <guid>http://blog.networkchallenge.de/post/erster_post</guid>
-      <description>&lt;p&gt;Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf &lt;a href=&#34;http://blogger.com&#34;&gt;Blogger&lt;/a&gt; gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist.&lt;/p&gt;
-
-&lt;p&gt;Nun starte ich einen neuen Versuch mit &lt;a href=&#34;http://metalsmith.io&#34;&gt;metalsmith&lt;/a&gt;, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte). Da für nächstes Jahr eine Weltreise geplant ist male ich mir einige Vorteile aus.&lt;/p&gt;
-
-&lt;p&gt;Die technische Seite von &lt;em&gt;metalsmith&lt;/em&gt; werde ich dann die Tage einmal beleuchten. Jetzt muss das hier für den Anfang erstmal genug sein.&lt;/p&gt;
-</description>
+      <guid>http://blog.networkchallenge.de/post/erster_post/</guid>
+      <description>Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf Blogger gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist.
+Nun starte ich einen neuen Versuch mit metalsmith, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte).</description>
     </item>
     
     <item>
       <title>Markdown Cheatsheet</title>
-      <link>http://blog.networkchallenge.de/post/markdown_cheatsheet</link>
+      <link>http://blog.networkchallenge.de/post/markdown_cheatsheet/</link>
       <pubDate>Thu, 12 Jan 2017 20:59:17 +0100</pubDate>
       
-      <guid>http://blog.networkchallenge.de/post/markdown_cheatsheet</guid>
-      <description>
-
-&lt;p&gt;Based on &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;Markdown Cheatsheet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is intended as a quick reference and showcase. For more complete info, see &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;John Gruber&amp;rsquo;s original spec&lt;/a&gt; and the &lt;a href=&#34;http://github.github.com/github-flavored-markdown/&#34;&gt;Github-flavored Markdown info page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Note that there is also a &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet&#34;&gt;Cheatsheet specific to Markdown Here&lt;/a&gt; if that&amp;rsquo;s what you&amp;rsquo;re looking for. You can also check out &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Other-Markdown-Tools&#34;&gt;more Markdown tools&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h5 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;#headers&#34;&gt;Headers&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#emphasis&#34;&gt;Emphasis&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#lists&#34;&gt;Lists&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#links&#34;&gt;Links&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#images&#34;&gt;Images&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#code&#34;&gt;Code and Syntax Highlighting&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#tables&#34;&gt;Tables&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#blockquotes&#34;&gt;Blockquotes&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#html&#34;&gt;Inline HTML&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#hr&#34;&gt;Horizontal Rule&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#lines&#34;&gt;Line Breaks&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;#videos&#34;&gt;Youtube videos&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;headers&#34;&gt;Headers&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-Alternatively, for H1 and H2, an underline-ish style:
-
-Alt-H1
-======
-
-Alt-H2
-------
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
-
-&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
-
-&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
-
-&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
-
-&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
-
-&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
-
-&lt;p&gt;Alternatively, for H1 and H2, an underline-ish style:&lt;/p&gt;
-
-&lt;h1 id=&#34;alt-h1&#34;&gt;Alt-H1&lt;/h1&gt;
-
-&lt;h2 id=&#34;alt-h2&#34;&gt;Alt-H2&lt;/h2&gt;
-
-&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Emphasis, aka italics, with &lt;em&gt;asterisks&lt;/em&gt; or &lt;em&gt;underscores&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Strong emphasis, aka bold, with &lt;strong&gt;asterisks&lt;/strong&gt; or &lt;strong&gt;underscores&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Combined emphasis with &lt;strong&gt;asterisks and &lt;em&gt;underscores&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Strikethrough uses two tildes. &lt;del&gt;Scratch this.&lt;/del&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;lists&#34;&gt;Lists&lt;/h2&gt;
-
-&lt;p&gt;(In this example, leading and trailing spaces are shown with with dots: ⋅)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don&#39;t matter, just that it&#39;s a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&#39;ll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;First ordered list item&lt;/li&gt;
-&lt;li&gt;Another item
-
-&lt;ul&gt;
-&lt;li&gt;Unordered sub-list.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Actual numbers don&amp;rsquo;t matter, just that it&amp;rsquo;s a number
-
-&lt;ol&gt;
-&lt;li&gt;Ordered sub-list&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;And another item.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&amp;rsquo;ll use three here to also align the raw Markdown).&lt;/p&gt;
-
-&lt;p&gt;To have a line break without a paragraph, you will need to use two trailing spaces.&lt;br /&gt;
-   Note that this line is separate, but within the same paragraph.&lt;br /&gt;
-   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Unordered list can use asterisks&lt;/li&gt;
-&lt;li&gt;Or minuses&lt;/li&gt;
-&lt;li&gt;Or pluses&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
-
-&lt;p&gt;There are two ways to create links.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;[I&#39;m an inline-style link](https://www.google.com)
-
-[I&#39;m an inline-style link with title](https://www.google.com &amp;quot;Google&#39;s Homepage&amp;quot;)
-
-[I&#39;m a reference-style link][Arbitrary case-insensitive reference text]
-
-[I&#39;m a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or &amp;lt;http://www.example.com&amp;gt; and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.google.com&#34;&gt;I&amp;rsquo;m an inline-style link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.google.com&#34; title=&#34;Google&#39;s Homepage&#34;&gt;I&amp;rsquo;m an inline-style link with title&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.mozilla.org&#34;&gt;I&amp;rsquo;m a reference-style link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;../blob/master/LICENSE&#34;&gt;I&amp;rsquo;m a relative reference to a repository file&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://slashdot.org&#34;&gt;You can use numbers for reference-style link definitions&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Or leave it empty and use the &lt;a href=&#34;http://www.reddit.com&#34;&gt;link text itself&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;URLs and URLs in angle brackets will automatically get turned into links.
-&lt;a href=&#34;http://www.example.com&#34;&gt;http://www.example.com&lt;/a&gt; or &lt;a href=&#34;http://www.example.com&#34;&gt;http://www.example.com&lt;/a&gt; and sometimes
-example.com (but not on Github, for example).&lt;/p&gt;
-
-&lt;p&gt;Some text to show that the reference links can follow later.&lt;/p&gt;
-
-&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;Here&#39;s our logo (hover to see the title text):
-
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &amp;quot;Logo Title Text 1&amp;quot;)
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &amp;quot;Logo Title Text 2&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here&amp;rsquo;s our logo (hover to see the title text):&lt;/p&gt;
-
-&lt;p&gt;Inline-style:
-&lt;img src=&#34;https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 1&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Reference-style:
-&lt;img src=&#34;https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png&#34; alt=&#34;alt text&#34; title=&#34;Logo Title Text 2&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;code-and-syntax-highlighting&#34;&gt;Code and Syntax Highlighting&lt;/h2&gt;
-
-&lt;p&gt;Code blocks are part of the Markdown spec, but syntax highlighting isn&amp;rsquo;t. However, many renderers &amp;ndash; like Github&amp;rsquo;s and &lt;em&gt;Markdown Here&lt;/em&gt; &amp;ndash; support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. &lt;em&gt;Markdown Here&lt;/em&gt; supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the &lt;a href=&#34;http://softwaremaniacs.org/media/soft/highlight/test.html&#34;&gt;highlight.js demo page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;Inline `code` has `back-ticks around` it.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Inline &lt;code&gt;code&lt;/code&gt; has &lt;code&gt;back-ticks around&lt;/code&gt; it.&lt;/p&gt;
-
-&lt;p&gt;Blocks of code are either fenced by lines with three back-ticks &lt;code&gt;```&lt;/code&gt;, or are indented with four spaces. I recommend only using the fenced code blocks &amp;ndash; they&amp;rsquo;re easier and only they support syntax highlighting.&lt;/p&gt;
-
-&lt;pre lang=&#34;no-highlight&#34;&gt;&lt;code&gt;```javascript
-var s = &#34;JavaScript syntax highlighting&#34;;
-alert(s);
-```
- 
-```python
-s = &#34;Python syntax highlighting&#34;
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let&#39;s throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
-```
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var s = &amp;quot;JavaScript syntax highlighting&amp;quot;;
-alert(s);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;s = &amp;quot;Python syntax highlighting&amp;quot;
-print s
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
-But let&#39;s throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
-
-&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but they are part of GFM and &lt;em&gt;Markdown Here&lt;/em&gt; supports them. They are an easy way of adding tables to your email &amp;ndash; a task that would otherwise require copy-pasting from another application.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don&#39;t need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Colons can be used to align columns.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Tables&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Are&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;Cool&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;col 3 is&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;right-aligned&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$1600&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;col 2 is&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;centered&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$12&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;zebra stripes&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;are neat&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don&amp;rsquo;t need to make the raw Markdown line up prettily. You can also use inline Markdown.&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Markdown&lt;/th&gt;
-&lt;th&gt;Less&lt;/th&gt;
-&lt;th&gt;Pretty&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Still&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;renders&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;nicely&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;&amp;gt; Blockquotes are very handy in email to emulate reply text.
-&amp;gt; This line is part of the same quote.
-
-Quote break.
-
-&amp;gt; This is a very long line that will still be quoted properly when it wraps. Oh boy let&#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Blockquotes are very handy in email to emulate reply text.
-This line is part of the same quote.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Quote break.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a very long line that will still be quoted properly when it wraps. Oh boy let&amp;rsquo;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can &lt;em&gt;put&lt;/em&gt; &lt;strong&gt;Markdown&lt;/strong&gt; into a blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;inline-html&#34;&gt;Inline HTML&lt;/h2&gt;
-
-&lt;p&gt;You can also use raw HTML in your Markdown, and it&amp;rsquo;ll mostly work pretty well.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;&amp;lt;dl&amp;gt;
-  &amp;lt;dt&amp;gt;Definition list&amp;lt;/dt&amp;gt;
-  &amp;lt;dd&amp;gt;Is something people use sometimes.&amp;lt;/dd&amp;gt;
-
-  &amp;lt;dt&amp;gt;Markdown in HTML&amp;lt;/dt&amp;gt;
-  &amp;lt;dd&amp;gt;Does *not* work **very** well. Use HTML &amp;lt;em&amp;gt;tags&amp;lt;/em&amp;gt;.&amp;lt;/dd&amp;gt;
-&amp;lt;/dl&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;Definition list&lt;/dt&gt;
-  &lt;dd&gt;Is something people use sometimes.&lt;/dd&gt;
-
-  &lt;dt&gt;Markdown in HTML&lt;/dt&gt;
-  &lt;dd&gt;Does *not* work **very** well. Use HTML &lt;em&gt;tags&lt;/em&gt;.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;h2 id=&#34;horizontal-rule&#34;&gt;Horizontal Rule&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;Three or more...
-
----
-
-Hyphens
-
-***
-
-Asterisks
-
-___
-
-Underscores
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Three or more&amp;hellip;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Hyphens&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Asterisks&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Underscores&lt;/p&gt;
-
-&lt;h2 id=&#34;line-breaks&#34;&gt;Line Breaks&lt;/h2&gt;
-
-&lt;p&gt;My basic recommendation for learning how line breaks work is to experiment and discover &amp;ndash; hit &amp;lt;Enter&amp;gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You&amp;rsquo;ll soon learn to get what you want. &amp;ldquo;Markdown Toggle&amp;rdquo; is your friend.&lt;/p&gt;
-
-&lt;p&gt;Here are some things to try out:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Here&#39;s a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
-
-This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it&#39;s a separate line in the *same paragraph*.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a line for us to start with.&lt;/p&gt;
-
-&lt;p&gt;This line is separated from the one above by two newlines, so it will be a &lt;em&gt;separate paragraph&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;This line is also begins a separate paragraph, but&amp;hellip;&lt;br /&gt;
-This line is only separated by a single newline, so it&amp;rsquo;s a separate line in the &lt;em&gt;same paragraph&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;(Technical note: &lt;em&gt;Markdown Here&lt;/em&gt; uses GFM line breaks, so there&amp;rsquo;s no need to use MD&amp;rsquo;s two-space line breaks.)&lt;/p&gt;
-
-&lt;h2 id=&#34;youtube-videos&#34;&gt;Youtube videos&lt;/h2&gt;
-
-&lt;p&gt;They can&amp;rsquo;t be added directly but you can add an image with a link to the video like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;&amp;lt;a href=&amp;quot;http://www.youtube.com/watch?feature=player_embedded&amp;amp;v=YOUTUBE_VIDEO_ID_HERE
-&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg&amp;quot; 
-alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height=&amp;quot;180&amp;quot; border=&amp;quot;10&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Or, in pure Markdown, but losing the image sizing and border:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-no-highlight&#34;&gt;[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Referencing a bug by #bugID in your git commit links it to the slip. For example #1.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;License: &lt;a href=&#34;https://creativecommons.org/licenses/by/3.0/&#34;&gt;CC-BY&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>http://blog.networkchallenge.de/post/markdown_cheatsheet/</guid>
+      <description>Based on Markdown Cheatsheet.
+This is intended as a quick reference and showcase. For more complete info, see John Gruber&amp;rsquo;s original spec and the Github-flavored Markdown info page.
+Note that there is also a Cheatsheet specific to Markdown Here if that&amp;rsquo;s what you&amp;rsquo;re looking for. You can also check out more Markdown tools.
+Table of Contents Headers
+Emphasis
+Lists
+Links
+Images
+Code and Syntax Highlighting
+Tables
+Blockquotes
+Inline HTML</description>
     </item>
     
   </channel>

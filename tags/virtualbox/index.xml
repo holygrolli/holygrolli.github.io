@@ -2,66 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtualbox on ChaosBlog</title>
-    <link>http://blog.networkchallenge.de/tags/virtualbox/index.xml</link>
+    <link>http://blog.networkchallenge.de/tags/virtualbox/</link>
     <description>Recent content in Virtualbox on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2017</copyright>
-    <atom:link href="http://blog.networkchallenge.de/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Feb 2017 09:22:51 +0100</lastBuildDate>
+    
+	<atom:link href="http://blog.networkchallenge.de/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Automatische Docker-Mounts in Windows</title>
-      <link>http://blog.networkchallenge.de/post/automatische-docker-mounts-win</link>
+      <link>http://blog.networkchallenge.de/post/automatische-docker-mounts-win/</link>
       <pubDate>Wed, 22 Feb 2017 09:22:51 +0100</pubDate>
       
-      <guid>http://blog.networkchallenge.de/post/automatische-docker-mounts-win</guid>
-      <description>
-
-&lt;p&gt;Standardmäßig wird bei der Installation der &lt;em&gt;Docker Toolbox&lt;/em&gt; die freie Virtualisierungssoftware &lt;em&gt;VirtualBox&lt;/em&gt; installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad &lt;code&gt;/c/Users&lt;/code&gt; im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. &lt;code&gt;c:\dev&lt;/code&gt; arbeitet.&lt;/p&gt;
-
-&lt;p&gt;Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden. Da ich unter Windows primär mit der &lt;em&gt;GitBash&lt;/em&gt; arbeite, hier nun die einzelnen Schritte. (Vorraussetzung die Maschine &lt;em&gt;default&lt;/em&gt; ist gestoppt)&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Prüfung der aktuellen SharedFolder-Einstellungen&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;VBoxManage showvminfo default
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Dies sollte folgende Standardausgabe weit am Ende liefern:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Shared folders:
-Name: &#39;c/Users&#39;, Host path: &#39;\\?\c:\Users&#39; (machine mapping), writable
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hinzufügen eines neuen SharedFolder&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;VBoxManage sharedfolder add default --name /c/dev --hostpath &amp;quot;C:\\dev&amp;quot; --automount
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Starten der Docker-Machine mit &lt;code&gt;docker-machine start default&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Per ssh mit der Docker-Machine verbinden &lt;code&gt;docker-machine ssh default&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;eine neue Datei für den &amp;ldquo;Autostart&amp;rdquo; erzeugen und editieren&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo vi /mnt/sda1/var/lib/boot2docker/bootlocal.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Der folgende Dateiinhalt erzeugt den Mount-Pfad und hängt das SharedFolder ein&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mkdir -p /c/dev
-mount -t vboxsf -o defaults,uid=`id -u docker`,gid=`id -g docker` c/dev /c/dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Nach dem Verlassen der VM zurück in der GitBash verhilft ein schnelles &lt;code&gt;docker-machine restart default&lt;/code&gt; zum Neustart der VM.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Verbindet man sich nun erneut mit der VM mittels &lt;code&gt;docker-machine ssh default&lt;/code&gt; sollte ein &lt;code&gt;ls /c/dev&lt;/code&gt; den Inhalt des Host-Verzeichnisses anzeigen.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;zusatzinfo&#34;&gt;Zusatzinfo&lt;/h3&gt;
-
-&lt;p&gt;Da ich nicht nur mit der GitBash sondern auch mit &lt;a href=&#34;https://babun.github.io&#34;&gt;Babun&lt;/a&gt; arbeite ist es auch noch interessant, wenn man die Cygwin-typischen Pfade mountet. Das bedeutet man bindet das Verzeichnis &lt;code&gt;c:\dev&lt;/code&gt; zusätzlich als &lt;code&gt;/cygdrive/c/dev&lt;/code&gt; ein und man kann dann ebenso aus der Cygwin-Shell heraus Pfade einbinden.&lt;/p&gt;
-</description>
+      <guid>http://blog.networkchallenge.de/post/automatische-docker-mounts-win/</guid>
+      <description>Standardmäßig wird bei der Installation der Docker Toolbox die freie Virtualisierungssoftware VirtualBox installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad /c/Users im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. c:\dev arbeitet.
+Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden.</description>
     </item>
     
   </channel>

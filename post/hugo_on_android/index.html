@@ -5,13 +5,10 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Ein Blog über alles aus dem Leben mit den Schwerpunkten DevOps, Fotos, Reisen, Technik und Gadgets."><meta name="author" content="Andreas">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Challenge: den Blog auf Reisen aktualisieren - nur mit einem Android-Device"><meta name="author" content="Andreas">
 
-    <title>404 Page not found -- ChaosBlog</title>
+    <title>Hugo auf einem Android Tablet -- ChaosBlog</title>
 
-    
-    <link href="http://blog.networkchallenge.de/index.xml" rel="alternate" type="application/rss+xml" title="ChaosBlog" />
-    <link href="http://blog.networkchallenge.de/index.xml" rel="feed" type="application/rss+xml" title="ChaosBlog" />
     
 
     
@@ -91,32 +88,83 @@
         
     </nav>
 
+
     
-    <header class="intro-header" style="background-image: url('http://blog.networkchallenge.de//img/home-bg.jpg')">
+    
+    <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+      
       <div class="header-bg">
-       <div class="container">
-         <div class="row">
+      <div class="container">
+        <div class="row">
            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-             <div class="site-heading">
-              <div class="title">
-               <h1>ChaosBlog</h1>
+            <div class="page-heading">
+             <div class="title">
+               <h1>Hugo auf einem Android Tablet</h1>
+               <span class="meta">
+                 
+29. Dec 2017
+<br />
+In: <a href="/categories/tech">tech</a>
+
+Tags: <a href="/tags/hugo">hugo</a>
+
+               </span>
                <hr class="small">
-               
-               <span class="subheading">Ich hasse das Chaos, aber das Chaos liebt mich. <a href="https://www.aphorismen.de/zitat/48718"><i class="fa fa-copyright" aria-hidden="true"></i></a></span>
+               <h2 class="subheading">Challenge: den Blog auf Reisen aktualisieren - nur mit einem Android-Device</h2>
              </div>
-             </div>
+            </div>
            </div>
-         </div>
-       </div>
-     </div>
+        </div>
+      </div>
+      </div>
     </header>
 
     
-    <div class="container">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                      <p>404 Page not found</p>
-      </div>
-    </div>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <p>Gerade beginnt Woche 3 in Sri Lanka und während wir auf unseren Fahrer warten habe ich 2 Stunden Zeit zum Basteln.
+Durch Zufall bin ich gestern auf die Android-App <em>termux</em> gestoßen. Damit bekommt man eine minimale Linuxinstallation auf sein Gerät
+und kann Pakete mittels <em>apt</em> nachinstallieren.</p>
+
+<p>Zuerst installiert man mit <code>apt install wget</code> das vollständige wget-Paket (default ist nur eine abgespeckte Busybox-Version), dann lädt
+man sich das Linux ARM Paket von <a href="https://github.com/gohugoio/hugo/releases">Hugo</a>.</p>
+
+<p>Nach dem Entpacken steht einem nun die Hugo Binary zur Verfügung und kann genauso wie auf jeder anderen Plattform genutzt werden.
+Überraschend ist auch die funktionierende Möglichkeit, die Live-Ansicht mit <code>hugo server</code> im Browser unter <code>http://localhost:1313</code> aufrufen zu können.</p>
+
+<p>Das ganze ermöglicht dann doch eine recht mobile Variante des Bloggens, wie dieses Bild beweist:
+<img src="/img/IMG_20171229_130724_HDR.jpg" class="img-responsive" ></p>
+
+                  <hr class="margin">
+                  
+   <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "thechaosblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
 
     <hr>
     

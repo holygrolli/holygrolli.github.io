@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on ChaosBlog</title>
+    <link>http://blog.networkchallenge.de/tags/hugo/</link>
+    <description>Recent content in Hugo on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2017</copyright>
+    <lastBuildDate>Fri, 29 Dec 2017 13:18:51 +0530</lastBuildDate>
+    
+	<atom:link href="http://blog.networkchallenge.de/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo auf einem Android Tablet</title>
+      <link>http://blog.networkchallenge.de/post/hugo_on_android/</link>
+      <pubDate>Fri, 29 Dec 2017 13:18:51 +0530</pubDate>
+      
+      <guid>http://blog.networkchallenge.de/post/hugo_on_android/</guid>
+      <description>Gerade beginnt Woche 3 in Sri Lanka und während wir auf unseren Fahrer warten habe ich 2 Stunden Zeit zum Basteln. Durch Zufall bin ich gestern auf die Android-App termux gestoßen. Damit bekommt man eine minimale Linuxinstallation auf sein Gerät und kann Pakete mittels apt nachinstallieren.
+Zuerst installiert man mit apt install wget das vollständige wget-Paket (default ist nur eine abgespeckte Busybox-Version), dann lädt man sich das Linux ARM Paket von Hugo.</description>
+    </item>
+    
+  </channel>
+</rss>

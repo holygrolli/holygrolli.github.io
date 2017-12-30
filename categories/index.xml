@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on ChaosBlog</title>
+    <link>http://blog.networkchallenge.de/categories/</link>
+    <description>Recent content in Categories on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2017</copyright>
+    <lastBuildDate>Tue, 31 Jan 2017 17:00:49 +0100</lastBuildDate>
+    
+	<atom:link href="http://blog.networkchallenge.de/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Allgemein</title>
+      <link>http://blog.networkchallenge.de/categories/allgemein/</link>
+      <pubDate>Tue, 31 Jan 2017 17:00:49 +0100</pubDate>
+      
+      <guid>http://blog.networkchallenge.de/categories/allgemein/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>http://blog.networkchallenge.de/categories/tech/</link>
+      <pubDate>Fri, 29 Dec 2017 13:18:51 +0530</pubDate>
+      
+      <guid>http://blog.networkchallenge.de/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vonoben</title>
+      <link>http://blog.networkchallenge.de/categories/vonoben/</link>
+      <pubDate>Tue, 07 Feb 2017 18:18:29 +0100</pubDate>
+      
+      <guid>http://blog.networkchallenge.de/categories/vonoben/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
