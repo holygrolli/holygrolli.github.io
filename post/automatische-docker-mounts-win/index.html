@@ -29,6 +29,7 @@
     </script>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <script src="http://blog.networkchallenge.de//js/lazysizes.min.js" async=""></script>
     
     
     
@@ -124,7 +125,7 @@ Tags: <a href="/tags/docker">docker</a>, <a href="/tags/devops">devops</a>, <a h
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <p>Standardmäßig wird bei der Installation der <em>Docker Toolbox</em> die freie Virtualisierungssoftware <em>VirtualBox</em> installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad <code>/c/Users</code> im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. <code>c:\dev</code> arbeitet.</p>
+		<p>Standardmäßig wird bei der Installation der <em>Docker Toolbox</em> die freie Virtualisierungssoftware <em>VirtualBox</em> installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad <code>/c/Users</code> im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. <code>c:\dev</code> arbeitet.</p>
 
 <p>Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden. Da ich unter Windows primär mit der <em>GitBash</em> arbeite, hier nun die einzelnen Schritte. (Vorraussetzung die Maschine <em>default</em> ist gestoppt)</p>
 
