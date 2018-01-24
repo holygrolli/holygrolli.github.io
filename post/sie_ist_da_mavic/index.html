@@ -29,6 +29,14 @@
     </script>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <script>
+        function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+
+        if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+            loadJS("http:\/\/blog.networkchallenge.de\//js/ls.respimg.min.js");
+        }
+    </script>
+    <script src="http://blog.networkchallenge.de//js/ls.bgset.min.js"></script>
     <script src="http://blog.networkchallenge.de//js/lazysizes.min.js" async=""></script>
     
     
@@ -92,7 +100,7 @@
 
     
     
-    <header class="intro-header" style="background-image: url('/img/vonoben-bg.jpg')">
+    <header class="intro-header lazyload" data-bgset="http://img.networkchallenge.de/800x/vonoben-bg.jpg 800w, http://img.networkchallenge.de/400x/vonoben-bg.jpg 400w, http://img.networkchallenge.de/1600x/vonoben-bg.jpg 1600w, http://img.networkchallenge.de/2100x/vonoben-bg.jpg 2100w" data-sizes="auto">
       
       <div class="header-bg">
       <div class="container">
