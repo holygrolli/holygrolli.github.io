@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.networkchallenge.de/privacypolicy/</loc>
+    <lastmod>2018-05-21T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.networkchallenge.de/post/hugo_on_android/</loc>
     <lastmod>2017-12-29T13:18:51+05:30</lastmod>
   </url>
@@ -62,7 +67,7 @@
   
   <url>
     <loc>http://blog.networkchallenge.de/</loc>
-    <lastmod>2017-12-29T13:18:51+05:30</lastmod>
+    <lastmod>2018-05-21T00:00:00+02:00</lastmod>
     <priority>0</priority>
   </url>
   

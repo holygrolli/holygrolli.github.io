@@ -27,11 +27,30 @@
     <link rel="icon" type="image/png" href="http://blog.networkchallenge.de//img/favicon.png">
 
     
-    <script type="text/javascript">
-        window.cookieconsent_options = {"message":"Diese Website benutzt Cookies zur automatisierten Nutzerauswertung und Werbeeinblendung.","dismiss":"Ok","learnMore":"More info","link":null,"theme":"dark-bottom"};
-    </script>
-
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+	<script>
+	window.addEventListener("load", function(){
+	window.cookieconsent.initialise({
+	  "palette": {
+	    "popup": {
+	      "background": "#000"
+	    },
+	    "button": {
+	      "background": "#f1d600"
+	    }
+	  },
+	  "position": "bottom-left",
+	  "content": {
+    "message": "Diese Website benutzt Cookies zur automatisierten Nutzerauswertung mit Google Analytics.",
+    "dismiss": "Verstanden",
+    "link": "Datenschutzerklärung",
+    "href": "/privacypolicy/"
+    }
+	})});
+	</script>	
+    
+    
     <script>
         function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
 
@@ -45,23 +64,22 @@
     
     
     
-    
-    <script>
-        var gaProperty = 'UA-259583-6';
-        var disableStr = 'ga-disable-' + gaProperty;
-        if (document.cookie.indexOf(disableStr + '=true') > -1) {
-            window[disableStr] = true;
-        }
-    </script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <script>
+      var gaProperty = 'UA-259583-6';
+      var disableStr = 'ga-disable-' + gaProperty;
+      if (document.cookie.indexOf(disableStr + '=true') > -1) {
+          window[disableStr] = true;
+      }
+  </script>
+  
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-259583-6"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-259583-6', { 'anonymize_ip': true });
+	</script>
 
-        ga('create', 'UA-259583-6', 'auto');
-        ga('send', 'pageview');
-    </script>
 </head>
 
 <body>
@@ -189,7 +207,7 @@
                     </li>
                     
                   </ul>
-                  <p class="copyright text-muted">Copyright © ChaosBlog 2017</p>
+                  <p class="copyright text-muted"><a href="/privacypolicy/index.html" title="Datenschutzerklärung">Datenschutzerklärung</a><br>Copyright © ChaosBlog 2018</p>
                 </div>
             </div>
         </div>

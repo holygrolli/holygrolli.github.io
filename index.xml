@@ -6,11 +6,21 @@
     <description>Recent content on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <copyright>Copyright © ChaosBlog 2017</copyright>
-    <lastBuildDate>Fri, 29 Dec 2017 13:18:51 +0530</lastBuildDate>
+    <copyright>Copyright © ChaosBlog 2018</copyright>
+    <lastBuildDate>Mon, 21 May 2018 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="http://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Datenschutzerklärung</title>
+      <link>http://blog.networkchallenge.de/privacypolicy/</link>
+      <pubDate>Mon, 21 May 2018 00:00:00 +0200</pubDate>
+      
+      <guid>http://blog.networkchallenge.de/privacypolicy/</guid>
+      <description>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (&amp;ldquo;Google&amp;rdquo;). Die Benutzung erfolgt auf der Grundlage des Art. 6 Abs. 1 S. 1 lit. f. DSGVO. Google Analytics verwendet sog. &amp;ldquo;Cookies&amp;rdquo;, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung der Webseite wie
+ Browser-Typ/-Version, verwendetes Betriebssystem, Referrer-URL (die zuvor besuchte Seite), Hostname des zugreifenden Rechners (IP-Adresse), Uhrzeit der Serveranfrage,  werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</description>
+    </item>
     
     <item>
       <title>Hugo auf einem Android Tablet</title>
