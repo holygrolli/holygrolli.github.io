@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Essen on ChaosBlog</title>
-    <link>https://blog.networkchallenge.de/tags/essen/</link>
+    <link>http://blog.networkchallenge.de/tags/essen/</link>
     <description>Recent content in Essen on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Tue, 31 Jan 2017 17:00:49 +0100</lastBuildDate>
     
-	<atom:link href="https://blog.networkchallenge.de/tags/essen/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.networkchallenge.de/tags/essen/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Die Zucchini-Preise</title>
-      <link>https://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017/</link>
+      <link>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017/</link>
       <pubDate>Tue, 31 Jan 2017 17:00:49 +0100</pubDate>
       
-      <guid>https://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017/</guid>
+      <guid>http://blog.networkchallenge.de/post/zucchini_preise_im_winter_2017/</guid>
       <description>Mir ist schon letzte Woche im Discounter aufgefallen, dass die Zucchini-Preise unerwartet hoch sind. Dabei habe ich mich gefragt, wie es dazu kommt. Schließlich kostet Fleisch ja weiterhin unverschämt wenig. Und für 5,99 Euro pro Kilo Zucchini bekommt man wahrscheinlich 3 Kilo Hack. Wenn ich dachte, dass der Preis im Discounter schon hoch war, wurde ich beim Supermarkt um die Ecke gleich eines besseren belehrt, dort kostete das Kilo gleich 7,99 Euro.</description>
     </item>
     
