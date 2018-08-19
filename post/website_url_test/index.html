@@ -5,13 +5,10 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Ein Blog über alles aus dem Leben mit den Schwerpunkten DevOps, Fotos, Reisen, Technik und Gadgets."><meta name="author" content="Andreas">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Resourcen einer Website auf der Console prüfen"><meta name="author" content="Andreas">
 
-    <title>Tech -- ChaosBlog</title>
+    <title> -- ChaosBlog</title>
 
-    
-    <link href="https://blog.networkchallenge.de/categories/tech/index.xml" rel="alternate" type="application/rss+xml" title="ChaosBlog" />
-    <link href="https://blog.networkchallenge.de/categories/tech/index.xml" rel="feed" type="application/rss+xml" title="ChaosBlog" />
     
 
     
@@ -118,76 +115,109 @@
         
     </nav>
 
+
     
-    <header class="intro-header lazyload" data-bgset="https://imgs.networkchallenge.de/800x/home-bg.jpg 800w, https://imgs.networkchallenge.de/400x/home-bg.jpg 400w, https://imgs.networkchallenge.de/1600x/home-bg.jpg 1600w, https://imgs.networkchallenge.de/2100x/home-bg.jpg 2100w" data-sizes="auto">
+    
+    <header class="intro-header lazyload" data-bgset="https://imgs.networkchallenge.de/800x/home-bg.jpg 800w, https://imgs.networkchallenge.de/400x/home-bg.jpg 400w, https://imgs.networkchallenge.de/1600x/home-bg.jpg 1600w, https://imgs.networkchallenge.de/2100x/home-bg.jpg 2100w, https://imgs.networkchallenge.de/3200x/home-bg.jpg 3200w" data-sizes="auto">
+    
       <div class="header-bg">
-       <div class="container">
-         <div class="row">
+      <div class="container">
+        <div class="row">
            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-             <div class="site-heading">
-              <div class="title">
-               <h1>Tech</h1>
+            <div class="page-heading">
+             <div class="title">
+               <h1></h1>
+               <span class="meta">
+                 
+1. Jan 0001
+<br />
+In: <a href="/categories/tech">tech</a>
+
+Tags: <a href="/tags/devops">devops</a>
+
+               </span>
                <hr class="small">
-               
-               <span class="subheading"></span>
+               <h2 class="subheading">Resourcen einer Website auf der Console prüfen</h2>
              </div>
-             </div>
+            </div>
            </div>
-         </div>
-       </div>
-     </div>
+        </div>
+      </div>
+      </div>
     </header>
 
     
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          
-                             <div class="post-preview">
-                  <p class="post-meta"><a href="https://blog.networkchallenge.de/post/moto_g6/">Moto G6 - ein kurzer (Foto-) Erfahrungsbericht</a> am 27. May 2018
-                    <br />
-                    In: <a href="/categories/tech">tech</a>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<p>Aktuell hatte ich ein Problem mit einem Webprojekt. Einige Website-Resouren wurden sporadisch, ohne erkennbares Muster, nicht geladen. Um ein eventuelles Muster (oder eben nicht) zu erkennen, musste ein paar Hilfsmittel her.</p>
 
-                    Tags: <a href="/tags/fotos">fotos</a>, <a href="/tags/handy">handy</a>
-                  </p>
-               </div>
+<h2 id="inventar-erstellen">Inventar erstellen</h2>
 
-          
-                             <div class="post-preview">
-                  <p class="post-meta"><a href="https://blog.networkchallenge.de/post/hugo_on_android/">Hugo auf einem Android Tablet</a> am 29. Dec 2017
-                    <br />
-                    In: <a href="/categories/tech">tech</a>
+<p>Zuerst musste eine Url-Liste erstellt werden, mit allen zu prüfenden Resourcen. Dafür kommt <code>wget</code> zum Einsatz. Mit folgendem Befehlt lassen sich alle Urls von einer Hauptseite ermitteln:</p>
 
-                    Tags: <a href="/tags/hugo">hugo</a>
-                  </p>
-               </div>
+<p><code>wget --spider --force-html -r -l1 https://blog.networkchallenge.de 2&gt;output.log</code></p>
 
-          
-                             <div class="post-preview">
-                  <p class="post-meta"><a href="https://blog.networkchallenge.de/post/automatische-docker-mounts-win/">Automatische Docker-Mounts in Windows</a> am 22. Feb 2017
-                    <br />
-                    In: <a href="/categories/tech">tech</a>
+<p>Das Output dieses Vorgangs verarbeiten wir nun weiter (es enthält viel mehr als die gesuchten URLs), um die finale Url-Liste zu erzeugen:</p>
 
-                    Tags: <a href="/tags/docker">docker</a>, <a href="/tags/devops">devops</a>, <a href="/tags/virtualbox">virtualbox</a>
-                  </p>
-               </div>
+<p><code>cat output.log  | grep '^--' | awk '{ print $3 }' &gt; urllist</code></p>
 
-          
-                             <div class="post-preview">
-                  <p class="post-meta"><a href="https://blog.networkchallenge.de/post/website_url_test/"></a> am 1. Jan 0001
-                    <br />
-                    In: <a href="/categories/tech">tech</a>
+<h2 id="prüfen-mittels-curl">Prüfen mittels cURL</h2>
 
-                    Tags: <a href="/tags/devops">devops</a>
-                  </p>
-               </div>
+<p>Bei meiner Recherche bin ich auf ein <a href="https://gist.github.com/antonbabenko/1600911">Gist</a> gestoßen. Nach minimaler Ergänzung um Zeitstempel und dynamischer Url-Liste kam nun folgendes heraus (gespeichert als <code>curl_all.sh</code>):</p>
 
-          
-          
+<pre><code>#!/bin/bash
+while read LINE; do
+  echo -n &quot;$(date +%H:%M:%S) &quot;
+  curl -o /dev/null --silent --progress-bar --head --write-out '%{http_code} %{time_starttransfer} %{url_effective}\n' &quot;$LINE&quot;
+done &lt; $1
+</code></pre>
 
+<h2 id="dauertest-aller-urls">Dauertest aller URLs</h2>
+
+<p>Nun haben wir alles zusammen, um kontinuierlich die URLs zu prüfen und Fehler beim Laden zu erkennen. Das erstellte Skript <code>curl_all.sh</code> arbeitet die Liste nur einmal ab. Für einen Dauertest rufen wir das Skript nun in einer Schleife auf:</p>
+
+<p><code>while true; do ./curl_all.sh urllist_test; done &gt; load_test.log</code></p>
+
+<p>Das <code>load_test.log</code> wird nun mit Prüfergebnissen gefüllt und wir können es gezielt (parallel und am Ende) nach HTTP-Status-Codes prüfen, die nicht mit 2 (200 - OK) beginnen:</p>
+
+<p><code>tail -f load_test.log | grep &quot;^..:..:.. [^2]&quot;</code></p>
+
+<h2 id="gist">Gist</h2>
+
+<p>Alles herunterladbar als Gist:</p>
+
+<script src="//gist.github.com/adulescentulus/4ee663291474cd519a4b948f21e5ab48.js"></script>
+
+                  <hr class="margin">
+                  
+   <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "thechaosblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </article>
 
     <hr>
     

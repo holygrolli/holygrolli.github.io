@@ -42,5 +42,17 @@ Zuerst installiert man mit apt install wget das vollständige wget-Paket (defaul
 Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://blog.networkchallenge.de/post/website_url_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/website_url_test/</guid>
+      <description>Aktuell hatte ich ein Problem mit einem Webprojekt. Einige Website-Resouren wurden sporadisch, ohne erkennbares Muster, nicht geladen. Um ein eventuelles Muster (oder eben nicht) zu erkennen, musste ein paar Hilfsmittel her.
+Inventar erstellen Zuerst musste eine Url-Liste erstellt werden, mit allen zu prüfenden Resourcen. Dafür kommt wget zum Einsatz. Mit folgendem Befehlt lassen sich alle Urls von einer Hauptseite ermitteln:
+wget --spider --force-html -r -l1 https://blog.networkchallenge.de 2&amp;gt;output.log
+Das Output dieses Vorgangs verarbeiten wir nun weiter (es enthält viel mehr als die gesuchten URLs), um die finale Url-Liste zu erzeugen:</description>
+    </item>
+    
   </channel>
 </rss>
