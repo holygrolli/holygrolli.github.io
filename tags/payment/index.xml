@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Handy on ChaosBlog</title>
-    <link>https://blog.networkchallenge.de/tags/handy/</link>
-    <description>Recent content in Handy on ChaosBlog</description>
+    <title>Payment on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/payment/</link>
+    <description>Recent content in Payment on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Tue, 28 Aug 2018 20:02:00 +0200</lastBuildDate>
     
-	<atom:link href="https://blog.networkchallenge.de/tags/handy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/tags/payment/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <guid>https://blog.networkchallenge.de/post/moto_g6_und_glase/</guid>
       <description>Völlig überrascht war ich, als ich am Wochenende mal wieder mein &amp;ldquo;neues&amp;rdquo; Motorolola G6 prüfte, ob es endlich Zahlungen mit Glase (ehemals Seqr) leisten kann.
 Dafür nehme ich ein anderes NFC-fähiges Smartphone und teste mit einer gängigen Kreditkartenlese-App, ob Glase endlich eine Kreditkarte simulieren kann. Als ich es damals nach dem Kauf (im Mai) schon getestet hatte, wurde nämlich nicht per NFC eine Mastercard emuliert. Wie meine Recherchen damals ergaben, muss Mastercard jedes Device einzeln zertifizieren.</description>
-    </item>
-    
-    <item>
-      <title>Moto G6 - ein kurzer (Foto-) Erfahrungsbericht</title>
-      <link>https://blog.networkchallenge.de/post/moto_g6/</link>
-      <pubDate>Sun, 27 May 2018 14:52:00 +0200</pubDate>
-      
-      <guid>https://blog.networkchallenge.de/post/moto_g6/</guid>
-      <description>Nach über einem Jahr mit meinem Motorola G5 Plus, welches ich schon (erfolgreich) an mehrere Verwandte und Bekannte empfohlen habe, habe ich auf den Erscheinungstermin des Moto G6 in der Special Edition bei Amazon gewartet. Special Edition deshalb, weil die Version mit 4 GB RAM und 64 GB Speicher exklusiv bei Amazon verkauft wird, und das für nur 40 Euro mehr.
-Nüchtern betrachtet muss ich zugeben, dass keines der Features für ein Upgrade sprechen würde, aber im Vergleich zu den Verschlimmbesserungen beim G5s Plus (Phablet-Size) sind diesmal wirklich einige Verbesserungen vorzufinden.</description>
     </item>
     
   </channel>
