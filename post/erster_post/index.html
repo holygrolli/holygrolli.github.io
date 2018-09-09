@@ -45,8 +45,8 @@
     "href": "/privacypolicy/"
     }
 	})});
-	</script>	
-    
+	</script>
+
     
     <script>
         function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
@@ -57,9 +57,12 @@
     </script>
     <script src="https://blog.networkchallenge.de//js/ls.bgset.min.js"></script>
     <script src="https://blog.networkchallenge.de//js/lazysizes.min.js" async=""></script>
+
     
     
     
+
+    <link type="text/css" rel="stylesheet" href="https://blog.networkchallenge.de//css/lightgallery.min.css" />
     
   <script>
       var gaProperty = 'UA-259583-6';
@@ -148,7 +151,7 @@ Tags: <a href="/tags/metalsmith">metalsmith</a>, <a href="/tags/blog">blog</a>
 
     
     <article>
-        <div class="container">
+        <div class="container" id="post">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 		<p>Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf <a href="http://blogger.com">Blogger</a> gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist.</p>
@@ -207,7 +210,12 @@ Tags: <a href="/tags/metalsmith">metalsmith</a>, <a href="/tags/blog">blog</a>
 
     
     <script src="https://blog.networkchallenge.de//js/clean-blog.js"></script>
-
+    <script src="https://blog.networkchallenge.de//js/lightgallery.min.js"></script>
+    <script>$(document).ready(function () {
+    $('#post').lightGallery({
+      selector: '.gallery'
+    });
+});</script>
 </body>
 
 </html>

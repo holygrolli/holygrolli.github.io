@@ -45,8 +45,8 @@
     "href": "/privacypolicy/"
     }
 	})});
-	</script>	
-    
+	</script>
+
     
     <script>
         function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
@@ -57,9 +57,12 @@
     </script>
     <script src="https://blog.networkchallenge.de//js/ls.bgset.min.js"></script>
     <script src="https://blog.networkchallenge.de//js/lazysizes.min.js" async=""></script>
+
     
     
     
+
+    <link type="text/css" rel="stylesheet" href="https://blog.networkchallenge.de//css/lightgallery.min.css" />
     
   <script>
       var gaProperty = 'UA-259583-6';
@@ -148,7 +151,7 @@ Tags: <a href="/tags/docker">docker</a>, <a href="/tags/devops">devops</a>, <a h
 
     
     <article>
-        <div class="container">
+        <div class="container" id="post">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 		<p>Standardmäßig wird bei der Installation der <em>Docker Toolbox</em> die freie Virtualisierungssoftware <em>VirtualBox</em> installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad <code>/c/Users</code> im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. <code>c:\dev</code> arbeitet.</p>
@@ -267,7 +270,12 @@ mount -t vboxsf -o defaults,uid=`id -u docker`,gid=`id -g docker` c/dev /c/dev
 
     
     <script src="https://blog.networkchallenge.de//js/clean-blog.js"></script>
-
+    <script src="https://blog.networkchallenge.de//js/lightgallery.min.js"></script>
+    <script>$(document).ready(function () {
+    $('#post').lightGallery({
+      selector: '.gallery'
+    });
+});</script>
 </body>
 
 </html>
