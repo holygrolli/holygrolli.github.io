@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Tue, 28 Aug 2018 20:02:00 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 23 Sep 2018 09:31:28 +0200</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Die Reiseroute steht fest</title>
+      <link>https://blog.networkchallenge.de/post/reiseroute_steht/</link>
+      <pubDate>Sun, 23 Sep 2018 09:31:28 +0200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/reiseroute_steht/</guid>
+      <description>Nach wochenlangen Recherchen haben wir uns nun für eine Reiseroute entschieden. Der Weg führt uns direkt aus Leipzig über Frankfurt nach Panama. Da die meisten Flüge der Lufthansa nach Südamerika entweder über Panama City oder Bogota führen, haben wir uns entschieden, einfach noch einen Zwischenstopp in Panama einzulegen.
+Nach Panama geht es weiter nach Guayaquil in Ecuador, da es nur von hier oder Quito Flüge auf die Galapagosinseln gibt. Das bedeutet für uns, dass wir nach ein paar Tagen Guayaquil direkt auf die Galapagosinseln weiterziehen, um dort die beiden Hauptinseln Santa Cruz und San Cristóbal zu besuchen.</description>
+    </item>
     
     <item>
       <title>Kontaktloses Bezahlen mit dem Moto G6</title>
