@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Sun, 23 Sep 2018 15:52:41 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 10 Oct 2018 19:50:45 +0200</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Persönliches DOK-Festival-Programm zusammenstellen</title>
+      <link>https://blog.networkchallenge.de/post/e2c-update-dok2018/</link>
+      <pubDate>Wed, 10 Oct 2018 19:50:45 +0200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/e2c-update-dok2018/</guid>
+      <description>Letztes Jahr hatte ich damit begonnen, ein kleines Online-Tool zu schreiben, welches mir bei Konferenzen die Planung meines Konferenzprogramms ermöglicht. Viele Konferenzen schaffen es im Jahr 2018 noch nicht, einen eigener Planer für das persönliche Konferenzprogramm auf die Beine zu stellen. Aus diesem Wunsch ist das Tool Event2Calender (kurz: e2c).
+Mit dem Tool ist es möglich, unterstützte Programmseiten auszuwerten und daraus Konferenztermine zu extrahieren. Diese werden dem Nutzer dann einzeln angezeigt und er kann sie mit einem Klick auf den Knopf &amp;ldquo;Add to Google&amp;rdquo; seinem Google-Kalender hinzufügen.</description>
+    </item>
     
     <item>
       <title>MongoDB-Cluster Verbindung durch Firewall</title>
