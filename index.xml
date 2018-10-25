@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Sun, 21 Oct 2018 14:57:53 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 24 Oct 2018 07:06:00 +0200</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Weltreise</title>
+      <link>https://blog.networkchallenge.de/rtw/</link>
+      <pubDate>Wed, 24 Oct 2018 07:06:00 +0200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/rtw/</guid>
+      <description>Ab 29. Oktober sind wir auf Weltreise. Bis August 2019 haben wir ein wenig Zeit, um die Welt zu erkunden. Wir versuchen unsere Eindrücke hier auf dem Blog für alle Daheimgebliebenen festzuhalten. Zusätzlich werden alle Stationen der Reise auf der Weltkarte festgehalten.</description>
+    </item>
     
     <item>
       <title>Das passende Schuhwerk</title>
