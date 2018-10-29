@@ -82,7 +82,17 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-259583-6', { 'anonymize_ip': true });
 	</script><link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script></head>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script><link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+        appId: "4373a84e-c094-48e0-9e5e-58d81c8fc1b9",
+        });
+    });
+    </script>
+</head>
 
 <body>
 
@@ -165,6 +175,7 @@ Tags: <a href="/tags/e2c">e2c</a>
                   <hr class="small">
                       
                       <p>Das Programm des DOK-Festivals wurde heute veröffentlicht. Wie stellt man sich sein persönliches Programm zusammen?</p>
+                      <a href="https://blog.networkchallenge.de/post/e2c-update-dok2018/">mehr ...</a>
                       
                 </div>
                 <hr>
