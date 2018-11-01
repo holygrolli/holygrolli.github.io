@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Tue, 30 Oct 2018 14:55:15 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 01 Nov 2018 08:10:32 -0500</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Werbung</title>
+      <link>https://blog.networkchallenge.de/werbung/</link>
+      <pubDate>Thu, 01 Nov 2018 08:10:32 -0500</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/werbung/</guid>
+      <description>Aktuell setze ich für den Blog und die damit zusammenhängenden technischen Spielereien auf mehrere Bausteine. Folgende Links sind Werbelinks und verursachen bei mir einen kleinen Umsatzanteil:
+ Webspace und Server günstig und zuverlässig   </description>
+    </item>
     
     <item>
       <title>Weltreise - Tag 1</title>
