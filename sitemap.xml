@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-santa-catalina/</loc>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-auto-nach-santa-catalina/</loc>
     <lastmod>2018-11-07T02:50:08-05:00</lastmod>
   </url>
@@ -127,7 +132,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2018-11-07T02:50:08-05:00</lastmod>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -157,7 +162,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/essen/</loc>
-    <lastmod>2018-11-07T02:50:08-05:00</lastmod>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -187,13 +192,19 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/mavic/</loc>
-    <lastmod>2017-02-07T18:18:29+01:00</lastmod>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/metalsmith/</loc>
     <lastmod>2017-01-17T20:59:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/panama/</loc>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -205,7 +216,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2018-11-07T02:50:08-05:00</lastmod>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -217,13 +228,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2018-11-07T02:50:08-05:00</lastmod>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2018-11-07T02:50:08-05:00</lastmod>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -253,7 +264,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/vonoben/</loc>
-    <lastmod>2017-02-07T18:18:29+01:00</lastmod>
+    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
     <priority>0</priority>
   </url>
   
