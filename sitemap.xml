@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-santa-cruz/</loc>
+    <lastmod>2018-11-19T05:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-auf-nach-galapagos/</loc>
     <lastmod>2018-11-12T21:39:35-06:00</lastmod>
   </url>
@@ -137,7 +142,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2018-11-12T21:39:35-06:00</lastmod>
+    <lastmod>2018-11-19T05:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -167,7 +172,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/ecuador/</loc>
-    <lastmod>2018-11-12T21:39:35-06:00</lastmod>
+    <lastmod>2018-11-19T05:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -185,7 +190,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/galapagos/</loc>
-    <lastmod>2018-11-12T21:39:35-06:00</lastmod>
+    <lastmod>2018-11-19T05:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -233,7 +238,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2018-11-12T21:39:35-06:00</lastmod>
+    <lastmod>2018-11-19T05:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -245,13 +250,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2018-11-12T21:39:35-06:00</lastmod>
+    <lastmod>2018-11-19T05:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2018-11-12T21:39:35-06:00</lastmod>
+    <lastmod>2018-11-19T05:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
