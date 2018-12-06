@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtualbox on ChaosBlog</title>
-    <link>https://blog.networkchallenge.de/tags/virtualbox/</link>
+    <link>/tags/virtualbox/</link>
     <description>Recent content in Virtualbox on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Wed, 22 Feb 2017 09:22:51 +0100</lastBuildDate>
     
-	<atom:link href="https://blog.networkchallenge.de/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automatische Docker-Mounts in Windows</title>
-      <link>https://blog.networkchallenge.de/post/automatische-docker-mounts-win/</link>
+      <link>/post/automatische-docker-mounts-win/</link>
       <pubDate>Wed, 22 Feb 2017 09:22:51 +0100</pubDate>
       
-      <guid>https://blog.networkchallenge.de/post/automatische-docker-mounts-win/</guid>
+      <guid>/post/automatische-docker-mounts-win/</guid>
       <description>Standardmäßig wird bei der Installation der Docker Toolbox die freie Virtualisierungssoftware VirtualBox installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad /c/Users im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. c:\dev arbeitet.
 Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden.</description>
     </item>
