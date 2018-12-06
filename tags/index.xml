@@ -2,184 +2,184 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ChaosBlog</title>
-    <link>/tags/</link>
+    <link>https://blog.networkchallenge.de/tags/</link>
     <description>Recent content in Tags on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Tue, 17 Jan 2017 20:59:17 +0100</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blog</title>
-      <link>/tags/blog/</link>
+      <link>https://blog.networkchallenge.de/tags/blog/</link>
       <pubDate>Tue, 17 Jan 2017 20:59:17 +0100</pubDate>
       
-      <guid>/tags/blog/</guid>
+      <guid>https://blog.networkchallenge.de/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devops</title>
-      <link>/tags/devops/</link>
+      <link>https://blog.networkchallenge.de/tags/devops/</link>
       <pubDate>Sun, 23 Sep 2018 15:52:41 +0200</pubDate>
       
-      <guid>/tags/devops/</guid>
+      <guid>https://blog.networkchallenge.de/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>/tags/docker/</link>
+      <link>https://blog.networkchallenge.de/tags/docker/</link>
       <pubDate>Sun, 23 Sep 2018 15:52:41 +0200</pubDate>
       
-      <guid>/tags/docker/</guid>
+      <guid>https://blog.networkchallenge.de/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Drohne</title>
-      <link>/tags/drohne/</link>
+      <link>https://blog.networkchallenge.de/tags/drohne/</link>
       <pubDate>Tue, 07 Feb 2017 18:18:29 +0100</pubDate>
       
-      <guid>/tags/drohne/</guid>
+      <guid>https://blog.networkchallenge.de/tags/drohne/</guid>
       <description></description>
     </item>
     
     <item>
       <title>E2c</title>
-      <link>/tags/e2c/</link>
+      <link>https://blog.networkchallenge.de/tags/e2c/</link>
       <pubDate>Wed, 10 Oct 2018 19:50:45 +0200</pubDate>
       
-      <guid>/tags/e2c/</guid>
+      <guid>https://blog.networkchallenge.de/tags/e2c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ecuador</title>
-      <link>/tags/ecuador/</link>
+      <link>https://blog.networkchallenge.de/tags/ecuador/</link>
       <pubDate>Mon, 03 Dec 2018 08:20:49 -0500</pubDate>
       
-      <guid>/tags/ecuador/</guid>
+      <guid>https://blog.networkchallenge.de/tags/ecuador/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Essen</title>
-      <link>/tags/essen/</link>
+      <link>https://blog.networkchallenge.de/tags/essen/</link>
       <pubDate>Sun, 11 Nov 2018 21:26:50 -0600</pubDate>
       
-      <guid>/tags/essen/</guid>
+      <guid>https://blog.networkchallenge.de/tags/essen/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fotos</title>
-      <link>/tags/fotos/</link>
+      <link>https://blog.networkchallenge.de/tags/fotos/</link>
       <pubDate>Sun, 27 May 2018 14:52:00 +0200</pubDate>
       
-      <guid>/tags/fotos/</guid>
+      <guid>https://blog.networkchallenge.de/tags/fotos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Galapagos</title>
-      <link>/tags/galapagos/</link>
+      <link>https://blog.networkchallenge.de/tags/galapagos/</link>
       <pubDate>Mon, 03 Dec 2018 08:20:49 -0500</pubDate>
       
-      <guid>/tags/galapagos/</guid>
+      <guid>https://blog.networkchallenge.de/tags/galapagos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Handy</title>
-      <link>/tags/handy/</link>
+      <link>https://blog.networkchallenge.de/tags/handy/</link>
       <pubDate>Tue, 28 Aug 2018 20:02:00 +0200</pubDate>
       
-      <guid>/tags/handy/</guid>
+      <guid>https://blog.networkchallenge.de/tags/handy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>/tags/hugo/</link>
+      <link>https://blog.networkchallenge.de/tags/hugo/</link>
       <pubDate>Fri, 29 Dec 2017 13:18:51 +0530</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>https://blog.networkchallenge.de/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lufthansa</title>
-      <link>/tags/lufthansa/</link>
+      <link>https://blog.networkchallenge.de/tags/lufthansa/</link>
       <pubDate>Tue, 30 Oct 2018 14:55:15 +0100</pubDate>
       
-      <guid>/tags/lufthansa/</guid>
+      <guid>https://blog.networkchallenge.de/tags/lufthansa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mavic</title>
-      <link>/tags/mavic/</link>
+      <link>https://blog.networkchallenge.de/tags/mavic/</link>
       <pubDate>Sun, 11 Nov 2018 21:26:50 -0600</pubDate>
       
-      <guid>/tags/mavic/</guid>
+      <guid>https://blog.networkchallenge.de/tags/mavic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Metalsmith</title>
-      <link>/tags/metalsmith/</link>
+      <link>https://blog.networkchallenge.de/tags/metalsmith/</link>
       <pubDate>Tue, 17 Jan 2017 20:59:17 +0100</pubDate>
       
-      <guid>/tags/metalsmith/</guid>
+      <guid>https://blog.networkchallenge.de/tags/metalsmith/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Panama</title>
-      <link>/tags/panama/</link>
+      <link>https://blog.networkchallenge.de/tags/panama/</link>
       <pubDate>Sun, 11 Nov 2018 21:26:50 -0600</pubDate>
       
-      <guid>/tags/panama/</guid>
+      <guid>https://blog.networkchallenge.de/tags/panama/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Payment</title>
-      <link>/tags/payment/</link>
+      <link>https://blog.networkchallenge.de/tags/payment/</link>
       <pubDate>Tue, 28 Aug 2018 20:02:00 +0200</pubDate>
       
-      <guid>/tags/payment/</guid>
+      <guid>https://blog.networkchallenge.de/tags/payment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rtw</title>
-      <link>/tags/rtw/</link>
+      <link>https://blog.networkchallenge.de/tags/rtw/</link>
       <pubDate>Mon, 03 Dec 2018 08:20:49 -0500</pubDate>
       
-      <guid>/tags/rtw/</guid>
+      <guid>https://blog.networkchallenge.de/tags/rtw/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Virtualbox</title>
-      <link>/tags/virtualbox/</link>
+      <link>https://blog.networkchallenge.de/tags/virtualbox/</link>
       <pubDate>Wed, 22 Feb 2017 09:22:51 +0100</pubDate>
       
-      <guid>/tags/virtualbox/</guid>
+      <guid>https://blog.networkchallenge.de/tags/virtualbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vivobarefoot</title>
-      <link>/tags/vivobarefoot/</link>
+      <link>https://blog.networkchallenge.de/tags/vivobarefoot/</link>
       <pubDate>Sun, 21 Oct 2018 14:57:53 +0200</pubDate>
       
-      <guid>/tags/vivobarefoot/</guid>
+      <guid>https://blog.networkchallenge.de/tags/vivobarefoot/</guid>
       <description></description>
     </item>
     

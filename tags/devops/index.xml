@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devops on ChaosBlog</title>
-    <link>/tags/devops/</link>
+    <link>https://blog.networkchallenge.de/tags/devops/</link>
     <description>Recent content in Devops on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Sun, 23 Sep 2018 15:52:41 +0200</lastBuildDate>
     
-	<atom:link href="/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MongoDB-Cluster Verbindung durch Firewall</title>
-      <link>/post/mongodb_verbindung_hinter_firewall/</link>
+      <link>https://blog.networkchallenge.de/post/mongodb_verbindung_hinter_firewall/</link>
       <pubDate>Sun, 23 Sep 2018 15:52:41 +0200</pubDate>
       
-      <guid>/post/mongodb_verbindung_hinter_firewall/</guid>
+      <guid>https://blog.networkchallenge.de/post/mongodb_verbindung_hinter_firewall/</guid>
       <description>Auf Arbeit stand ich vor dem Problem, auf einem MongoDB Atlas-Cluster einen Dump einspielen zu müssen. Dafür ist aber die Benutzung der Kommandozeilenwerkzeuge mongodump und mongorestore unabdingbar. Die Herausforderung war aber eine, die mich regelmäßig quält: das Sicherheitsbedürfnis des Unternehmens steht an oberster Stelle und wir müssen somit immer über den Unternehmens-Proxy oder dedizierte Jumphosts gehen, die für bestimmte Verbindungen freigeschaltet sind.
 Bei der Verbindung zu einem Replica Set steht man vor der Herausforderung, dass der Client eine Verbindung zu allen Nodes machen will und bekommt dabei die Serveradressen von der Gegenseite mitgeteilt.</description>
     </item>
     
     <item>
       <title>URLs einer Website testen</title>
-      <link>/post/website_url_test/</link>
+      <link>https://blog.networkchallenge.de/post/website_url_test/</link>
       <pubDate>Sun, 19 Aug 2018 13:27:00 +0200</pubDate>
       
-      <guid>/post/website_url_test/</guid>
+      <guid>https://blog.networkchallenge.de/post/website_url_test/</guid>
       <description>Aktuell hatte ich ein Problem mit einem Webprojekt. Einige Website-Resouren wurden sporadisch, ohne erkennbares Muster, nicht geladen. Um ein eventuelles Muster (oder eben nicht) zu erkennen, musste ein paar Hilfsmittel her.
 Inventar erstellen Zuerst musste eine Url-Liste erstellt werden, mit allen zu prüfenden Resourcen. Dafür kommt wget zum Einsatz. Mit folgendem Befehlt lassen sich alle Urls von einer Hauptseite ermitteln:
 wget --spider --force-html -r -l1 https://blog.networkchallenge.de 2&amp;gt;output.log
@@ -36,10 +36,10 @@ Das Output dieses Vorgangs verarbeiten wir nun weiter (es enthält viel mehr als
     
     <item>
       <title>Automatische Docker-Mounts in Windows</title>
-      <link>/post/automatische-docker-mounts-win/</link>
+      <link>https://blog.networkchallenge.de/post/automatische-docker-mounts-win/</link>
       <pubDate>Wed, 22 Feb 2017 09:22:51 +0100</pubDate>
       
-      <guid>/post/automatische-docker-mounts-win/</guid>
+      <guid>https://blog.networkchallenge.de/post/automatische-docker-mounts-win/</guid>
       <description>Standardmäßig wird bei der Installation der Docker Toolbox die freie Virtualisierungssoftware VirtualBox installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad /c/Users im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. c:\dev arbeitet.
 Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden.</description>
     </item>

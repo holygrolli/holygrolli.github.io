@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ChaosBlog</title>
-    <link>/categories/</link>
+    <link>https://blog.networkchallenge.de/categories/</link>
     <description>Recent content in Categories on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Tue, 31 Jan 2017 17:00:49 +0100</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Allgemein</title>
-      <link>/categories/allgemein/</link>
+      <link>https://blog.networkchallenge.de/categories/allgemein/</link>
       <pubDate>Tue, 31 Jan 2017 17:00:49 +0100</pubDate>
       
-      <guid>/categories/allgemein/</guid>
+      <guid>https://blog.networkchallenge.de/categories/allgemein/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projekte</title>
-      <link>/categories/projekte/</link>
+      <link>https://blog.networkchallenge.de/categories/projekte/</link>
       <pubDate>Wed, 10 Oct 2018 19:50:45 +0200</pubDate>
       
-      <guid>/categories/projekte/</guid>
+      <guid>https://blog.networkchallenge.de/categories/projekte/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reise</title>
-      <link>/categories/reise/</link>
+      <link>https://blog.networkchallenge.de/categories/reise/</link>
       <pubDate>Mon, 03 Dec 2018 08:20:49 -0500</pubDate>
       
-      <guid>/categories/reise/</guid>
+      <guid>https://blog.networkchallenge.de/categories/reise/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tech</title>
-      <link>/categories/tech/</link>
+      <link>https://blog.networkchallenge.de/categories/tech/</link>
       <pubDate>Sun, 23 Sep 2018 15:52:41 +0200</pubDate>
       
-      <guid>/categories/tech/</guid>
+      <guid>https://blog.networkchallenge.de/categories/tech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vonoben</title>
-      <link>/categories/vonoben/</link>
+      <link>https://blog.networkchallenge.de/categories/vonoben/</link>
       <pubDate>Sun, 11 Nov 2018 21:26:50 -0600</pubDate>
       
-      <guid>/categories/vonoben/</guid>
+      <guid>https://blog.networkchallenge.de/categories/vonoben/</guid>
       <description></description>
     </item>
     
