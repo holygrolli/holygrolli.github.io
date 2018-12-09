@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-lima-peru/</loc>
+    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-san-cristobal/</loc>
     <lastmod>2018-12-03T08:20:49-05:00</lastmod>
   </url>
@@ -152,7 +157,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2018-12-03T08:20:49-05:00</lastmod>
+    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -217,6 +222,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/lima/</loc>
+    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/lufthansa/</loc>
     <lastmod>2018-10-30T14:55:15+01:00</lastmod>
     <priority>0</priority>
@@ -247,8 +258,14 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/peru/</loc>
+    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2018-12-03T08:20:49-05:00</lastmod>
+    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -260,13 +277,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2018-12-03T08:20:49-05:00</lastmod>
+    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2018-12-03T08:20:49-05:00</lastmod>
+    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
     <priority>0</priority>
   </url>
   
