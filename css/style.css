@@ -60,3 +60,30 @@ body>header div.page-heading div.title {
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
+
+.meta div {
+	float: left;
+	padding-right: 10px;
+}
+
+.author-head {
+	background: #ddd;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.author-social {
+	background: #eee;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+.author {
+	background: #eee;
+	padding-top: 15px;
+	font-size: 14px;
+}
+.avatar p{
+	text-align: center;
+}
