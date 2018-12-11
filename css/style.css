@@ -66,6 +66,12 @@ body>header div.page-heading div.title {
 	padding-right: 10px;
 }
 
+.widget {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
 .author-head {
 	background: #ddd;
 	font-size: 16px;
