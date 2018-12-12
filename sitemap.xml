@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-fahrt-nach-huacachina/</loc>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-lima-peru/</loc>
     <lastmod>2018-12-07T23:30:30-05:00</lastmod>
   </url>
@@ -157,7 +162,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -175,7 +180,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/drohne/</loc>
-    <lastmod>2017-02-07T18:18:29+01:00</lastmod>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -216,6 +221,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/huacachina/</loc>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/hugo/</loc>
     <lastmod>2017-12-29T13:18:51+05:30</lastmod>
     <priority>0</priority>
@@ -235,7 +246,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/mavic/</loc>
-    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -252,6 +263,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/paracas/</loc>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/payment/</loc>
     <lastmod>2018-08-28T20:02:00+02:00</lastmod>
     <priority>0</priority>
@@ -259,13 +276,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/peru/</loc>
-    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -277,13 +294,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2018-12-07T23:30:30-05:00</lastmod>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -313,7 +330,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/vonoben/</loc>
-    <lastmod>2018-11-11T21:26:50-06:00</lastmod>
+    <lastmod>2018-12-12T15:20:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
