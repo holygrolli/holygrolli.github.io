@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/android/</link>
+    <description>Recent content in Android on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2018</copyright>
+    <lastBuildDate>Thu, 13 Dec 2018 19:50:11 -0500</lastBuildDate>
+    
+	<atom:link href="https://blog.networkchallenge.de/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Microsoft Unternehmensportal auf Huawei-Telefonen</title>
+      <link>https://blog.networkchallenge.de/post/unternehmensportal-auf-huawei/</link>
+      <pubDate>Thu, 13 Dec 2018 19:50:11 -0500</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/unternehmensportal-auf-huawei/</guid>
+      <description>Mein privates Telefon synchronisierte seit ein paar Tagen keine Mails mehr. Für die Synchronisation müssen alle Geräte explizit den Sicherheitsrichtlinien der Firma entsprechen. Trotz der Erfüllung dieser Anforderungen wollte partout keine Mail mehr synchronisiert werden, vielmehr informierte mich immer wieder eine automatische Mail, dass ich doch das Unternehmensportal (früher Microsoft Intune bzw. Company Portal) installieren soll &amp;hellip; cleverer Tipp&amp;hellip;
+Nach einer kurzen Rücksprache mit den Firmenadmins hat sich herausgestellt, dass die Geräteprofile heimlich auf Android for Work umgestellt wurden, was bedeutete, dass das bisherige Profil meines Geräts einfach nicht mehr funktionieren konnte.</description>
+    </item>
+    
+  </channel>
+</rss>
