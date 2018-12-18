@@ -93,3 +93,20 @@ body>header div.page-heading div.title {
 .avatar p{
 	text-align: center;
 }
+
+@media (max-width: 1099px) {
+	div.title {
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+	 } 
+}
+@media (min-width: 1100px) {
+	div.title {
+		-webkit-hyphens: manual;
+		-ms-hyphens: manual;
+		hyphens: manual;
+	 } 
+}
+
+  
