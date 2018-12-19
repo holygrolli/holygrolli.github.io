@@ -94,6 +94,14 @@ body>header div.page-heading div.title {
 	text-align: center;
 }
 
+li a {
+    text-decoration: underline;
+}
+
+img.gallery {
+	cursor: zoom-in;
+}
+
 @media (max-width: 1099px) {
 	div.title {
 		-webkit-hyphens: auto;
