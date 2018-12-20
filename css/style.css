@@ -80,6 +80,10 @@ body>header div.page-heading div.title {
 	padding-bottom: 5px;
 }
 
+.author-head a {
+	text-decoration: none;
+}
+
 .author-social {
 	background: #eee;
 	padding-bottom: 15px;
