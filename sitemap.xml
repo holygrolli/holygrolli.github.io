@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-copacabana/</loc>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-puno-tour/</loc>
     <lastmod>2018-12-23T17:57:47-04:00</lastmod>
   </url>
@@ -204,6 +209,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/alpaka/</loc>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/android/</loc>
     <lastmod>2018-12-13T19:50:11-05:00</lastmod>
     <priority>0</priority>
@@ -222,6 +233,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/bolivien/</loc>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/categories/</loc>
     <lastmod>2017-01-31T17:00:49+01:00</lastmod>
     <priority>0</priority>
@@ -229,7 +246,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2018-12-23T17:57:47-04:00</lastmod>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/copacabana/</loc>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -367,7 +390,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2018-12-23T17:57:47-04:00</lastmod>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -385,19 +408,19 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2018-12-23T17:57:47-04:00</lastmod>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2018-12-23T17:57:47-04:00</lastmod>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/</loc>
-    <lastmod>2018-12-13T19:50:11-05:00</lastmod>
+    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
     <priority>0</priority>
   </url>
   
