@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/test-alpina-eye-5-tour/</loc>
+    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-copacabana/</loc>
     <lastmod>2018-12-24T15:31:33-04:00</lastmod>
   </url>
@@ -204,7 +209,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/allgemein/</loc>
-    <lastmod>2017-01-31T17:00:49+01:00</lastmod>
+    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -240,13 +245,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/</loc>
-    <lastmod>2017-01-31T17:00:49+01:00</lastmod>
+    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -390,7 +395,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -414,7 +419,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -427,6 +432,12 @@
   <url>
     <loc>https://blog.networkchallenge.de/categories/tech/</loc>
     <lastmod>2018-12-13T19:50:11-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/test/</loc>
+    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
     <priority>0</priority>
   </url>
   
