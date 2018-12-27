@@ -192,7 +192,7 @@
 
 <p>Für die Verbindung gibt es nun ein <code>docker-compose</code>-File, welches das MongoDB-Image (mit den CLI Tools) zur Verfügung stellt. Weiterhin werden noch 3 Container gestartet, um auf die lokalen SSH-Tunnel weiterzuleiten. Wieso 3? Weil jeder der Container auf einer Docker-IP jeweils auf Port 27017 einen Tunnel bereitstellen muss. Docker ermöglicht es uns, dem MongoDB Container diese 3 Container-IPs den Hostnames der Ziel-DB-Knoten zuzuordnen (extra/additional hosts). Dadurch denkt der Client, er verbindet sich mit den 3 Zielhosts und auch SSL macht somit keine Probleme.</p>
 
-<script src="//gist.github.com/adulescentulus/d4a4977abf1b76d314ee74dc78a144d4.js"></script>
+<script type="application/javascript" src="//gist.github.com/adulescentulus/d4a4977abf1b76d314ee74dc78a144d4.js"></script>
 
 <p>Speichert man die <code>docker-compose.yml</code> nun in einem Ordner <code>mdb</code>, dann kann man die Container alle starten:</p>
 
@@ -258,7 +258,7 @@
               <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
                 
    <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     

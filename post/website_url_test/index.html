@@ -178,11 +178,13 @@
 
 <p>Zuerst musste eine Url-Liste erstellt werden, mit allen zu prüfenden Resourcen. Dafür kommt <code>wget</code> zum Einsatz. Mit folgendem Befehlt lassen sich alle Urls von einer Hauptseite ermitteln:</p>
 
-<p><code>wget --spider --force-html -r -l1 https://blog.networkchallenge.de 2&gt;output.log</code></p>
+<pre><code>wget --spider --force-html -r -l1 https://blog.networkchallenge.de 2&gt;output.log
+</code></pre>
 
 <p>Das Output dieses Vorgangs verarbeiten wir nun weiter (es enthält viel mehr als die gesuchten URLs), um die finale Url-Liste zu erzeugen:</p>
 
-<p><code>cat output.log  | grep '^--' | awk '{ print $3 }' &gt; urllist</code></p>
+<pre><code>cat output.log  | grep '^--' | awk '{ print $3 }' &gt; urllist
+</code></pre>
 
 <h2 id="prüfen-mittels-curl">Prüfen mittels cURL</h2>
 
@@ -199,7 +201,8 @@ done &lt; $1
 
 <p>Nun haben wir alles zusammen, um kontinuierlich die URLs zu prüfen und Fehler beim Laden zu erkennen. Das erstellte Skript <code>curl_all.sh</code> arbeitet die Liste nur einmal ab. Für einen Dauertest rufen wir das Skript nun in einer Schleife auf:</p>
 
-<p><code>while true; do ./curl_all.sh urllist_test; done &gt; load_test.log</code></p>
+<pre><code>while true; do ./curl_all.sh urllist_test; done &gt; load_test.log
+</code></pre>
 
 <p>Das <code>load_test.log</code> wird nun mit Prüfergebnissen gefüllt und wir können es gezielt (parallel und am Ende) nach HTTP-Status-Codes prüfen, die nicht mit 2 (200 - OK) beginnen:</p>
 
@@ -209,7 +212,7 @@ done &lt; $1
 
 <p>Alles herunterladbar als Gist:</p>
 
-<script src="//gist.github.com/adulescentulus/4ee663291474cd519a4b948f21e5ab48.js"></script>
+<script type="application/javascript" src="//gist.github.com/adulescentulus/4ee663291474cd519a4b948f21e5ab48.js"></script>
 
                 </div>
                 <div class="col-lg-2 col-lg-offset-0 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
@@ -263,7 +266,7 @@ done &lt; $1
               <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
                 
    <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
