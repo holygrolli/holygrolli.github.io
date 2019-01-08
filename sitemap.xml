@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/migrationspakt-was-steckt-dahinter/</loc>
+    <lastmod>2019-01-08T12:48:47-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/test-alpina-eye-5-tour/</loc>
     <lastmod>2018-12-25T11:54:59-04:00</lastmod>
   </url>
@@ -209,7 +214,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/allgemein/</loc>
-    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
+    <lastmod>2019-01-08T12:48:47-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -245,13 +250,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/</loc>
-    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
+    <lastmod>2019-01-08T12:48:47-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
+    <lastmod>2019-01-08T12:48:47-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -312,6 +317,12 @@
   <url>
     <loc>https://blog.networkchallenge.de/tags/galapagos/</loc>
     <lastmod>2018-12-03T08:20:49-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/gastbeitrag/</loc>
+    <lastmod>2019-01-08T12:48:47-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -394,8 +405,14 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/politik/</loc>
+    <lastmod>2019-01-08T12:48:47-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2018-12-25T11:54:59-04:00</lastmod>
+    <lastmod>2019-01-08T12:48:47-03:00</lastmod>
     <priority>0</priority>
   </url>
   
