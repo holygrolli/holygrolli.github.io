@@ -104,6 +104,7 @@ article a {
 
 img.gallery {
 	cursor: zoom-in;
+	width: 100%;
 }
 
 @media (max-width: 1099px) {
