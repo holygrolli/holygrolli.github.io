@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-san-pedro-de-atacama/</loc>
+    <lastmod>2019-01-20T14:11:48-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-uyuni-san-pedro/</loc>
     <lastmod>2019-01-15T09:46:46-03:00</lastmod>
   </url>
@@ -281,7 +286,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-01-15T09:46:46-03:00</lastmod>
+    <lastmod>2019-01-20T14:11:48-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/chile/</loc>
+    <lastmod>2019-01-20T14:11:48-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -443,7 +454,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-01-15T09:46:46-03:00</lastmod>
+    <lastmod>2019-01-20T14:11:48-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -461,19 +472,19 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-01-15T09:46:46-03:00</lastmod>
+    <lastmod>2019-01-20T14:11:48-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-01-15T09:46:46-03:00</lastmod>
+    <lastmod>2019-01-20T14:11:48-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/sanpedro/</loc>
-    <lastmod>2019-01-15T09:46:46-03:00</lastmod>
+    <lastmod>2019-01-20T14:11:48-03:00</lastmod>
     <priority>0</priority>
   </url>
   
