@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Santiago on ChaosBlog</title>
-    <link>https://blog.networkchallenge.de/tags/santiago/</link>
-    <description>Recent content in Santiago on ChaosBlog</description>
+    <title>Valparaiso on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/valparaiso/</link>
+    <description>Recent content in Valparaiso on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Wed, 23 Jan 2019 01:29:12 -0300</lastBuildDate>
     
-	<atom:link href="https://blog.networkchallenge.de/tags/santiago/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/tags/valparaiso/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>https://blog.networkchallenge.de/post/rtw-valparaiso/</guid>
       <description>Nach unserem Besuch von Santiago de Chile stand ein weiteres, berühmtes Ziel auf dem Programm. Zwei Stunden westlich von Santiago liegt die Küstenstadt Valparaíso, mit dem Urlaubsort Viña del Mar zusammen der zweitgrößte Ballungsraum Chiles.
 Anreise Die Anreise haben wir diesmal sehr kostengünstig gewählt indem wir den öffentlichen Bus nahmen. Der Bus ist in Chile Fortbewegungsmittel Nummer 1 und bietet zu wichtigen Zielen eine schnelle und kostengünstige Art des Reisens.</description>
-    </item>
-    
-    <item>
-      <title>Santiago de Chile</title>
-      <link>https://blog.networkchallenge.de/post/rtw-santiago-de-chile/</link>
-      <pubDate>Tue, 22 Jan 2019 15:54:03 -0300</pubDate>
-      
-      <guid>https://blog.networkchallenge.de/post/rtw-santiago-de-chile/</guid>
-      <description>Anreise Wir sind mit Sky Airlines von San Pedro de Atacama in zwei Stunden zum Hauptstadtflughafen geflogen. Sky Airlines ist keine wirkliche Billigairline, aber trotzdem gab es nicht einmal ein kostenloses Getränk. Am Flughafen von Santiago de Chile befindet sich direkt nach den Gepäckbändern von Sky der Ausgang und dort warten mehrere Taxiunternehmen auf potentielle Kunden. Als Kunde von Sky gab es direkt 10% Rabatt bei TRANSVIP. Somit ging es für knapp 16€ vom Flughafen in 20 Minuten zu unserer Unterkunft im Zentrum Santiagos.</description>
     </item>
     
   </channel>
