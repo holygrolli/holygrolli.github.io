@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-nach-feuerland/</loc>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-el-chalten/</loc>
     <lastmod>2019-02-13T10:30:42-03:00</lastmod>
   </url>
@@ -293,7 +298,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/argentinien/</loc>
-    <lastmod>2019-02-13T10:30:42-03:00</lastmod>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -317,7 +322,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-02-13T10:30:42-03:00</lastmod>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -384,6 +389,12 @@
   <url>
     <loc>https://blog.networkchallenge.de/tags/essen/</loc>
     <lastmod>2018-11-11T21:26:50-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/feuerland/</loc>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -479,7 +490,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/patagonien/</loc>
-    <lastmod>2019-02-13T10:30:42-03:00</lastmod>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -503,7 +514,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-02-13T10:30:42-03:00</lastmod>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -521,13 +532,19 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-02-13T10:30:42-03:00</lastmod>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/rio-gallegos/</loc>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-02-13T10:30:42-03:00</lastmod>
+    <lastmod>2019-02-18T07:03:33+13:00</lastmod>
     <priority>0</priority>
   </url>
   
