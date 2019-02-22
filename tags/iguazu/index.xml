@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iguazu on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/iguazu/</link>
+    <description>Recent content in Iguazu on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2018</copyright>
+    <lastBuildDate>Fri, 22 Feb 2019 12:29:41 +1300</lastBuildDate>
+    
+	<atom:link href="https://blog.networkchallenge.de/tags/iguazu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Puerto Iguazú, Argentinien</title>
+      <link>https://blog.networkchallenge.de/post/rtw-iguazu/</link>
+      <pubDate>Fri, 22 Feb 2019 12:29:41 +1300</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/rtw-iguazu/</guid>
+      <description>Anreisemarathon Nach unseren zwei Wochen Patagonien ging es von Punta Arenas im chilenischen Teil Patagoniens zurück nach Santiago de Chile. Sechs Stunden nach Ankunft ging unser Flieger nach Buenos Aires in Argentinien. Kurz nach 23 Uhr landeten wir dort und mussten (mal wieder) in Argentinien einreisen. Interessanterweise erfolgte die Einreise hier im Gegensatz zu unseren Grenzübertritten in Patagonien mit einem Abgleich von Foto und Fingerabdrücken. Als wir dann kurz vor Mitternacht endlich unser Gepäck hatten, mussten wir noch vom Flughafen Ezeiza (EZE) vor der Stadt zum Flughafen Aeroparque Jorge Newbery (AEP) direkt in der Stadt.</description>
+    </item>
+    
+  </channel>
+</rss>
