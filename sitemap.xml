@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-buenos-aires/</loc>
+    <lastmod>2019-02-28T08:40:53+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-iguazu/</loc>
     <lastmod>2019-02-22T12:29:41+13:00</lastmod>
   </url>
@@ -308,7 +313,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/argentinien/</loc>
-    <lastmod>2019-02-22T12:29:41+13:00</lastmod>
+    <lastmod>2019-02-28T08:40:53+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -331,6 +336,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/buenos-aires/</loc>
+    <lastmod>2019-02-28T08:40:53+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/categories/</loc>
     <lastmod>2019-01-08T12:48:47-03:00</lastmod>
     <priority>0</priority>
@@ -338,7 +349,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-02-22T12:29:41+13:00</lastmod>
+    <lastmod>2019-02-28T08:40:53+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -536,7 +547,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-02-22T12:29:41+13:00</lastmod>
+    <lastmod>2019-02-28T08:40:53+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -554,7 +565,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-02-22T12:29:41+13:00</lastmod>
+    <lastmod>2019-02-28T08:40:53+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -566,7 +577,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-02-22T12:29:41+13:00</lastmod>
+    <lastmod>2019-02-28T08:40:53+13:00</lastmod>
     <priority>0</priority>
   </url>
   
