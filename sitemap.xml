@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-thames-coromandel/</loc>
+    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-far-north-district/</loc>
     <lastmod>2019-03-03T14:16:03+13:00</lastmod>
   </url>
@@ -354,7 +359,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-03-03T14:16:03+13:00</lastmod>
+    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -367,6 +372,12 @@
   <url>
     <loc>https://blog.networkchallenge.de/tags/copacabana/</loc>
     <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/coromandel/</loc>
+    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -516,7 +527,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/neuseeland/</loc>
-    <lastmod>2019-03-03T14:16:03+13:00</lastmod>
+    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -564,7 +575,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-03-03T14:16:03+13:00</lastmod>
+    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -582,7 +593,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-03-03T14:16:03+13:00</lastmod>
+    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -594,7 +605,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-03-03T14:16:03+13:00</lastmod>
+    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
     <priority>0</priority>
   </url>
   
