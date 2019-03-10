@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-rotorua-matamata/</loc>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-thames-coromandel/</loc>
     <lastmod>2019-03-04T13:35:49+13:00</lastmod>
   </url>
@@ -359,7 +364,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -508,6 +513,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/matamata/</loc>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/mavic/</loc>
     <lastmod>2019-02-13T10:30:42-03:00</lastmod>
     <priority>0</priority>
@@ -520,6 +531,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/mittelerde/</loc>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/nazca/</loc>
     <lastmod>2018-12-17T17:30:00-04:00</lastmod>
     <priority>0</priority>
@@ -527,7 +544,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/neuseeland/</loc>
-    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -575,7 +592,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -593,7 +610,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -604,8 +621,14 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/rotorua/</loc>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-03-04T13:35:49+13:00</lastmod>
+    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
     <priority>0</priority>
   </url>
   
