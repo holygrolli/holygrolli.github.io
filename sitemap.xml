@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-westkueste-nordinsel-nz/</loc>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-rotorua-matamata/</loc>
     <lastmod>2019-03-10T12:55:08+13:00</lastmod>
   </url>
@@ -364,7 +369,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -406,7 +411,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/drohne/</loc>
-    <lastmod>2019-02-13T10:30:42-03:00</lastmod>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -520,7 +525,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/mavic/</loc>
-    <lastmod>2019-02-13T10:30:42-03:00</lastmod>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -544,7 +549,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/neuseeland/</loc>
-    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -592,7 +597,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -610,7 +615,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -628,7 +633,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-03-10T12:55:08+13:00</lastmod>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -689,6 +694,12 @@
   <url>
     <loc>https://blog.networkchallenge.de/categories/vonoben/</loc>
     <lastmod>2018-12-12T15:20:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/westk%C3%BCste/</loc>
+    <lastmod>2019-03-14T14:41:46+13:00</lastmod>
     <priority>0</priority>
   </url>
   
