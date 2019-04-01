@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Fri, 29 Dec 2017 13:18:51 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 20:20:40 +1300</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Umstellung auf AMP</title>
+      <link>https://blog.networkchallenge.de/post/umstellung-auf-amp/</link>
+      <pubDate>Mon, 01 Apr 2019 20:20:40 +1300</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/umstellung-auf-amp/</guid>
+      <description>Die letzten Tage ohne Internet habe ich an einem nun schon Wochen dauernden Projekt verbracht: AMP. AMP steht für Accelerated Mobile Pages und wurde von Google ins Leben gerufen, um das Web schneller zu machen. Die genauen Details dazu erspare ich euch, da man darüber auch geteilter Meinung sein kann.
+Nachdem ich nun Ewigkeiten mit Anpassungen des Designs und der Integration der AMP-Standards verbracht habe, konnte ich nun auch einmal ein paar vorläufige Tests mit den Pagespeed Insights machen.</description>
+    </item>
     
     <item>
       <title>Hugo auf einem Android Tablet</title>
