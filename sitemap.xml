@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-catlins-neuseeland/</loc>
+    <lastmod>2019-04-03T09:00:00+13:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-neuseeland-suedinsel-ostseite/</loc>
     <lastmod>2019-04-02T13:33:54+13:00</lastmod>
   </url>
@@ -395,8 +400,14 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/catlins/</loc>
+    <lastmod>2019-04-03T09:00:00+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-04-02T13:33:54+13:00</lastmod>
+    <lastmod>2019-04-03T09:00:00+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -576,7 +587,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/neuseeland/</loc>
-    <lastmod>2019-04-02T13:33:54+13:00</lastmod>
+    <lastmod>2019-04-03T09:00:00+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -630,7 +641,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-04-02T13:33:54+13:00</lastmod>
+    <lastmod>2019-04-03T09:00:00+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -648,7 +659,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-04-02T13:33:54+13:00</lastmod>
+    <lastmod>2019-04-03T09:00:00+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -666,7 +677,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-04-02T13:33:54+13:00</lastmod>
+    <lastmod>2019-04-03T09:00:00+13:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -679,6 +690,12 @@
   <url>
     <loc>https://blog.networkchallenge.de/tags/santiago/</loc>
     <lastmod>2019-01-23T01:29:12-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/sunset/</loc>
+    <lastmod>2019-04-03T09:00:00+13:00</lastmod>
     <priority>0</priority>
   </url>
   
