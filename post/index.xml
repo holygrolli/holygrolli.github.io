@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 20:20:40 +1300</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 13:33:54 +1300</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Die Ostküste südlich von Christchurch</title>
+      <link>https://blog.networkchallenge.de/post/rtw-neuseeland-suedinsel-ostseite/</link>
+      <pubDate>Tue, 02 Apr 2019 13:33:54 +1300</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/rtw-neuseeland-suedinsel-ostseite/</guid>
+      <description>Knapp zwei Wochen ohne einen Reisebericht. Im Hintergrund habe ich ein paar technische Änderungen am Blog gemacht. Insgesamt machte es auch nicht so viel Sinn, nach jedem Zwischenstopp etwas zu schreiben, da wir das alles hier auf der Südinsel etwas entspannter angehen.
+Nach unserer Rückfahrt nach Auckland ging es am Abend mit dem Flugzeug und Air New Zealand nach Christchurch. Dabei konnten wir einen wunderbaren Sonnenuntergang über den Wolken sehen.</description>
+    </item>
     
     <item>
       <title>Umstellung auf AMP</title>
