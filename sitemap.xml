@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-milford-sound/</loc>
+    <lastmod>2019-04-11T09:12:11+12:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-catlins-neuseeland/</loc>
     <lastmod>2019-04-04T09:30:00+13:00</lastmod>
   </url>
@@ -407,7 +412,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-04-04T09:30:00+13:00</lastmod>
+    <lastmod>2019-04-11T09:12:11+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -574,6 +579,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/milford-sound/</loc>
+    <lastmod>2019-04-11T09:12:11+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/mittelerde/</loc>
     <lastmod>2019-03-10T12:55:08+13:00</lastmod>
     <priority>0</priority>
@@ -587,7 +598,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/neuseeland/</loc>
-    <lastmod>2019-04-04T09:30:00+13:00</lastmod>
+    <lastmod>2019-04-11T09:12:11+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -641,7 +652,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-04-04T09:30:00+13:00</lastmod>
+    <lastmod>2019-04-11T09:12:11+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -659,7 +670,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-04-04T09:30:00+13:00</lastmod>
+    <lastmod>2019-04-11T09:12:11+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -677,7 +688,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-04-04T09:30:00+13:00</lastmod>
+    <lastmod>2019-04-11T09:12:11+12:00</lastmod>
     <priority>0</priority>
   </url>
   
