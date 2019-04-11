@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Thu, 11 Apr 2019 09:12:11 +1200</lastBuildDate>
+    <lastBuildDate>Fri, 12 Apr 2019 00:00:00 +1200</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Impressum</title>
+      <link>https://blog.networkchallenge.de/impressum/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/impressum/</guid>
+      <description>Andreas Groll
+Carpzovstr. 5
+04317 Leipzig
+Telefon: 034160015756
+E-Mail: contact@networkchallenge.de
+Verantwortlich für den Inhalt gem. § 55 Abs. 2 RStV:
+Andreas Groll
+Carpzovstr. 5
+04317 Leipzig
+Wir nehmen nicht an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.
+Impressum erstellt mit dem Impressumsgenerator von 123recht.de - Rechtsberatung online.</description>
+    </item>
     
     <item>
       <title>Milford Sound, Neuseeland</title>
@@ -561,8 +580,16 @@ Nüchtern betrachtet muss ich zugeben, dass keines der Features für ein Upgrade
       <pubDate>Mon, 21 May 2018 00:00:00 +0200</pubDate>
       
       <guid>https://blog.networkchallenge.de/privacypolicy/</guid>
-      <description>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (&amp;ldquo;Google&amp;rdquo;). Die Benutzung erfolgt auf der Grundlage des Art. 6 Abs. 1 S. 1 lit. f. DSGVO. Google Analytics verwendet sog. &amp;ldquo;Cookies&amp;rdquo;, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung der Webseite wie
- Browser-Typ/-Version, verwendetes Betriebssystem, Referrer-URL (die zuvor besuchte Seite), Hostname des zugreifenden Rechners (IP-Adresse), Uhrzeit der Serveranfrage,  werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</description>
+      <description>Mit dieser Datenschutzerklärung möchten wir Sie über Art, Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf unserer Webseite aufklären. Personenbezogene Daten sind alle Daten, die einen persönlichen Bezug zu Ihnen aufweisen, z. B. Name, Adresse, E-Mail-Adresse oder Nutzerverhalten.
+Wer bei uns für die Datenverarbeitung verantwortlich ist Verantwortlich für die Datenverarbeitung ist:
+Andreas Groll
+Carpzovstr. 5
+04317 Leipzig
+Deutschland
+034160015756
+contact@networkchallenge.de
+https://blog.networkchallenge.de/impressum/
+Webhosting Wir bedienen uns zum Vorhalten unserer Onlinepräsenz eines Internet-Service-Providers, auf dessen Server die Webseite gespeichert wird (Hosting) und der unsere Seite im Internet verfügbar macht.</description>
     </item>
     
     <item>
