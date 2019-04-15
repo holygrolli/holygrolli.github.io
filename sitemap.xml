@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-mount-cook/</loc>
+    <lastmod>2019-04-15T16:00:00+12:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-wanaka-neuseeland/</loc>
     <lastmod>2019-04-13T19:00:00+12:00</lastmod>
   </url>
@@ -427,7 +432,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-04-13T19:00:00+12:00</lastmod>
+    <lastmod>2019-04-15T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -606,6 +611,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/mount-cook/</loc>
+    <lastmod>2019-04-15T16:00:00+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/nazca/</loc>
     <lastmod>2018-12-17T17:30:00-04:00</lastmod>
     <priority>0</priority>
@@ -613,7 +624,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/neuseeland/</loc>
-    <lastmod>2019-04-13T19:00:00+12:00</lastmod>
+    <lastmod>2019-04-15T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -667,7 +678,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-04-13T19:00:00+12:00</lastmod>
+    <lastmod>2019-04-15T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -691,7 +702,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-04-13T19:00:00+12:00</lastmod>
+    <lastmod>2019-04-15T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -709,7 +720,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-04-13T19:00:00+12:00</lastmod>
+    <lastmod>2019-04-15T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
