@@ -429,8 +429,24 @@ amp-web-push-widget button.subscribe {
                         "event_category": "photos",
                         "event_name": "openLightbox"
                         }
+                    },
+                    "clickLinkInternal": {
+                        "on": "click",
+                        "selector": "article a[href^='/'], article a[href^='https://blog.networkchallenge.de']",
+                        "vars": {
+                        "event_category": "link",
+                        "event_name": "clickLinkInArticleInternal"
+                        }
+                    },
+                    "clickLinkExternal": {
+                        "on": "click",
+                        "selector": "article a[href^='http']:not([href*='blog.networkchallenge.de'])",
+                        "vars": {
+                        "event_category": "link",
+                        "event_name": "clickLinkInArticleExternal"
+                        }
                     }
-                    }
+                }
             }
         </script>
         </amp-analytics>
@@ -508,6 +524,47 @@ amp-web-push-widget button.subscribe {
 
 <div class="clearfix" id="content">
     <div class="sm-col-12 md-col-8 px2 mx-auto">
+
+
+    
+    
+               <article class="post-preview">
+                 <header>
+                    <a href="https://blog.networkchallenge.de/post/rtw-fahrt-nach-arequipa/">
+                        <h2>Fahrt nach Arequipa</h2>
+                      </a>
+                      
+                        <span class="meta">
+                            
+<div class="clearfix">
+    <div class="fit">
+            
+            Von Andreas Groll</a>
+ <br>
+            
+    </div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 17. Dec 2018</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/peru">peru</a>, <a href="https://blog.networkchallenge.de/tags/nazca">nazca</a>, <a href="https://blog.networkchallenge.de/tags/arequipa">arequipa</a>, <a href="https://blog.networkchallenge.de/tags/alpaka">alpaka</a>
+</div> 
+    
+</div>
+
+                          </span>
+                      
+                 </header>
+                    
+                    <hr class="small">
+                    <div class="clearfix">
+                      
+                      <div class="overflow-hidden">
+
+                        <p>Von Huacachina nach Arequipa, mit Stopps in einem Weingut und in Nazca</p>
+                        <a href="https://blog.networkchallenge.de/post/rtw-fahrt-nach-arequipa/">mehr ...</a>
+                      </div>
+                    </div>
+                    </article>
+                <hr>
 
 
                    <article class="post-preview">
@@ -931,47 +988,6 @@ amp-web-push-widget button.subscribe {
 
                         <p>Der Panama-Kanal und die Fahrt nach Santa Catalina im Südwesten von Panama</p>
                         <a href="https://blog.networkchallenge.de/post/rtw-auto-nach-santa-catalina/">mehr ...</a>
-                      </div>
-                    </div>
-                    </article>
-                <hr>
-
-
-    
-    
-               <article class="post-preview">
-                 <header>
-                    <a href="https://blog.networkchallenge.de/post/rtw-panama-city/">
-                        <h2>Panama City</h2>
-                      </a>
-                      
-                        <span class="meta">
-                            
-<div class="clearfix">
-    <div class="fit">
-            
-            Von Andreas Groll</a>
- <br>
-            
-    </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 4. Nov 2018</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
-
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/essen">essen</a>, <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/panama">panama</a>
-</div> 
-    
-</div>
-
-                          </span>
-                      
-                 </header>
-                    
-                    <hr class="small">
-                    <div class="clearfix">
-                      
-                      <div class="overflow-hidden">
-
-                        <p>2 Tage in der Hauptstadt Panamas</p>
-                        <a href="https://blog.networkchallenge.de/post/rtw-panama-city/">mehr ...</a>
                       </div>
                     </div>
                     </article>

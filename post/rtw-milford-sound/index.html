@@ -459,8 +459,24 @@ amp-web-push-widget button.subscribe {
                         "event_category": "photos",
                         "event_name": "openLightbox"
                         }
+                    },
+                    "clickLinkInternal": {
+                        "on": "click",
+                        "selector": "article a[href^='/'], article a[href^='https://blog.networkchallenge.de']",
+                        "vars": {
+                        "event_category": "link",
+                        "event_name": "clickLinkInArticleInternal"
+                        }
+                    },
+                    "clickLinkExternal": {
+                        "on": "click",
+                        "selector": "article a[href^='http']:not([href*='blog.networkchallenge.de'])",
+                        "vars": {
+                        "event_category": "link",
+                        "event_name": "clickLinkInArticleExternal"
+                        }
                     }
-                    }
+                }
             }
         </script>
         </amp-analytics>

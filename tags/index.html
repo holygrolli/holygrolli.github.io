@@ -429,8 +429,24 @@ amp-web-push-widget button.subscribe {
                         "event_category": "photos",
                         "event_name": "openLightbox"
                         }
+                    },
+                    "clickLinkInternal": {
+                        "on": "click",
+                        "selector": "article a[href^='/'], article a[href^='https://blog.networkchallenge.de']",
+                        "vars": {
+                        "event_category": "link",
+                        "event_name": "clickLinkInArticleInternal"
+                        }
+                    },
+                    "clickLinkExternal": {
+                        "on": "click",
+                        "selector": "article a[href^='http']:not([href*='blog.networkchallenge.de'])",
+                        "vars": {
+                        "event_category": "link",
+                        "event_name": "clickLinkInArticleExternal"
+                        }
                     }
-                    }
+                }
             }
         </script>
         </amp-analytics>
@@ -512,11 +528,11 @@ amp-web-push-widget button.subscribe {
             <ul>
                     
                     
-                    <li><a href="/tags/rtw">Rtw</a> 50</li>
+                    <li><a href="/tags/rtw">Rtw</a> 51</li>
+                    
+                    <li><a href="/tags/neuseeland">Neuseeland</a> 12</li>
                     
                     <li><a href="/tags/peru">Peru</a> 12</li>
-                    
-                    <li><a href="/tags/neuseeland">Neuseeland</a> 11</li>
                     
                     <li><a href="/tags/cusco">Cusco</a> 7</li>
                     

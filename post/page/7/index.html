@@ -429,8 +429,24 @@ amp-web-push-widget button.subscribe {
                         "event_category": "photos",
                         "event_name": "openLightbox"
                         }
+                    },
+                    "clickLinkInternal": {
+                        "on": "click",
+                        "selector": "article a[href^='/'], article a[href^='https://blog.networkchallenge.de']",
+                        "vars": {
+                        "event_category": "link",
+                        "event_name": "clickLinkInArticleInternal"
+                        }
+                    },
+                    "clickLinkExternal": {
+                        "on": "click",
+                        "selector": "article a[href^='http']:not([href*='blog.networkchallenge.de'])",
+                        "vars": {
+                        "event_category": "link",
+                        "event_name": "clickLinkInArticleExternal"
+                        }
                     }
-                    }
+                }
             }
         </script>
         </amp-analytics>
@@ -508,6 +524,45 @@ amp-web-push-widget button.subscribe {
 
 <div class="clearfix" id="content">
     <div class="sm-col-12 md-col-8 px2 mx-auto">
+
+
+                   <article class="post-preview">
+                 <header>
+                    <a href="https://blog.networkchallenge.de/post/automatische-docker-mounts-win/">
+                        <h2>Automatische Docker-Mounts in Windows</h2>
+                      </a>
+                      
+                        <span class="meta">
+                            
+<div class="clearfix">
+    <div class="fit">
+            
+            Von Andreas Groll</a>
+ <br>
+            
+    </div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 22. Feb 2017</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/tech">tech</a></div>
+
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/docker">docker</a>, <a href="https://blog.networkchallenge.de/tags/devops">devops</a>, <a href="https://blog.networkchallenge.de/tags/virtualbox">virtualbox</a>
+</div> 
+    
+</div>
+
+                          </span>
+                      
+                 </header>
+                    
+                    <hr class="small">
+                    <div class="clearfix">
+                      
+                      <div class="overflow-hidden">
+
+                        <p>Docker mit VirtualBox unter Windows macht es einem nicht sehr leicht, andere Verzeichnisse als das Benutzer-Verzeichnis als Volume bereitzustellen.</p>
+                        <a href="https://blog.networkchallenge.de/post/automatische-docker-mounts-win/">mehr ...</a>
+                      </div>
+                    </div>
+                    </article>
+                <hr>
 
 
     
