@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-nordwestkueste-neuseeland/</loc>
+    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-in-den-nordwesten/</loc>
     <lastmod>2019-04-17T19:18:55+12:00</lastmod>
   </url>
@@ -437,7 +442,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-04-17T19:18:55+12:00</lastmod>
+    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -629,7 +634,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/neuseeland/</loc>
-    <lastmod>2019-04-17T19:18:55+12:00</lastmod>
+    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -683,7 +688,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-04-17T19:18:55+12:00</lastmod>
+    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -707,7 +712,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-04-17T19:18:55+12:00</lastmod>
+    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -725,7 +730,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-04-17T19:18:55+12:00</lastmod>
+    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -743,7 +748,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/sunset/</loc>
-    <lastmod>2019-04-12T17:18:16+12:00</lastmod>
+    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -816,6 +821,12 @@
   <url>
     <loc>https://blog.networkchallenge.de/tags/westk%C3%BCste/</loc>
     <lastmod>2019-03-14T14:41:46+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/westport/</loc>
+    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
