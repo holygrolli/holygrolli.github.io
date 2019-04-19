@@ -23,6 +23,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -114,7 +115,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -127,7 +128,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -196,9 +197,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -219,6 +217,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -388,6 +389,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -491,11 +496,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -515,11 +520,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -551,9 +556,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 11. Feb 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 6 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 11. Feb 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 6 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/el-calafate">el calafate</a>, <a href="https://blog.networkchallenge.de/tags/patagonien">patagonien</a>, <a href="https://blog.networkchallenge.de/tags/argentinien">argentinien</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/el-calafate/">el calafate</a>, <a href="https://blog.networkchallenge.de/tags/patagonien/">patagonien</a>, <a href="https://blog.networkchallenge.de/tags/argentinien/">argentinien</a>
 </div> 
     
 </div>
@@ -580,6 +585,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Es ging dann rund 80km auf der Ruta 40 nach Norden bis zum Abzweig der Ruta 7. Die Ruta 7 wird als schnellste Verbindung nach El Calafate vorgeschlagen, weil man einige Kilometer spart. Rückblickend bin ich hin- und hergerissen, ob ich diese Strecke empfehlen kann. Es sind etwas über 60km auf einer typischen Schotterpiste mitten durch die patagonische Pampa. Man sieht viele Guanacos, sogar <a href="https://de.wikipedia.org/wiki/Nandu">Nandus</a> haben wir einmal direkt neben der Straße gesehen, neben ein paar Autos alle 15 Minuten. Das Geruckel auf der Straße ist aber schon anstrengend und man läuft schon permanent Gefahr, sich einen Platten einzufahren. Wir haben einen Camper aus Deutschland überholt, den wir auch schon in Torres del Paine gesehen hatten. Dieser kroch mit höchsten 30km/h über die Buckelpiste, um das Fahrwerk nicht zu sehr zu schrotten. Bei dem Pickup und noch einem Mietfahrzeug war das alles schon schmerzbefreit. Alternativ bleibt man auf der geteerten Ruta 40 und rollt mit über 100km/h den Umweg. Eine klare Empfehlung kann ich nicht geben, nur ein paar Eindrücke der Strecke.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190128_131312.jpg" 
@@ -596,6 +676,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190128_135321.jpg" 
@@ -612,12 +769,89 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>In El Calafate angekommen bezogen wir direkt unsere Unterkunft, die Pension <a href="https://goo.gl/maps/G47n4nJLGuS2">Roble Sur</a> etwas außerhalb vom Zentrum. Eine sehr schicke Unterkunft für einen günstigen Preis inklusive ordentlichem Frühstück.</p>
 
 <p>Als wir dann in die Stadt zum Essen fahren wollten passierte es dann. Beim Rückwärtsfahren musste ich die Vorderräder unseres riesigen Pickups zurück über eine Rasenkante aus Steinen fahren. Die Hinterräder als Antriebsachse hatten aber auf dem Schotter keinen Halt und drehten durch. Mit mehreren Schwüngen auf engstem Raum konnte ich das Hindernis endlich überwinden. Als wir dann aber losfahren wollten war es passiert: mein erster Platten in 19 Jahren Fahrpraxis und das mitten in Patagonien! Beim Durchdrehen der Räder muss ein Stein den Reifen beschädigt haben.</p>
 
 <p>Also das Auto gerade hingestellt und das Handbuch (in Spanisch) gewälzt. Zuerst musst das Reserverad vom Unterboden entfernt werden. Das Herablassen des Rads war kein Problem, nur das Lösen von der Halterung stellte mich vor unüberwindbare Herausforderungen. Am Ende zeigte sich wieder einmal, dass eine Promotion auch in der Praxis taugt: Katrin konnte das Rad lösen, während ich das Handbuch wälzte. Eine weitere Schwierigkeit (für mich) war die Positionierung des Wagenhebers. Die Abbildungen im Handbuch stimmten nicht mit der Realität überein &hellip;</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190128_172407.jpg" 
@@ -634,6 +868,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Während meiner Recherchen versuchte Katrin zusammen mit dem Pensionsbesitzer eine lokale Werkstatt anzurufen, wo leider durchweg besetzt war. Die Öffnungszeiten im Netz ließen uns nur noch 10 Minuten Zeit. Der Pensionsbesitzer bot uns selbstlos sein Auto an, um damit selbst (!) zur Werkstatt um die Ecke zu fahren. Gesagt, getan! Leider mussten wir feststellen, dass die Werkstatt scheinbar dauerhaft geschlossen war, somit ging es unverrichteter Dinge zurück zur Pension. Dort ging es dann aber auch zackig: Wagenheber (irgendwie) nach Anleitung platziert und Rad gewechselt. In der Summe hat es dann 90 Minuten gedauert, kein schlechter Wert für unser erstes Mal Radwechsel.</p>
 
 <p>Danach ging es dann mit dem platten Reifen in eine Reifenwerkstatt. Sehr dreckig in einem Hinterhof, aber durchaus professionel, trotz fehlender Englischkenntnisse. Während man sich um das Flicken des Reifens kümmerte, konnten wir zur nächstgelegenen Bank gehen, um endlich Geld abzuheben. Hier ging es dann auch sofort. Allerdings sind die Maximalmengen wenn man Glück hat 4000 Pesos, weniger als 100€ und das bei bis zu US$8 Gebühren - Wucher!</p>
@@ -642,6 +878,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Am nächsten Tag ging es dann mit dem Auto zum 60km entfernten Los Glaciares Nationalpark. Am Eingang des Parks wird man erst einmal AR$700 (knapp 17€) los, die man mittlerweile aber mit Kreditkarte zahlen kann. Dann sind es noch einmal über 20km im Park bis man am Parkplatz zum Perito Moreno Gletscher ankommt. Ein Shuttlebus bringt einen dann den letzten Kilometer bis zum Startpunkt der Wanderwege. Leider hatten wir an diesem Tag typisches Patagonien-Wetter, das heißt viel Wind, leichter Regen und generell niedrige Temperaturen, was den Aufenthalt nicht sehr angenehm werden ließ. Trotzdem war die Aussicht vom ersten Aussichtspunkt beeindruckend:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190129_152515.jpg" 
@@ -658,8 +969,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Je näher man kam, umso beeindruckender war die durchschnittlich 50m hohe Wand aus Eis.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190129_154450.jpg" 
@@ -676,6 +1064,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190129_155229.jpg" 
@@ -692,8 +1157,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Am Ende war es so unangenehm, dass wir uns in das Restaurant zurückzogen und Heißgetränke zu uns nahmen und hofften, dass das schlechte Wetter doch noch einmal aufhört. Leider wurden wir enttäuscht. Wir nahmen den letzten Bus zurück zum Parkplatz und hatten dort immerhin noch die Möglichkeit, einen Fuchs über den Parkplatz spazieren zu sehen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190129_173100.jpg" 
@@ -710,8 +1252,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Am nächsten Tag sollte es eigentlich weiter nach El Chalten gehen. Da das Wetter aber scheinbar besser als am Vortag war entschieden wir uns doch noch einmal die 160km für den Trip zum Perito Morino anzugehen. Leider gelten die Nationalparktickets nur an einem Tag (Torres del Paine 3 Tage). An den Wanderwegen konnten wir tatsächlich besseres Wetter genießen. Gelegentlich kamen ein paar Sonnenstrahlen durch, aber immerhin kein Regen und nur wenig Wind, so kann man Patagonien genießen. Wir konnten somit einige der Wege zu unterschiedlichen Aussichtsplattformen laufen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190130_115323.jpg" 
@@ -728,6 +1347,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190130_124450.jpg" 
@@ -744,18 +1440,95 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Man konnte sogar eine Weile einfach nur sitzen, um das Brechen des Gletschereis zu hören. Immer wieder brachen auch Stücke mit lautem Krachen ins Wasser.</p>
 
-<p><amp-instagram
+<amp-instagram
     data-shortcode="BtpWjNphpTF"
     data-captioned
     width="400"
     height="400"
     layout="responsive">
-</amp-instagram></p>
+</amp-instagram>
 
 <p>Auf dem Rückweg hielten wir noch einmal in El Calafate für einen Kaffee. Dabei konnte ich mir den Schnappschuss des überall blühenden Lavendels nicht entgehen lassen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190130_161407.jpg" 
@@ -772,9 +1545,31 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Nachdem wir nun in <a href="/post/rtw-torres-del-paine/">Torres del Paine</a> die Bootsfahrt zum Grey-Gletscher mitgemacht haben, muss ich festhalten, dass der Perito Moreno-Gletscher ein besserer Preis-Leistungsverhältnis hat. Natürlich kann man beide Erlebnisse nicht direkt miteinander vergleichen, aber die Möglichkeit, den Perito Moreno entlang der Küste selbstbestimmt abzulaufen, schlägt die geführte Bootstour in meinen Augen.</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -934,9 +1729,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

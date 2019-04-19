@@ -21,6 +21,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -112,7 +113,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -125,7 +126,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -194,9 +195,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -217,6 +215,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -384,6 +385,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -487,11 +492,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -511,11 +516,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -547,9 +552,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 12. Nov 2018</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 3 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/vonoben">vonoben</a>, <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 12. Nov 2018</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 3 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/vonoben/">vonoben</a>, <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/essen">essen</a>, <a href="https://blog.networkchallenge.de/tags/mavic">mavic</a>, <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/panama">panama</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/essen/">essen</a>, <a href="https://blog.networkchallenge.de/tags/mavic/">mavic</a>, <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/panama/">panama</a>
 </div> 
     
 </div>
@@ -572,12 +577,89 @@ amp-web-push-widget button.subscribe {
         <div class="content relative">
           
           <article>
-          <p>Nachdem wir die abenteuerliche Autofahrt überstanden hatten, konnten wir uns auf drei Strandtage freuen. Mir wurde von Arbeitskollegen (Gruß an Helge und Sascha!) empfohlen, das Schnorchelparadies Coiba nicht zu verpassen. Aufgrund unserer doch recht knappen Zeit und der Tatsache, dass uns unser nächster Stopp nach Galapagos führen wird, haben wir darauf verzichtet pro Richtung knapp 90 bis 120 Minuten in einer kleinen Nussschale zu sitzen. Wir haben uns voll und ganz auf den Strand konzentriert.</p>
+          
+
+<p>Nachdem wir die abenteuerliche Autofahrt überstanden hatten, konnten wir uns auf drei Strandtage freuen. Mir wurde von Arbeitskollegen (Gruß an Helge und Sascha!) empfohlen, das Schnorchelparadies Coiba nicht zu verpassen. Aufgrund unserer doch recht knappen Zeit und der Tatsache, dass uns unser nächster Stopp nach Galapagos führen wird, haben wir darauf verzichtet pro Richtung knapp 90 bis 120 Minuten in einer kleinen Nussschale zu sitzen. Wir haben uns voll und ganz auf den Strand konzentriert.</p>
 
 <h2 id="the-beach">The Beach</h2>
 
 <p><em>Playa El Estero</em> ist der Traumstrand, wenn es um viel und superfeinen Sand geht. Allerdings nur, wenn gerade Ebbe herrscht. Kommt man so wie wir bei Flut an den Strand, muss man zum Surfcenter und zum Hauptstrand einen Fluss durchqueren. Dieser wird bei Flut auch vom Meer aus geflutet, was bedeutet, man watet Bauchnabeltief durch das Wasser. Die Einheimischen mit ihren Geländewagen scheuen sich auch davor nicht.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181104_121620.jpg" 
@@ -594,8 +676,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Bei Ebbe sieht das alles schon sehr unspektakulär aus.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181103_173745.jpg" 
@@ -612,8 +771,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Ist man dann am Strand angelangt und erwischt nicht den höchsten Stand der Gezeiten, dann erstreckt sich der Strand wortwörtlich soweit das Auge reicht.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181104_163609.jpg" 
@@ -630,6 +866,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181104_163759.jpg" 
@@ -646,6 +959,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181105_085746.jpg" 
@@ -662,6 +1052,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der Strand ist nicht nur wegen seines Sandes beliebt, sondern auch unter Surfern beliebt. Tatsächlich kommen hier im Sekundentakt nacheinander angenehme Wellen an den Strand. Zusätzlich hat das Wasser auch noch eine sehr angenehme Temperatur, bei der man sich stundenlang im Wasser aufhalten kann.</p>
 
 <p>Am ersten Tag entspannten wir wunderbar am Strand und holten uns unseren ersten Sonnenbrand. Ich als Sonnenblocker überhaupt zeigt so gut wie keine Haut. Allerdings haben schmale Streifen zwischen Füßen und Hose auf auf den Handrücken gereicht, um für <em>leicht</em> rote Färbung zu sorgen. Was lernen wir daraus? Immer schön ans Eincremen denken. Wir hatten uns zum Schutz der Meere extra eine Sonnencreme von <em>Eco</em> auf Basis von Naturkosmetik geholt. Leider ein totaler, teurer Reinfall.</p>
@@ -672,6 +1064,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Den Strand von Santa Catalina nutzte ich auch für den allerersten Einsatz der Drohne. Gegen 7 Uhr früh gab es keine Probleme.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/rtw-DJI_0010.JPG" 
@@ -688,6 +1155,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/rtw-DJI_0019.JPG" 
@@ -704,6 +1248,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/rtw-DJI_0028.JPG" 
@@ -720,10 +1341,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="kulinarische-empfehlungen">Kulinarische Empfehlungen</h2>
 
 <p>Da wir kein Frühstück im AirBnB dabei hatten, mussten wir eine Alternative finden. Diese fanden wir dann für alle unsere morgendlichen Genüsse in Form der <a href="https://goo.gl/maps/2JVMrNnT4WF2">La Panaderia Vieja</a>. Diese bot echt leckere Sandwiches auf selbstgemachtem Olivenbrot und andere italienische Speisen an.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181103_093810.jpg" 
@@ -740,10 +1438,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Das Essen war so gut, dass wir hier jeden Tag frühstückten.</p>
 
 <p>Die zwei Abendessen genehmigten wir uns im <a href="https://goo.gl/maps/z4kKMJAAQHr">El Chillinguito</a> und im <a href="https://goo.gl/maps/hoDuFzpSHBq">Hotel Iguanito</a> dessen Besitzer ein deutscher Auswanderer ist. Der hier servierte <em>tropical Sangria</em> war ein Traum! Wir hatten hier auch wunderbare Thunfischfilets, einmal als Art Teriyaki und einmal mit Sesamkruste.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181104_210002.jpg" 
@@ -760,10 +1535,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="bekanntschaften">Bekanntschaften</h2>
 
 <p>Am vorletzten Tag trafen wir beim Frühstück noch Gabriel, einen Panamesen, mit dem wir ins Gespräch kamen. Katrin&rsquo;s Charme verleitete ihn irgendwie dazu, dass er uns als Andenken an Panama neben einem Foto mit ihm noch sein altes Motorradkennzeichen schenkte. Das wird ein übergroßer Kühlschrankmagnet. Bei der Ausreise hatten wir auch keine Probleme mit einem eventuell geklauten Nummernschild :-D</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181104_095857.jpg" 
@@ -780,7 +1632,29 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -940,9 +1814,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

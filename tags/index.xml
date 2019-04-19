@@ -67,6 +67,15 @@
     </item>
     
     <item>
+      <title>Aws</title>
+      <link>https://blog.networkchallenge.de/tags/aws/</link>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Blog</title>
       <link>https://blog.networkchallenge.de/tags/blog/</link>
       <pubDate>Mon, 01 Apr 2019 20:20:40 +1300</pubDate>
@@ -150,7 +159,7 @@
     <item>
       <title>Devops</title>
       <link>https://blog.networkchallenge.de/tags/devops/</link>
-      <pubDate>Sun, 23 Sep 2018 15:52:41 +0200</pubDate>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/devops/</guid>
       <description></description>
@@ -159,7 +168,7 @@
     <item>
       <title>Docker</title>
       <link>https://blog.networkchallenge.de/tags/docker/</link>
-      <pubDate>Sun, 23 Sep 2018 15:52:41 +0200</pubDate>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/docker/</guid>
       <description></description>
@@ -252,6 +261,24 @@
       <pubDate>Tue, 08 Jan 2019 12:48:47 -0300</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/gastbeitrag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gcp</title>
+      <link>https://blog.networkchallenge.de/tags/gcp/</link>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/gcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graalvm</title>
+      <link>https://blog.networkchallenge.de/tags/graalvm/</link>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/graalvm/</guid>
       <description></description>
     </item>
     
@@ -535,6 +562,24 @@
     </item>
     
     <item>
+      <title>Serverless</title>
+      <link>https://blog.networkchallenge.de/tags/serverless/</link>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/serverless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://blog.networkchallenge.de/tags/spring/</link>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sunset</title>
       <link>https://blog.networkchallenge.de/tags/sunset/</link>
       <pubDate>Thu, 18 Apr 2019 16:00:00 +1200</pubDate>
@@ -567,6 +612,15 @@
       <pubDate>Tue, 25 Dec 2018 11:54:59 -0400</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>https://blog.networkchallenge.de/tags/tutorial/</link>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/tutorial/</guid>
       <description></description>
     </item>
     

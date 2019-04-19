@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/google-cloud-run-ausprobiert/</loc>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-nordwestkueste-neuseeland/</loc>
     <lastmod>2019-04-18T16:00:00+12:00</lastmod>
   </url>
@@ -405,6 +410,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/aws/</loc>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/blog/</loc>
     <lastmod>2019-04-01T20:20:40+13:00</lastmod>
     <priority>0</priority>
@@ -442,7 +453,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -472,13 +483,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/devops/</loc>
-    <lastmod>2018-09-23T15:52:41+02:00</lastmod>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/docker/</loc>
-    <lastmod>2018-09-23T15:52:41+02:00</lastmod>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -539,6 +550,18 @@
   <url>
     <loc>https://blog.networkchallenge.de/tags/gastbeitrag/</loc>
     <lastmod>2019-01-08T12:48:47-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/gcp/</loc>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/graalvm/</loc>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -688,7 +711,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -747,6 +770,18 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/serverless/</loc>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/spring/</loc>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/sunset/</loc>
     <lastmod>2019-04-18T16:00:00+12:00</lastmod>
     <priority>0</priority>
@@ -772,13 +807,19 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/tech/</loc>
-    <lastmod>2019-04-01T20:20:40+13:00</lastmod>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/test/</loc>
     <lastmod>2018-12-25T11:54:59-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/tutorial/</loc>
+    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
     <priority>0</priority>
   </url>
   

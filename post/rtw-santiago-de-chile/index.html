@@ -21,6 +21,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -112,7 +113,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -125,7 +126,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -194,9 +195,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -217,6 +215,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -386,6 +387,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -489,11 +494,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -513,11 +518,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -549,9 +554,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 22. Jan 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 6 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 22. Jan 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 6 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/chile">chile</a>, <a href="https://blog.networkchallenge.de/tags/santiago">santiago</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/chile/">chile</a>, <a href="https://blog.networkchallenge.de/tags/santiago/">santiago</a>
 </div> 
     
 </div>
@@ -574,7 +579,9 @@ amp-web-push-widget button.subscribe {
         <div class="content relative">
           
           <article>
-          <h2 id="anreise">Anreise</h2>
+          
+
+<h2 id="anreise">Anreise</h2>
 
 <p>Wir sind mit Sky Airlines von <a href="/post/rtw-san-pedro-de-atacama/">San Pedro de Atacama</a> in zwei Stunden zum Hauptstadtflughafen geflogen. Sky Airlines ist keine wirkliche Billigairline, aber trotzdem gab es nicht einmal ein kostenloses Getränk. Am Flughafen von Santiago de Chile befindet sich direkt nach den Gepäckbändern von Sky der Ausgang und dort warten mehrere Taxiunternehmen auf potentielle Kunden. Als Kunde von Sky gab es direkt 10% Rabatt bei TRANSVIP. Somit ging es für knapp 16€ vom Flughafen in 20 Minuten zu unserer Unterkunft im Zentrum Santiagos. Allerdings war der Minivan auch voll belegt. Glücklicherweise waren wir die letzten zwei, die einstiegen und auch als erstes wieder ausstiegen.</p>
 
@@ -582,6 +589,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Wir hatten uns extra für ein Appartment entschieden, wo wir auch selber kochen konnten. Ein seltenes Schnäppchen bei Expedia (10% Firmenrabatt) brachte uns eine schicke <a href="https://goo.gl/maps/g3ANNetSicG2">Loftwohnung</a> im 16. Stock mit Ausblick auf das <em>Castillo Hidalgo</em>. Die Aufbereitung der Wohnung war schon schick gemacht.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190112_201038.jpg" 
@@ -598,10 +680,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Leider war aber die Konstruktion der Wohnung nicht sonderlich gut durchdacht, da die offene Galerie ohne Fenster sehr stickig war. In der Nacht wurde die Balkontür aufgerissen und sorgte unten für ein angenehmes Klima, oben war es aber weiterhin sehr warm. Not macht bekanntlich erfinderisch, so dass ich mit den optimalen Platzierung eines vorhandenen Ventilators jeden Tag aufs Neue experimentieren durfte. Nach zwei Tagen war die optimale Position gefunden: auf dem Rücken liegend, angelehnt an die Wand pustete der Ventilator von nun an die ganze Nacht die kalte Luft vom Boden der Balkontür senkrecht nach oben in die Höhe der Galerie. MacGyver wäre stolz gewesen.</p>
 
 <p>Durch die Küche und den Essbereich machten wir uns täglich selbst Frühstück mit frischen Brötchen vom Bäcker und Obst aus dem Supermarkt nebenan. Zweimal wurde mit den beschränkten Mitteln gekocht, was bei den deutschen Restaurantpreisen in Chile durchaus für Entspannung in der Reisekasse sorgt.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190114_191403.jpg" 
@@ -618,6 +777,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_105915.jpg" 
@@ -634,8 +870,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der Gebäudekomplex bestand aus vier Hochhäusern. Auf einem befand sich ein Pool und die Aussicht war auch nicht zu verachten.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190115_105547.jpg" 
@@ -652,6 +965,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Insgesamt war das Preis-/Leistungsverhältnis schon sehr gut. Wir hatten noch separat zwei Nächte verlängert und direkt den vergünstigten Expediapreis bekommen und bezahlten am Ende im Schnitt keine 40€ die Nacht.</p>
 
 <h2 id="aktivitäten">Aktivitäten</h2>
@@ -660,6 +975,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Definitiv einen Besuch wert ist der Aufstieg auf den Berg des Parks <a href="https://goo.gl/maps/Qf65GnikzX22">Cerro San Cristobal</a>. Hier hat man einen wunderbaren Ausblick in alle Richtungen von Santiago de Chile. Auf den Berg fährt eine Zahnradbahn. Der Aufstieg auf den Berg dauert bei entspannter Gangart auch keine Stunde.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190115_112321.jpg" 
@@ -676,8 +1066,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Oben erwartet einen dann eine Pilgerstätte mit einer Jungfrauenstatue, die über die Stadt blickt. Dazu gibt es eine kleine Kirche und einen großen Platz für die hier stattfindenden Messen. Begleitet wird der Aufenthalt durch kirchliche Gesänge aus dem Lautsprecher.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190115_132824.jpg" 
@@ -694,6 +1161,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190115_133951.jpg" 
@@ -710,12 +1254,89 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der Abstieg ging wesentlich entspannter und schneller vonstatten. In nicht einmal 30 Minuten waren wir wieder am Fuß des Hügels.</p>
 
 <h3 id="castillo-hidalgo">Castillo Hidalgo</h3>
 
 <p>Direkt neben unserem Appartmentkomplex befindet sich auch eine kleine grüne Oase mit dem Schlösschen <em>Castillo Hidalgo</em>. Innerhalb von 15 Minuten ist man durch den Park spaziert und kann auf dem Aussichtspunkt über die Stadt schauen. Der Park ist dabei super gepflegt und blüht in unterschiedlichen Farben.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190118_130412.jpg" 
@@ -732,6 +1353,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190118_130418.jpg" 
@@ -748,6 +1446,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190118_131546.jpg" 
@@ -764,10 +1539,80 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h3 id="stadtbummel">Stadtbummel</h3>
 
 <p>Da wir selten unsere Zeit in Museen verbringen, lassen wir die Stadt lieber durch die Straßen auf uns wirken. Da wir uns am Rand des Finanzzentrums von Santiago befanden, sind wir direkt durch die Hochhausschluchten gewandert. Man fühlte sich wie in einer amerikanischen Großstadt bzw. wie in einer kleinen Version von New York. Der Baustil vieler Gebäude erinnerte zumindest daran.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+        
+    
 <div style="max-width: 2100px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_145358.jpg" 
@@ -784,6 +1629,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_145643.jpg" 
@@ -800,6 +1722,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_145919.jpg" 
@@ -816,8 +1815,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Santiago de Chile ist auch geprägt von vielen geräumigen Plätzen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_150849.jpg" 
@@ -834,6 +1910,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_151354.jpg" 
@@ -850,6 +2003,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_151701.jpg" 
@@ -866,10 +2096,80 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Einen Besuch wert ist definitiv auch der <a href="https://goo.gl/maps/48p7BAjbNnA2">Zentrale Markt</a>. In der Mitte des historischen Gebäudes befinden sich überdacht teure Restaurants. In dem umschließenden Gang befinden sich kleinere Fischrestaurants und Fischstände, die frischen Frisch anbieten.</p>
 
 <p>In den Straßen befinden sich auch immer kleine Kioske, die im geschlossenen Zustand auch amüsante Fotomotive boten.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+        
+    
 <div style="max-width: 2100px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_135847.jpg" 
@@ -886,10 +2186,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="kulinarisches">Kulinarisches</h2>
 
 <p>Eine Städtereise ist bei uns nur vollständig, wenn wir auch kulinarisch die verschiedensten Restaurants ausprobieren. Am ersten Abend hatten wir uns eine gut bewertete <a href="https://goo.gl/maps/AuTxE5ogWJr">Ramenbar</a> ausgesucht. Die war so gut besucht, dass wir vor Ort keinen Tisch bekamen und uns auf eine Warteliste eintragen mussten. Das war aber sehr unproblematisch und wir hatten die Chance, das Stadtviertel ein wenig zu erkunden. Dabei entdeckten wir das kleine Restaurant <a href="https://goo.gl/maps/MJ5tyUHHBKT2">Local Paraíso</a>, welches uns am nächsten Abend leckeren Sangria und Snacks bieten sollte. Alle Hauptgerichte wurden dabei in einer Emaille-Schüssel serviert. Eine klare Empfehlung.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190113_190513.jpg" 
@@ -906,8 +2283,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Auf dem Rückweg von dem Aussichtspunkt <em>Cerro San Cristobal</em> stoppten wir noch in dem Restaurant <a href="https://goo.gl/maps/i2a8FqtXvRK2">Sanguchería Ciudad Vieja</a>, welches unter anderem auch Lammburger anbot. Ich entschied mich für ein durchaus leckeres Pastrami-Sandwich.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190115_152307.jpg" 
@@ -924,8 +2378,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Auch muss ich unbedingt das leckere Eis der Kette <em>Bravissimo</em> erwähnen. Hier gab es RIESIGE Eistüten mit leckerem, sehr cremigem Eis. Zwei Geschmacksrichtungen für $2800, definitiv das Geld wert. Die riesigen Eisbecher wurden hier gerade zubereitet.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190117_193336.jpg" 
@@ -942,10 +2473,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="sonderausgaben">Sonderausgaben</h2>
 
 <p>Als Sonderausgabe muss bzw. darf ich meine neue Sonnenbrille verbuchen. Nach dem <a href="/post/test-alpina-eye-5-tour/">großen Debakel</a> mit meiner Alpina Sonnenbrille und der Nichterreichbarkeit des Alpina-Supports habe ich mich in Santiago auf die Suche nach einem ordentlichen Ersatz gemacht. Letztendlich wusste ich genau, was ich wollte, schließlich war ich lange Zeit gut mit der Oakley Flak 2.0 XL unterwegs. Von dem günstigsten Angebot am Airport in Calama für knapp 170€ konnte ich mich noch gerade retten. In den Straßen von Santiago war ich bei über 200€ nicht sehr angetan. Letztlich wurde ich bei der Kette <em>sunglasseshut</em> (wie auch am Airport) fündig und man gab mir noch zusätzlich 20% Rabatt. Wahrscheinlich das günstigste Angebot bei so einem Notkauf.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190118_110526.jpg" 
@@ -962,6 +2570,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Danke Alpina, nie wieder!</p>
 
 <h2 id="bekanntschaften">Bekanntschaften</h2>
@@ -973,6 +2583,26 @@ amp-web-push-widget button.subscribe {
 <p>Santiago de Chile war auf alle Fälle eindrucksvoll, da komplett verschieden von allen bisherigen Städten in Südamerika. Es war tatsächlich die &ldquo;westlichste&rdquo; und modernste Stadt. Es war sehr abwechslungsreich und wir hatten keine Probleme, uns sicher zu fühlen, obwohl selbst die Chilenen vor Ort meinten, wir müssen nachts aufpassen.</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -1132,9 +2762,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

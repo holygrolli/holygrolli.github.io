@@ -21,6 +21,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -112,7 +113,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -125,7 +126,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -194,9 +195,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -217,6 +215,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -384,6 +385,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -487,11 +492,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -511,11 +516,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -547,9 +552,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 4. Mar 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 2 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 4. Mar 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 2 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/coromandel">coromandel</a>, <a href="https://blog.networkchallenge.de/tags/neuseeland">neuseeland</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/coromandel/">coromandel</a>, <a href="https://blog.networkchallenge.de/tags/neuseeland/">neuseeland</a>
 </div> 
     
 </div>
@@ -574,6 +579,81 @@ amp-web-push-widget button.subscribe {
           <article>
           <p>Von Auckland aus fuhren wir die komplette Küstenstraße entlang des <a href="https://goo.gl/maps/jx7t8W1saZN2">Firth of Thames</a>. Entlang der teilweise größeren oder kleineren Straßen schlängelten wir uns der Küste entlang und hatten wunderbare Ausblicke auf grüne Hügel und türkises Meer.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190224_123803.jpg" 
@@ -590,6 +670,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190224_165737-01.jpeg" 
@@ -606,6 +763,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190224_174914~2.jpg" 
@@ -622,8 +856,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Wir hatten ein kleines, <a href="https://goo.gl/maps/xYCise1FMvR2">schönes Apartment</a> und einer riesigen Terrasse in Whitianga. Von hier aus konnten wir zum bekannten Aussichtspunkt <a href="https://goo.gl/maps/YrbssB782Ko">Cathedral Cove</a> machen. Entlang des entspannten Wegs gab es immer wieder tolle Ausblicke über die Küste.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190225_134242-01.jpeg" 
@@ -640,6 +951,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190225_150902-01.jpeg" 
@@ -656,6 +1044,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190225_150925.jpg" 
@@ -672,6 +1137,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190225_151154.jpg" 
@@ -688,6 +1230,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190225_151536.jpg" 
@@ -704,6 +1323,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190225_153739-01.jpeg" 
@@ -720,8 +1416,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Nach dem Besuch von Cathedral Cove besuchten wir noch den <a href="https://goo.gl/maps/UGptYrCmPGp">Hot Water Beach</a>. Dieser ist mit dem Auto nur 10 Minuten entfernt und ermöglicht in einem Zeitfenster von zwei Stunden vor und nach der Ebbe in heißen Quellen zu baden. In dieser Zeit ist das Meer so weit zurückgegangen, dass man nach wenigen Zentimetern Graben im Sand auf bis zu 65°C heißes Wasser stoßen kann. Als wir am Strand pünktlich zwei Stunden vor der Ebbe ankamen, hatten wir schon die Befürchtung, dass wir nicht wissen, wo wir graben müssen. Aber am Strand angekommen, gab es schon genug Gräber vor uns. Ein sehr verrückter Anblick!</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190225_164812.jpg" 
@@ -738,8 +1511,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Irgendwann hatten wir ein Plätzchen gefunden, was nicht direkt das 65°C heiße Wasser abbekam. Danach konnten wir es uns im warmen, teilweise heißen Wasser gut gehen lassen und das bunte Treiben am Strand beobachten.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190225_170703.jpg" 
@@ -756,7 +1606,29 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -916,9 +1788,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

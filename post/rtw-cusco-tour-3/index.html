@@ -21,6 +21,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -112,7 +113,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -125,7 +126,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -194,9 +195,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -217,6 +215,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -386,6 +387,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -489,11 +494,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -513,11 +518,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -549,9 +554,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 22. Dec 2018</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 2 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 22. Dec 2018</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 2 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/peru">peru</a>, <a href="https://blog.networkchallenge.de/tags/cusco">cusco</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/peru/">peru</a>, <a href="https://blog.networkchallenge.de/tags/cusco/">cusco</a>
 </div> 
     
 </div>
@@ -574,12 +579,89 @@ amp-web-push-widget button.subscribe {
         <div class="content relative">
           
           <article>
-          <p>Unser Taxifahrer Ricardo holte uns an Tag 41 schon um 8 Uhr ab. Diesmal sollte es in den Nordwesten von Cusco gehen. Eigentlich ist das die Richtung vom Machu Picchu. Reist man zum Machu Picchu nicht mit der Bahn, dann kann man sicher eine der Sehenswürdigkeiten auch mit in seine Anfahrt oder Rückfahrt mit einbauen. Wir fanden es aber so wieder sehr komfortabel, nur einen Dreivierteltag mit Sightseeing beschäftigt zu sein. Eigentlich hätte zum <a href="https://www.cuscoperu.com/en/useful-information/touristic-tickets/cusco-touristic-ticket">Cusco Touristic Tickets</a> noch <em>Ollantaytambo</em> gehört. Darauf haben wir aber verzichtet, denn <em>Ollantaytambo</em> wäre nochmal mindestens eine halbe Stunde weiter weg von Cusco gewesen. So blieben wir bei unserer &ldquo;kleinen&rdquo; Tour und Ricardo fuhr uns wieder für 80 Soles durch die Berge.</p>
+          
+
+<p>Unser Taxifahrer Ricardo holte uns an Tag 41 schon um 8 Uhr ab. Diesmal sollte es in den Nordwesten von Cusco gehen. Eigentlich ist das die Richtung vom Machu Picchu. Reist man zum Machu Picchu nicht mit der Bahn, dann kann man sicher eine der Sehenswürdigkeiten auch mit in seine Anfahrt oder Rückfahrt mit einbauen. Wir fanden es aber so wieder sehr komfortabel, nur einen Dreivierteltag mit Sightseeing beschäftigt zu sein. Eigentlich hätte zum <a href="https://www.cuscoperu.com/en/useful-information/touristic-tickets/cusco-touristic-ticket">Cusco Touristic Tickets</a> noch <em>Ollantaytambo</em> gehört. Darauf haben wir aber verzichtet, denn <em>Ollantaytambo</em> wäre nochmal mindestens eine halbe Stunde weiter weg von Cusco gewesen. So blieben wir bei unserer &ldquo;kleinen&rdquo; Tour und Ricardo fuhr uns wieder für 80 Soles durch die Berge.</p>
 
 <h2 id="chinchero">Chinchero</h2>
 
 <p>Der erste Stopp war das 24km entfernte <a href="https://goo.gl/maps/KWzJzj2HNZq">Chinchero</a>. Hier haben die Inkas wieder Terrassen in die Berge gehauen. Zusätzlich haben die Spanier noch eine Kirche oben drauf gebaut. Die Terrassen erstreckten sich über mehrere Ecken des Berges, umgeben von anderen Bergen, an denen an diesem Tag Regenwolken vorbeizogen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_094055.jpg" 
@@ -596,6 +678,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_094112.jpg" 
@@ -612,6 +771,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_101540.jpg" 
@@ -628,10 +864,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="moray">Moray</h2>
 
 <p>Die nächste Fahrt ging rund 18km weiter in den Nordwesten. <a href="https://goo.gl/maps/ArPpsa9TWcC2">Moray</a> ist dabei nicht wieder nur eine Inka-Terrassen-Anlage. Die gesamte historische Anlage ist schon beeindruckend, denn hier wurden die Terrassen auf dem Berg in teilweise 70m tiefe Karsttrichter eingearbeitet. Durch diese bemerkenswerte Architektur ergeben sich verschiedene Mikroklimas, weswegen man annimmt, dass die Inkas Moray als Art Forschungslabor für Agrarprodukte genutzt haben. Man spürte auch diese Klimas, denn teilweise bewegte sich kein Lüftchen und es war heiß, obwohl auf den nächstgelegenen Berggipfeln Schnee lag.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_115435.jpg" 
@@ -648,6 +961,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_120048.jpg" 
@@ -664,6 +1054,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_121411.jpg" 
@@ -680,10 +1147,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="maras-salzminen">Maras Salzminen</h2>
 
 <p>Nach dem Besuch von Moray fuhren wir die auf dem Weg liegenden <a href="https://goo.gl/maps/1MDkXWFUbXU2">Salzminen von Maras</a> an. Diese hatten nichts mit dem Ticket und Inkas zu tun und kosteten 10 Soles pro Person zusätzlich Eintritt. Auch die Salzminen waren beeidruckend. Schließlich fuhr man von einem Plateau eine Schlucht hinab, entlang derer sich terrassenartig Salzpfannen befanden. Und es waren nicht nur ein paar Salzpfannen, nein, Salzpfannen so weit das Auge reichte. Hier konnte man Einheimische beobachten, wie sie das Salz &ldquo;ernteten&rdquo;, welches durch die Hitze der Sonne in den Salzpfannen übrig blieb.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_135316.jpg" 
@@ -700,6 +1244,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_135740.jpg" 
@@ -716,6 +1337,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181208_140326.jpg" 
@@ -732,9 +1430,31 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Hast du Interesse an den anderen Touren rund um Cusco, dann findest du sie <a href="/tags/cusco">hier</a>!</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -894,9 +1614,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

@@ -21,6 +21,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -112,7 +113,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -125,7 +126,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -194,9 +195,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -217,6 +215,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -386,6 +387,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -489,11 +494,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -513,11 +518,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -549,9 +554,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 20. Dec 2018</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 7 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 20. Dec 2018</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 7 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/peru">peru</a>, <a href="https://blog.networkchallenge.de/tags/cusco">cusco</a>, <a href="https://blog.networkchallenge.de/tags/alpaka">alpaka</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/peru/">peru</a>, <a href="https://blog.networkchallenge.de/tags/cusco/">cusco</a>, <a href="https://blog.networkchallenge.de/tags/alpaka/">alpaka</a>
 </div> 
     
 </div>
@@ -574,12 +579,89 @@ amp-web-push-widget button.subscribe {
         <div class="content relative">
           
           <article>
-          <p>Sage und schreibe 17 Nächte verbrachten wir in Cusco. Allerdings muss man ein klein wenig relativieren, denn davon verbrachten wir eine Nacht auswärts, während unserer Tour zum <a href="https://blog.networkchallenge.de/post/rtw-machu-picchu/">Machu Picchu</a>. Generell hatten wir davon zu dritt mit Thomas nur vier Tage. Nach dem Stress mit ständigem Aufstehen von 6 Uhr und der Weiterfahrt am nächsten Tag wollten wir uns noch ein paar mehr Tage Entschleunigung gönnen. Mit dem Ergebnis, dass wir nach unserer AirBnB-Wohnung noch eine weitere Unterkunft per booking.com buchten und diese dann schrittweise weiter verlängerten, weil Cusco einfach traumhaft war.</p>
+          
+
+<p>Sage und schreibe 17 Nächte verbrachten wir in Cusco. Allerdings muss man ein klein wenig relativieren, denn davon verbrachten wir eine Nacht auswärts, während unserer Tour zum <a href="https://blog.networkchallenge.de/post/rtw-machu-picchu/">Machu Picchu</a>. Generell hatten wir davon zu dritt mit Thomas nur vier Tage. Nach dem Stress mit ständigem Aufstehen von 6 Uhr und der Weiterfahrt am nächsten Tag wollten wir uns noch ein paar mehr Tage Entschleunigung gönnen. Mit dem Ergebnis, dass wir nach unserer AirBnB-Wohnung noch eine weitere Unterkunft per booking.com buchten und diese dann schrittweise weiter verlängerten, weil Cusco einfach traumhaft war.</p>
 
 <h2 id="historische-altstadt-und-san-blas">Historische Altstadt und <em>San Blas</em></h2>
 
 <p>Cusco ist nicht umsonst in der Liste der <a href="https://de.wikipedia.org/wiki/Liste_des_UNESCO-Welterbes_in_Amerika">UNESCO-Welterbestätten</a> aufgeführt. Die ehemalige Inkahauptstadt ist geprägt von Inkaruinen und Kolonialbauten bzw. einer Mischung aus beidem, koloniale Gebäude auf alten Inkamauern. Dazu kommt noch das Künstlerviertel <em>San Blas</em>, welches stark geprägt von kleinen Häusern ist. Aber genauso wie in der Altstadt besteht <em>San Blas</em> aus vielen sehr schmalen Gassen und vielen Treppen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_115451-EFFECTS.jpg" 
@@ -596,6 +678,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_120455.jpg" 
@@ -612,6 +771,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_121023.jpg" 
@@ -628,6 +864,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_121212.jpg" 
@@ -644,6 +957,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_122525.jpg" 
@@ -660,8 +1050,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Vor allem in der Altstadt reihen sich eine Kirche an die andere, befinden sich unzählige Museen oder laden Plätze zum Verweilen ein.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_123258-01.jpeg" 
@@ -678,6 +1145,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_124356-01.jpeg" 
@@ -694,6 +1238,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181129_111948.jpg" 
@@ -710,8 +1331,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Zum Stadtbild gehören auch die verschiedenen Mercados, wie hier der Mercado de San Pedro.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_161318.jpg" 
@@ -728,8 +1426,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Ein toller Blick bietet sich einem auch bei Nacht, wenn im Hintergrund die Lichter auf den Hügeln leuchten wie eine Weihnachtsbaumbeleuchtung.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181128_202459.jpg" 
@@ -746,6 +1521,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181203_205646.jpg" 
@@ -762,8 +1614,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der <em>Plaza de Armas</em> ist dabei Zentrum für Touristen als auch Einheimische. An einem Tag gab es auch eine Polizeiparade, bei der alle verschiedene Spezialeinheiten der örtlichen Polizei aufliefen. Neben den Mitarbeitern des <em>CSI</em> (keine Ahnung wie das hier heißt) traten auch die Polizeitaucher in kompletter Montur, bestehend aus Neoprenanzug und Atemgerät, auf. Auch die Scharfschützen einer Spezialeinheit traten komplett &ldquo;verkleidet&rdquo; als Chewbacca, dem Wookie aus Star Wars auf.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_120402.jpg" 
@@ -780,6 +1709,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_123328.jpg" 
@@ -796,8 +1802,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Bewegte man sich abseits von den üblichen, touristischen Pfaden erlebte man das typisch peruanische Straßenleben. Überall wurde direkt von einem Handwagen etwas zu Essen oder zu Trinken verkauft.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_132728.jpg" 
@@ -814,6 +1897,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_132951.jpg" 
@@ -830,6 +1990,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_133142.jpg" 
@@ -846,8 +2083,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Zum Straßenbild gehörten aber auch viele Oldtimer, wie VW Käfer. So viele wie hier haben wir noch nie gesehen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181203_192059.jpg" 
@@ -864,10 +2178,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="museen">Museen</h2>
 
 <p>Wir sind nicht so die (Indoor-)Museumsfreunde. Trotzdem haben wir es uns nicht nehmen lassen, ein wenig für das historische Wissen zu tun, und haben ein paar Museen besucht. Dazu gehörte das <a href="https://goo.gl/maps/VuhEyTRV1Pu">Coricancha</a>, eine alte Inkaruine auf deren Mauern die Spanier im 17. Jahrhundert nach der Zerstörung durch ein Erdbeben ein Kloster aufbauten. Für meinen Geschmack war hier leider zu wenig zur Inkageschichte zu finden. Ein Großteil war hier mit katholischen Bildnissen ausgestattet.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181129_090109.jpg" 
@@ -884,6 +2275,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181129_090307.jpg" 
@@ -900,6 +2368,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181129_111345.jpg" 
@@ -916,10 +2461,80 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Weiterhin besuchten wir das <a href="https://goo.gl/maps/HPMA7ng2fW12">Museo de Historia Regional</a>, welches viel über die Geschichte der indigenen Bebölkerung erzählte. Hier wird über die Zeiten der Inkas informiert und besonders auf die Rebellion von <a href="https://de.wikipedia.org/wiki/Jos%C3%A9_Gabriel_Condorcanqui">Tupaq Amaru II.</a> eingegangen, der als Vorbild der Rebellion gegen die spanischen Besatzer gilt.</p>
 
 <p>Zusätzlich besuchten wir noch das <a href="https://goo.gl/maps/bjHA63MvBw72">Monumento Inca Pachacutec</a>, welches die Geschichte des Inkaherrschers <a href="https://de.wikipedia.org/wiki/Pachac%C3%BAtec_Yupanqui">Pachacutec</a> darstellt. Dieser hatte im 15. Jahrhundert das Inkareich bedeutend erweitert und modernisiert.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+        
+    
 <div style="max-width: 2100px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181207_144557.jpg" 
@@ -936,8 +2551,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Die letzten beiden Museen waren Teil des <a href="https://www.cuscoperu.com/en/useful-information/touristic-tickets/cusco-touristic-ticket">Cusco Touristic Tickets</a>, darin sind 16 Attraktionen enthalten, Museen und archeologische Anlagen. Zu letzteren werde ich noch etwas <a href="/tags/cusco/">eigenes</a> schreiben. Das Cusco Touristic Ticket kostet nur 130 Soles (weniger als 33€) und erlaubt den einmaligen Eintritt innerhalb von 10 Tagen. Wenn man sich auf weniger Attraktionen einschränken kann, dann kostet es auch weniger, allerdings waren für uns die verfügbaren Kombinationen nicht attraktiv genug.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181205_100124.jpg" 
@@ -954,6 +2646,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181205_102713.jpg" 
@@ -970,10 +2739,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="kulinarisches">Kulinarisches</h2>
 
 <p>Für uns wäre ein Aufenthalt unvollkommen, wenn es nicht etwas kulinarisches zu berichten gäbe. Wir hätten uns in Cusco auch nicht so wohl gefühlt, hätte es mit dem Essen auch nicht so gut gepasst. Wir haben in den nunmehr über 6 Wochen unserer Reise eigentlich sehr viel mitgenommen, von lokalen Gerichten vom Markt für 2€ über selbstgemachtes Ceviche bis zu hochpreisigem, aber leckerem Lobster. Cusco war aber kulinarisch ein echtes Highlight. Als erstes muss daher das <a href="https://goo.gl/maps/riUU7Fnhfw72">Green Point</a> erwähnt werden. Wir hatten es erst nach Thomas&rsquo; Abreise entdeckt und dann waren wir plötzlich jeden Tag dort. Das Green Point ist ein veganes Restaurant und somit überhaupt nicht peruanisch, aber mit den lokalen Zutaten ist es trotzdem irgendwie peruanisch, oder nicht? Auf alle Fälle gab es hier so tolle vegane Gerichte, dass man nie auf die Idee kam, Fleisch oder auch nur Milchprodukte zu vermissen. Besonders hervorzuheben sind dabei der Grillsalat, das Phad Thai (wirklich eins der besten, die wir je gegessen haben), die Grillplatte oder das Mousse au Chocolat (auf Avocadobasis). Einfach köstlich! Neben dem Essen waren auch die Preise spitze. Neben den eher normalpreisigen Hauptspeisen für rund 30 Soles gab es auch ein Mittagsmenü für 18 Soles, darin enthalten war ein Teller vom Salatbuffet, eine Vor-, Haupt- und Nachspeise - für 4,25€!</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_203902.jpg" 
@@ -990,8 +2836,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Gleich gegenüber gab es die <a href="https://www.tripadvisor.de/Restaurant_Review-g294314-d14257957-Reviews-Qura_Bowl_Bar-Cusco_Cusco_Region.html?m=19905">Qura Bowl Bar</a>. Hier waren wir oft frühstücken, gab es doch hier eine nette Auswahl an kalten Bowls, leckeren belegten Broten und auch ein leckeres Quinoa Tabulé.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_103006.jpg" 
@@ -1008,6 +2931,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Nur ein paar hundert Meter weiter und etwas den Berg hinauf gab es das <a href="https://goo.gl/maps/uatZsqa2ZY42">Siete y Siete Café</a> wo man eine wunderbare Aussicht über Cusco genießen konnte. Hier waren die Gerichte besonders günstig. So gab es Quinoa-Salat und andere Hauptspeisen für knapp 10 Soles.</p>
 
 <p>Allen drei Restaurant gemein war die Tatsache, dass sie über überdurchschnittlich gutes WiFi verfügten. Vor allem im <em>Siete y Siete</em> lies es sich gut mit Laptop &ldquo;arbeiten&rdquo;.</p>
@@ -1016,6 +2941,74 @@ amp-web-push-widget button.subscribe {
 
 <p>Um den Plaza de Armas herum gab es auch unzählige Restaurants, die um Besucher buhlten. Alle waren überteuert und sprachen uns von der Atmosphäre überhaupt nicht an. Wenige Meter vom Plaza de Armas entfernt waren wir einmal im <a href="https://goo.gl/maps/h2Ag9uNXFkF2">Museo del Cafe</a>, welches, wie der Name schon sagt, im schönen alten Gebäude auch ein kleines Kaffeemuseum eingerichtet hatte. Man konnte auch noch auf kleinen Balkons mit Blick in Richtung Plaza de Armas sitzen und seine Getränke genießen. Unter anderem hatten wir hier leckeren Glühwein und eine leckere Häppchenplatte mit Forelle und Alpaka!</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+        
+    
 <div style="max-width: 2100px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_154335.jpg" 
@@ -1032,6 +3025,76 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+        
+    
 <div style="max-width: 2100px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_154441.jpg" 
@@ -1048,6 +3111,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181204_154923.jpg" 
@@ -1064,8 +3204,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Als kleines, ruhiges aber doch zentrales Café kann das <a href="https://goo.gl/maps/Va8SkX5A5Tu">Café Perla</a> empfohlen werden. Es ist direkt neben dem Museum Coricancha gelegen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181129_102248.jpg" 
@@ -1082,11 +3299,33 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="fazit">Fazit</h2>
 
 <p>In der Summe ist Cusco für mich eine wunderbar vielseitige Stadt gewesen, die bezüglich Vielfalt und dem Preis-/Leistungsverhältnis für mich solch coole Städte wie Lissabon oder Barcelona übertrifft. Natürlich ohne Meer, aber dafür mit anderen Qualitäten. Nimmt man zusätzlich noch die Übernachtungskosten von unter 20€ pro Nacht für 2 Personen und auch die Internetanbindung, dann ist Cusco in meinen Augen ein toller Ort für digitale Nomaden in Südamerika.</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -1246,9 +3485,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

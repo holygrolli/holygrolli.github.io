@@ -23,6 +23,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -114,7 +115,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -127,7 +128,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -196,9 +197,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -219,6 +217,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -388,6 +389,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -491,11 +496,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -515,11 +520,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -551,9 +556,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 2. Apr 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 4 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 2. Apr 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 4 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/neuseeland">neuseeland</a>, <a href="https://blog.networkchallenge.de/tags/catlins">catlins</a>, <a href="https://blog.networkchallenge.de/tags/sunset">sunset</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/neuseeland/">neuseeland</a>, <a href="https://blog.networkchallenge.de/tags/catlins/">catlins</a>, <a href="https://blog.networkchallenge.de/tags/sunset/">sunset</a>
 </div> 
     
 </div>
@@ -580,6 +585,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Die erste größere Attraktion auf der Liste für die Catlins ist der <a href="https://goo.gl/maps/R5Q9uJrZ1qj">Nugget Point</a>, wo ein Leuchtturm vor ein paar Felsenbrocken (Nuggets) steht. Der Leuchtturm war jetzt nicht der Rede wert. Das Panorama der Küste war dafür um einiges besser!</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190323_130331-01.jpeg" 
@@ -596,12 +676,89 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Eine weitere Attraktion der Catlins ist <a href="https://goo.gl/maps/1MqCVebinS42">Jack&rsquo;s Blowhole</a>, ein riesiges Loch, welches 200 Meter von der eigentlichen Küste entfernt ist und an dessen Boden die Wellen vom Meer eintreffen. So etwas lässt sich meiner Meinung nach nicht eindrucksvoll mit (meiner Handy-)Kamera einfangen, weshalb ich hier auf Bilder verzichte. Ich fand es jetzt nicht so &ldquo;awesome&rdquo;, wie es der typische Amerikanisch-Englische Tourist beschreiben würde.</p>
 
 <p>Da man in den Catlins nicht wirklich (kostenlos) frei campen kann, haben wir uns für die Nacht für 32 NZD einen Platz im <a href="https://goo.gl/maps/24aapNUFtyM2">Kuramea Holiday Park</a> besorgt. Es war recht einfach ausgestattet, aber bei dem Preis kann man nicht klagen!</p>
 
 <p>Am nächsten Morgen ging es weiter zum <a href="https://goo.gl/maps/uGaTGQqVXGq">Curio Bay Holiday Park</a>, da die Bewertungen bei <em>CamperMate</em> Kommentare enthielten, dass man hier mit Glück mit Delfinen schwimmen kann. Die Übernachtung haben wir noch am Vorabend über die Website gebucht: 35 NZD für Premium Sea View ohne Strom. Auf dem Weg dorthin gab es immer wieder einzelne Naturschutzgebiete und Aussichtspunkte.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190324_113344.jpg" 
@@ -618,8 +775,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Als wir dann gegen Mittag ankamen, gab es erst einmal Frühstück/Mittagessen auf unserem Premiumplatz mit Meerblick und in der Tat war das schon Premium:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190324_134820.jpg" 
@@ -636,8 +870,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Aber das Beste kam noch, denn unsere Hoffnungen auf Delfine wurden erfüllt! (Hier passt &ldquo;awesome&rdquo;!) Der Campingplatz liegt direkt auf einer Landzunge, die die <em>Curio Bay</em> von der <em>Porpoise Bay</em> trennt. Vom Campervan hatten wir Blick auf die rauhe <em>Curio Bay</em>, aber die Delfine befanden sich nur einige hundert Meter entfernt in der <em>Porpoise Bay</em>. Hier schwammen sie in kleinen Gruppen teilweise zwischen Surfern und Badegästen. Dabei konnte man immer wieder sehen, wie die Delfine selbst die Wellen entlang surften. Leider ist das auf dem Foto nur mit gekonntem Blick zu erkennen:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190325_121803_1_BURST001_COVER.jpg" 
@@ -654,8 +965,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Glücklicherweise haben wir die Delfine später auch noch einmal beim Herumtollen gesehen, wo man sie auf dem Foto besser erkennen kann:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190325_120226_001_COVER-01.jpeg" 
@@ -672,20 +1060,97 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Dass die Delfine aber wirklich direkt neben uns geschwommen sind sieht man am besten auf einem Video, welches unter Qual, da die Wassertemperaturen hier unten vorsichtig gesagt &ldquo;anstrengend&rdquo; sind:</p>
 
-<p><amp-instagram
+<amp-instagram
     data-shortcode="BvsY3q3hpnh"
     data-captioned
     width="400"
     height="400"
     layout="responsive">
-</amp-instagram></p>
+</amp-instagram>
 
 <p>Bei den Delfinen handelt es sich übrigens um sogenannte <em>Hector</em>-Delfine, die kleinste Delfinart der Welt und in geringer Zahl nur heimisch in Neuseeland.</p>
 
 <p>Wir hatten uns noch dazu entschieden, um eine weitere Nacht zu verlängern, um so oft wie möglich die Delfine sehen zu können. Dafür hatten wir am zweiten Abend noch einen wunderbaren Sonnenuntergang:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190325_195342.jpeg" 
@@ -702,8 +1167,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>In den Catlins liegt auch noch der südlichste Punkt der Südinsel, der sogenannte <a href="https://goo.gl/maps/j7KHkTPuYJK2">Slope Point</a>. Definitiv nichts atemberaubendes, vor allem dann nicht, wenn man in Feuerland schon näher an der Antarktis war.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190326_154124.jpg" 
@@ -720,10 +1262,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Zum Schluss stand noch das <a href="https://goo.gl/maps/RyrkQiaGju52">Waipapa Point Lighthouse</a> auf dem Programm, aber auch das ist nichts, weshalb man die Catlins besuchen müsste.</p>
 
 <p>Die größte Stadt im Süden ist <em>Invercargill</em>, welche leider auch kein Freedom Camping ermöglicht. Deshalb entschlossen wir uns vorher noch einen Stopp einzulegen, auf dem kostenlosen Campingplatz von <a href="https://goo.gl/maps/WUyrMUevMiC2">Fortrose</a>. Hier gab es viel Parkfläche und das Meer (eine Bucht) direkt vor der Nase. Belohnt wurden wir mit einem Sonnenuntergang, der alle rötlichen Facetten ausreizte.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190326_195418.jpg" 
@@ -740,6 +1359,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190326_200040.jpg" 
@@ -756,9 +1452,31 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Am nächsten Tag planten wir die Weiterfahrt in Richtung <em>Milford Sound</em>. Dazu <a href="/post/rtw-milford-sound/">später mehr</a>. Zusammenfassend muss ich feststellen, dass sich <em>Curio Bay</em> definitiv lohnt. Hier sollte man zwei Tage einplanen, in der Hoffnung, die Hector-Delfine sehen zu können. Wenn man noch mehr Glück hat, kann man sogar von einem Aussichtspunkt Pinguine sehen, das war aber zu unserer Zeit (Ende März) sehr unwahrscheinlich.</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -918,9 +1636,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

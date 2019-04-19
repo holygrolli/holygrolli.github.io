@@ -21,6 +21,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -112,7 +113,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -125,7 +126,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -194,9 +195,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -217,6 +215,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -386,6 +387,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -489,11 +494,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -513,11 +518,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -549,9 +554,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 10. Apr 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 5 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 10. Apr 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 5 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/milford-sound">milford sound</a>, <a href="https://blog.networkchallenge.de/tags/neuseeland">neuseeland</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/milford-sound/">milford sound</a>, <a href="https://blog.networkchallenge.de/tags/neuseeland/">neuseeland</a>
 </div> 
     
 </div>
@@ -578,6 +583,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Nach der Übernachtung ging es dann weiter zum fast 200 km entfernten <em>Milford Sound</em>. Die letzte Stadt vorher ist <em>Te Anau</em> und nachdem man sie passiert hat gibt es auch keinen Handyempfang mehr. Auf dem weiteren Weg sollte man unbedingt an den <a href="https://goo.gl/maps/j5Fer5wBEfS2">Mirror Lakes</a> stoppen. Diese ermöglichen schöne Spiegelmotive der Berge im Hintergrund.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190328_121741.jpg" 
@@ -594,6 +674,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190328_122426.jpg" 
@@ -610,6 +767,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190328_122530.jpg" 
@@ -626,8 +860,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Entlang der Straße nach Milford Sound fuhren wir vorbei an Wäldern genauso wie an weiten, goldenen Wiesen und Flussläufen mit großen Binsen (wenn ich es richtig klassifiziert habe).</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190328_132239.jpg" 
@@ -644,8 +955,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Nicht weit vor Milford Sound kommt noch ein Parkplatz zur &ldquo;Kluft&rdquo;, in Englisch <a href="https://goo.gl/maps/TPFW2mM2zfo">The Chasm</a>. Hier läuft man einen kurzen Fußmarsch durch üppigen Regenwald bis man tatsächlich auf einer Brücke über einem Abgrund steht, der von Wassermassen über die Jahrtausende ausgewaschen wurde.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190328_140244-01.jpeg" 
@@ -662,6 +1050,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190328_140918.jpg" 
@@ -678,10 +1143,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>In Milford Sound angekommen entschieden wir uns am frühen Nachmittag bei dem einzigen kommerziellen Campingplatz <a href="https://goo.gl/maps/yCECTnScm5F2">Milford Sound Lodge</a> spontan nach einem Stellplatz zu fragen. Da der letzte günstige DOC-Campingplatz ungefähr 45 Fahrminuten wieder entfernt von Milford Sound lag, hielten wir es für praktisch, direkt hier zu übernachten, da wir am nächsten Morgen um 9 Uhr schon wieder hätten hier sein müssen. Glücklicherweise gab es einen Stellplatz, leider mit 60NZD doch recht teuer. Allerdings gab es dafür Strom und Wasser und wirklich moderne, saubere Sanitäranlagen. Eine große Gemeinschaftsküche und sogar eine entspannte Lounge in einem Holzhaus mitten im Wald. Daher kann ich das für eine Übernachtung ruhigen Gewissens empfehlen.</p>
 
 <p>Abends liefen wir von hier noch zum Sonnenuntergang zum Milford Sound und konnten einige Fotos machen während wir von Sandfliegen attackiert wurden. Vom <a href="https://goo.gl/maps/WiczFAVmZUu">Milford Sound Lookout</a> hatte man eine gute Sicht auf das gesamte Fjord und auch auf die ersten großen Wasserfälle, den <em>Bowen Falls</em>.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190328_181126.jpg" 
@@ -698,8 +1240,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Am nächsten Morgen hatten wir für 9 Uhr bei <a href="https://goo.gl/maps/37VCAH7SXmq">Rosco&rsquo;s Milford Kayaks</a> die Tour &ldquo;Stirling Sunriser&rdquo; gebucht. Zuerst wurden wir komplett mit Kayak-Kleidung ausgestattet, so dass wir nicht das Wasser und die Kälte fürchten mussten. Dann ging es mit einem anderen Zweier-Team und einem Guide raus aufs Wasser. Ein Boot brachte uns raus bis hinter die <a href="https://goo.gl/maps/8bhdGzJWgvx">Stirling Falls</a>. Von hier ging es knapp 12 km mit dem Kayak zurück zur Basis. Dabei waren wir wirklich sehr entspannt unterwegs. Dafür dass es die zweitschwerste Tour im Angebot war, war es sehr entspannt. Bei schlechtem Wetter und Gegenwind kann es natürlich ganz anders aussehen. So hatten wir viel Zeit immer wieder Fotos zu machen und auch insgesamt zweimal durch den Wassernebel der Stirling Falls zu paddeln. Theoretisch hätten wir direkt unter die Wasserfälle paddeln können, aber selbst die 10 Meter vorher war es schon so nass, dass es sich wie eine Dusche mit gleichzeitigem Gebläse anfühlte. Durch das glücklicherweise wunderbare Wetter konnten wir wieder viele Fotos machen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190329_095618.jpg" 
@@ -716,6 +1335,76 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+        
+    
 <div style="max-width: 2100px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190329_110154.jpg" 
@@ -732,6 +1421,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190329_122515.jpg" 
@@ -748,18 +1514,97 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Die Tour von Rosco war bei diesem Wetter also eine optimale Möglichkeit, Milford Sound aus einer anderen Perspektive zu sehen. Die Standardtouren erfolgen immer in einem mehr oder weniger großen Boot, was bis oben bepackt mit Touristen die einzelnen Stationen am Milford Sound abklappert. Unsere Tour mit insgesamt drei Kayaks war da schon um einiges individueller. Dafür hatte diese Tour natürlich ihren Preis, pro Person 179NZD. Bei der Buchung hatte ich immer wieder Bedenken, dass das typisch für Neuseeland einfach teuer ist. Betrachtet man aber den Gegenwert in Form einer so kleinen und individuellen Tour, dem Bootstransport, der kompletten Ausrüstung und natürlich die Betreuung durch einen Guide, dann ist der Preis schon verständlich. Das Team vor Ort betonte auch immer wieder, dass Rosco&rsquo;s der einzig verbliebene, inhabergeführte Kayakanbieter ist.</p>
 
 <p>Die Tourdaten habe ich natürlich getrackt:</p>
 
-<p><amp-iframe width="auto" height="500"
+
+<amp-iframe width="auto" height="500"
             layout="fixed-height"
             sandbox="allow-scripts allow-same-origin"
             src="https://connect.garmin.com/modern/activity/embed/3507954857">
-</amp-iframe></p>
+</amp-iframe>
+
 
 <p>Als wir dann mit leichten Schwielen an den Händen am Nachmittag zurück am Auto waren, entschieden wir uns kurzfristig, doch noch die Nacht hier verbringen zu wollen. Leider war aber diesmal (zum Wochenende) kein Stellplatz mehr zur Verfügung. So ging es wieder zurück in Richtung Te Anau. Dabei bekamen wir noch einmal die Möglichkeit, die Landschaft aus der anderen Richtung zu bewundern.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190329_154311.jpg" 
@@ -776,8 +1621,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Unser Stopp für die Nacht sollte der wunderbare DOC Campingplatz <a href="https://goo.gl/maps/XdPdqp55xin">Cascade Creek</a> sein, den wir auch schon für die Anreise geplant hatten. Ein riesiger Platz entlang eines Baches inmitten der Berge. Hier gab es am kommenden Morgen bei wunderbarer Sonne wieder ein paar Fotomotive.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190330_093833-02.jpeg" 
@@ -794,6 +1716,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190330_095614.jpg" 
@@ -810,6 +1809,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190330_100538.jpg" 
@@ -826,9 +1902,31 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Nach der Übernachtung ging es dann weiter zurück nach Te Anau, was ich in einem weiteren Beitrag schreiben werde.</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -988,9 +2086,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

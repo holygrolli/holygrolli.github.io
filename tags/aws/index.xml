@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/aws/</link>
+    <description>Recent content in Aws on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2018</copyright>
+    <lastBuildDate>Fri, 19 Apr 2019 20:50:00 +1200</lastBuildDate>
+    
+	<atom:link href="https://blog.networkchallenge.de/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Cloud Run ausprobiert</title>
+      <link>https://blog.networkchallenge.de/post/google-cloud-run-ausprobiert/</link>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/google-cloud-run-ausprobiert/</guid>
+      <description>Abstract Ich befasse mich mit einem Java-Microservice, welches bei Google Cloud Run deployed wird und betrachte es als Alternative zu AWS Lambda. Dabei gehe ich auch auf das Thema Kaltstartzeit der Container ein und befasse mich in diesem Kontext auch mit den Vorteilen der GraalVM.
+Google Cloud Next 2019 Dieses Jahr hat Google auf der eigenen Cloud-Messe Cloud Next wieder einige interessante Dinge vorgestellt, darunter Google Cloud Run. Cloud Run ermöglicht den Betrieb von Containern als HTTP-Endpunkte nur für die Zeit eines Requests.</description>
+    </item>
+    
+  </channel>
+</rss>

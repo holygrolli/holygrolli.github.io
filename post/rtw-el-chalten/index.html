@@ -23,6 +23,7 @@
         <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -114,7 +115,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -127,7 +128,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -196,9 +197,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -219,6 +217,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -388,6 +389,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -491,11 +496,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -515,11 +520,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -551,9 +556,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 13. Feb 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 5 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 13. Feb 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 5 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/el-chalten">el chalten</a>, <a href="https://blog.networkchallenge.de/tags/patagonien">patagonien</a>, <a href="https://blog.networkchallenge.de/tags/argentinien">argentinien</a>, <a href="https://blog.networkchallenge.de/tags/drohne">drohne</a>, <a href="https://blog.networkchallenge.de/tags/mavic">mavic</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/el-chalten/">el chalten</a>, <a href="https://blog.networkchallenge.de/tags/patagonien/">patagonien</a>, <a href="https://blog.networkchallenge.de/tags/argentinien/">argentinien</a>, <a href="https://blog.networkchallenge.de/tags/drohne/">drohne</a>, <a href="https://blog.networkchallenge.de/tags/mavic/">mavic</a>
 </div> 
     
 </div>
@@ -576,7 +581,9 @@ amp-web-push-widget button.subscribe {
         <div class="content relative">
           
           <article>
-          <p>Nach unseren zwei Nächten in <a href="/post/rtw-el-calafate/">El Calafate</a> ging es am späten Nachmittag in Richtung <em>El Chaltén</em> ebenso in Argentinien. El Chaltén wurde erst 1985, also in der jüngergen Vergangenheit gegründet. Man hätte vermuten können, dass wir auch hier über eine Schotterpiste an das Ziel gelangen würden. Auch peilte Google Maps knapp über 3 Stunden Fahrzeit an. Glücklicherweise wurden wir eines Besseren belehrt und wir brauchten nur 2 Stunden, da die letzte Straße nach der Ruta 40 auch sauber mit Asphalt überzogen war. Google Maps kannte das wohl noch nicht und so reduzierte sich die angezeigte Restzeit je Kilometer dramatisch.</p>
+          
+
+<p>Nach unseren zwei Nächten in <a href="/post/rtw-el-calafate/">El Calafate</a> ging es am späten Nachmittag in Richtung <em>El Chaltén</em> ebenso in Argentinien. El Chaltén wurde erst 1985, also in der jüngergen Vergangenheit gegründet. Man hätte vermuten können, dass wir auch hier über eine Schotterpiste an das Ziel gelangen würden. Auch peilte Google Maps knapp über 3 Stunden Fahrzeit an. Glücklicherweise wurden wir eines Besseren belehrt und wir brauchten nur 2 Stunden, da die letzte Straße nach der Ruta 40 auch sauber mit Asphalt überzogen war. Google Maps kannte das wohl noch nicht und so reduzierte sich die angezeigte Restzeit je Kilometer dramatisch.</p>
 
 <p>In El Chaltén hatten wir einen kleinen Familienbungalow in der Anlage <a href="https://goo.gl/maps/NEudVEAKMWp">Cabañas Cerro Torre</a>, der auch hier wieder etwas besser gepflegt hätte sein können. Die Gasheizung in den Zimmern durfte von uns nicht verstellt werden und ballerte die erste Nacht durch. Die einzige Regulationsmöglichkeit war die Bungalowtür und das kleine Badezimmerfenster, alle anderen Fenster waren nicht zu öffnen.</p>
 
@@ -584,6 +591,81 @@ amp-web-push-widget button.subscribe {
 
 <p>El Chaltén versprüht genauso wie auch El Calafate einen Charme einer amerikanischen Kleinstadt in den Bergen. Breite Straßen, Holzhütten und eine Menge kleiner, individueller Restaurants und Cafés, die sich gegen Nachmittag mit Wanderern füllten, wie beim Après-Ski nur mit argentinischem Wein statt Jagertee.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190131_115646.jpg" 
@@ -600,10 +682,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="tag-1">Tag 1</h2>
 
 <p>Für den ersten Tag nahmen wir uns den 9km langen Weg zur <a href="https://goo.gl/maps/cxACY72h99t">Laguna Torre</a> vor. Wir hatten schönstes Wetter bestellt und auch bekommen. Knapp 3 Stunden ging es entspannt den Weg entlang über Stock und Stein. Wir haben uns natürlich wieder viel Zeit gelassen, um auch eine Menge Fotos zu machen. Insgesamt waren doch sehr viele Leute unterwegs auf diesem doch bekannten Weg. Das waren wir von unseren kleineren, unbekannteren Treks in Torres del Paine nicht gewohnt. Trotzdem sahen wir &ldquo;wilde&rdquo; Tiere, wie diese Eule, die nur zwei Meter neben dem Weg ungestört auf Augenhöhe saß:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190131_145133.jpg" 
@@ -620,8 +779,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der Lago Torre diente dann vielen als Picknickplatz und dort witterte dann auch ein weiterer Vogel seine Chance auf leckere Häppchen:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190131_152852.jpg" 
@@ -638,8 +874,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der Ausblick über den See auf einen weiteren Gletscher lud auch wieder zum Entspannen ein.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190131_153640-01.jpeg" 
@@ -656,13 +969,17 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der Rückweg ging wieder etwas schneller vonstatten, da es nicht mehr so viele Fotostopps gab. Insgesamt haben wir an diesem Tag fast 20km hinter uns gebracht. Ein stolzer Wert, wenn man bedenkt, dass wir so selten wandern.</p>
 
-<p><amp-iframe width="auto" height="500"
+
+<amp-iframe width="auto" height="500"
             layout="fixed-height"
             sandbox="allow-scripts allow-same-origin"
             src="https://connect.garmin.com/modern/activity/embed/3346350722">
-</amp-iframe></p>
+</amp-iframe>
+
 
 <p>Nach ungefähr 7,5km in Richtung des Lago Torre gab es auch eine kleine Brücke mit einfachen Zugang zu einem Bach. Im Nationalpark gilt das Wasser als unbedenklich. Da man auch nicht so viel Wasser mitschleppen will, haben wir diese Option natürlich genutzt (und zur Sicherheit trotzdem mit dem UV-Filter behandelt). Meinen Beitrag für die digitale Gemeinschaft habe ich mit dem Kennzeichnen einer <a href="https://www.openstreetmap.org/node/6250551530">Frischwasserquelle</a> bei OpenStreetmap geleistet.</p>
 
@@ -670,6 +987,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Am darauffolgenden Tag nutzten wir das Auto und fuhren zum 30 Minuten entfernten Startpunkt außerhalb des Parks bei <em>El Pilar</em>. Wir wanderten knapp über 4km vom Parkplatz zur <em>Laguna Piedras Blancas</em>, welche man über das Flusstal sehen konnte und natürlich auch einen Teil eines Gletschers bot.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190201_150424.jpg" 
@@ -686,6 +1078,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190201_134255.jpg" 
@@ -702,14 +1171,93 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
-<p><amp-iframe width="auto" height="500"
+
+
+
+<amp-iframe width="auto" height="500"
             layout="fixed-height"
             sandbox="allow-scripts allow-same-origin"
             src="https://connect.garmin.com/modern/activity/embed/3348981811">
-</amp-iframe></p>
+</amp-iframe>
+
 
 <p>Ursprünglich hatten wir die Option ins Auge gefasst zum <em>Lago de los Tres</em> zu laufen. Die weiteren 5km wären aber mehr Qual als Freude gewesen. Da der Tag auch wunderbar warm war gingen wir zurück und ließen uns entspannt zum Picknick neben dem Flußufer nieder.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190201_120247.jpg" 
@@ -726,15 +1274,92 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Ursprünglich hatten wir uns schon einmal im Wald niedergelassen, nur wurden wir dort von einer Menge haariger Raupen vertrieben, die sich permanent von den Bäumen vielen ließen und auch auf uns zukrochen. Leider konnte ich keine weiteren Informationen außer dieses Youtube-Video finden:</p>
 
-<p><amp-youtube
+<amp-youtube
     data-videoid="KYeF37SPncE"
     layout="responsive"
-    width="480" height="270"></amp-youtube></p>
+    width="480" height="270"></amp-youtube>
 
 <p>Als es dann an Tag 96 unserer Weltreise an das Packen ging, hatten wir ein paar Weinflaschen geleert, obwohl wir eigentlich sonst nicht so viel Wein trinken. Aber zur Verteidigung: eine Dreiviertelflasche Weißwein ging für das Risotto drauf.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190202_094220.jpg" 
@@ -751,8 +1376,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Vor der Abreise aus El Chalten fuhren wir noch einmal in Richtung El Pilar, denn da man dort außerhalb des Nationalparks war, konnte man hier die Drohne fliegen. Dabei sind für meinen Geschmack wieder sehr schöne Bilder entstanden.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/rtw-DJI_0143-HDR.jpeg" 
@@ -769,6 +1471,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/rtw-DJI_0129-HDR.jpeg" 
@@ -785,6 +1564,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/rtw-DJI_0141-HDR.jpeg" 
@@ -801,15 +1657,92 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Zu guter Letzt noch ein kurzes Helixvideo mit der Mavic Pro:</p>
 
-<p><amp-youtube
+<amp-youtube
     data-videoid="YXhZTmxNwOs"
     layout="responsive"
-    width="480" height="270"></amp-youtube></p>
+    width="480" height="270"></amp-youtube>
 
 <p>Auf dem Rückweg entschieden wir uns noch, den kleinen Wasserfall <a href="https://goo.gl/maps/5ftRnWWNkvo">Chorillo del Salto</a> zu besuchen. Dieser lag auf dem Rückweg kurz vor El Chaltén und war nach 500m zu Fuß zu erreichen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190202_112021-01.jpeg" 
@@ -826,6 +1759,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Danach ging es dann <a href="/post/rtw-nach-feuerland/">weiter</a> in den Südosten in Richtung Atlantikküste.</p>
 
 <h2 id="fazit">Fazit</h2>
@@ -833,6 +1768,26 @@ amp-web-push-widget button.subscribe {
 <p>Zusammenfassend ist El Chaltén ein sehr schöner Ort fürs Wandern. Wenn das Wetter passt und man fit ist sind auch 20km an einem Tag kein Problem. Das tolle ist, dass man direkt an der Unterkunft loslaufen kann und dann viele der Orte in einem Tagesmarsch erreichen kann. Auch die Möglichkeit des Campings tief im Park ermöglicht es einem, noch weiter in die Landschaft vorzudringen. Für Wanderer mit viel Zeit sicher ein Paradies. Positiv zu erwähnen ist auch, dass El Chaltén, welches direkt im Nationalpark liegt, keine Eintrittsgebühren verlangt. Der Park ist für Low-Budget-Reisende also zu empfehlen.</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -992,9 +1947,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

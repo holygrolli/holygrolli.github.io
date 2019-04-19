@@ -21,6 +21,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -112,7 +113,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -125,7 +126,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -194,9 +195,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -217,6 +215,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -386,6 +387,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -489,11 +494,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -513,11 +518,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -549,9 +554,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 2. Apr 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 5 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 2. Apr 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 5 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/neuseeland">neuseeland</a>, <a href="https://blog.networkchallenge.de/tags/ostk%C3%BCste">ostküste</a>, <a href="https://blog.networkchallenge.de/tags/s%C3%BCdinsel">südinsel</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/neuseeland/">neuseeland</a>, <a href="https://blog.networkchallenge.de/tags/ostk%C3%BCste/">ostküste</a>, <a href="https://blog.networkchallenge.de/tags/s%C3%BCdinsel/">südinsel</a>
 </div> 
     
 </div>
@@ -578,6 +583,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Nach unserer <a href="/post/rtw-ueber-osten-nach-auckland/">Rückfahrt nach Auckland</a> ging es am Abend mit dem Flugzeug und Air New Zealand nach Christchurch. Dabei konnten wir einen wunderbaren Sonnenuntergang über den Wolken sehen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190312_195945.jpg" 
@@ -594,6 +674,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Wir hatten zur Übernachtung das <a href="https://goo.gl/maps/mAfTgdPK7At">Jucy Snooze Hotel</a> direkt am Flughafen ausgwählt. Dies war das günstigste Hotel am Flughafen und mit Gepäck nur 15 Minuten zu Fuß vom Terminal entfernt. Da wir für unseren Campervan am nächsten Tag vom Flughafen abgeholt werden sollten war es kein Problem, uns direkt von der Unterkunft abzuholen.</p>
 
 <p>Am nächsten Morgen wurden wir pünktlich abgeholt und zur wenige Kilometer entfernten Verleihstation gebracht. Dort durften wir uns ein Einklärvideo auf Englisch anschauen, in dem es darum ging immer Links zu fahren, wie man das Gas für das Kochen oder die Heizung anschaltet oder die Campingtoilette leert. Das ganze war sehr allgemein gehalten und wich natürlich von unserem Campervan erheblich ab. Aber so etwas muss wahrscheinlich aus versicherungstechnischen Gründen gemacht werden. Am Ende haben wir noch einmal eine Schnelleinführung für alles am Auto bekommen. Nach der Einführung schmissen wir unser gesamtes Gepäck hinten ins Auto und ab ging es. Leider handelte es sich aber bei dem Auto nicht mehr um eine Automatikschaltung, so dass direkt die ersten Kilometer die Anstrengung groß war, das riesige Auto beim Schalten (vor allem in Kreisverkehren) in der Spur zu halten.</p>
@@ -602,6 +684,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Am <a href="https://goo.gl/maps/shTnC27Uv7C2">Patiti Point</a> angekommen parkten wir unser Auto mit schönen Blick auf das Wasser und dem Rauschen der Wellen im Hintergrund. Hier gab es dann unser erstes Camping-Gericht, einen selbstgemachten Griechischen Salat mit Baguette.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190313_162246-01.jpeg" 
@@ -618,12 +775,89 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Da der nächste Tag etwas verregnet war und wir auch noch ein wenig die nächste Zeit planen wollten, entschieden wir uns, einfach eine weitere Nacht hier zu verbringen und beim Aufwachen wieder auf das Meer schauen zu können. Nach der zweiten Nacht und der Aussicht, dass es weiter zu Regenschauern kommen könnte, entschieden wir uns knapp 80 km südlich in <em>Oamaru</em> einen Campingplatz anzusteuern, der wenige hundert Meter entfernt von einer Pinguinkolonie sein sollte.</p>
 
 <p>Am <a href="https://goo.gl/maps/fSfynvWkupH2">Harbour Tourist Park</a> angekommen mussten wir uns erst einmal mit den Gepflogenheiten auf einem Campingplatz vertraut machen und was technisch am Campervan zu tun ist. Am Ende war es ganz einfach: Auto auf dem zugewiesenen Parkplatz parken, Stromkabel im Gepäck suchen und am Parkplatz und am Auto in die vorgesehenen Buchsen stecken. Komplizierter war es eher am Tag der Abreise, wenn der Frischwassertank und der Abwassertank geleert werden müssen. Das Befüllen hat wohl aufgrund von schlechtem Wasserdruck ewig gedauert und am Ende kam Frischwasser überall am Fahrzeugboden herausgelaufen (Überlauf?). Das Ablassen des Abwassers wird auch von dem Problem begleitet, dass das Auto eigentlich leicht gekippt stehen müsste, um den Tank restlos zu entleeren. So hatten wir dauernd das Problem, dass die Füllstandsanzeige oft noch <sup>1</sup>&frasl;<sub>3</sub> anzeigte, obwohl kein Wasser mehr herausfloss.</p>
 
 <p>Den Stopp in Oamaru haben wir auch für einen kleinen Stadtbummel genutzt, da es hier eine ganz schicke Altstadt mit altenglischen Fabriken gibt, die zu Shops oder Galerien umgebaut wurden.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190315_164738.jpg" 
@@ -640,6 +874,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190315_165606.jpg" 
@@ -656,10 +967,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>In der Innenstadt waren wir noch bei <em>Farmers</em>, einer Art Kaufhaus. In der Kinderabteilung waren gerade die Bodyboards für das Wellenreiten gesenkt. Katrin machte ein Megaschnäppchen, indem sie ein auf 12 NZD gesenktes Bodyboard mit einem stilsicheren Mini-Maus-Motiv kaufte! 😎</p>
 
 <p>Am Abend gingen wir dann im strömenden Regen in Richtung der <a href="https://goo.gl/maps/nP9FAkBPRmL2">Oamaru Blue Penguin Colony</a>, wo bei Sonnenuntergang die Pinguine vorbeilaufen sollten. Da wir keinen Eintritt bezahlen wollten standen wir wie viele andere draußen in der Bucht und warteten &hellip; und warteten. Bis auf ein altes Pier mit Massen Kormoranen (die man auch für Pinguine halten kann) war nur ein Verkehrsschild zu sehen, dass auf Pinguine hindeutete.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190316_103328.jpg" 
@@ -676,6 +1064,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190316_103620.jpg" 
@@ -692,10 +1157,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Nach diesem Abenteuer ging es weiter in Richtung Süden in die Gegend um <em>Dunedin</em>. Hier verbrachten wir die folgenden 7 Nächte auf insgesamt drei verschiedenen Parkplätzen, da man hier auf den schönen Plätzen nur zwei aufeinanderfolgende Nächte stehen durfte. Zwei Nächte zu Beginn auf dem <a href="https://goo.gl/maps/wgbio86nRxD2">Ocean View Recreation Reserve</a>, zwei Nächte auf dem öffentlichen Parkplatz vor dem <a href="https://goo.gl/maps/52JbvUFU3Ev">Brighton Surf Live Saving Club</a> und zwei Nächte auf <a href="https://goo.gl/maps/qoVb5emR9RJ2">Warrington Domain</a>. Auf dem Weg von Warrington in den Süden hielten wir dann noch einmal eine Nacht in Brighton, um ausgeschlafen weiter nach Süden zu fahren.</p>
 
 <p>Alle Plätze waren einfach wunderbar: kostenlos, saubere Toiletten, direkt am Wasser (Brighton) oder nur einen Katzensprung entfernt, lange Sandstrände. Hier konnte man kilometerweit den Strand entlangspazieren oder joggen und einfach den Tag genießen. In Ocean View und Warrington waren die Wellen auch immer vorhanden, um mit Katrin&rsquo;s Bodyboard zu surfen. Ich schiebe es einmal auf die Kindergröße des Bretts, dass es bei Katrin viel leichter klappt als bei mir, aber ich hatte auch meine Erfolge &hellip; 😇</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190318_074334-01.jpeg" 
@@ -712,6 +1254,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190318_175343-01.jpeg" 
@@ -728,8 +1347,78 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>An einem Tag war am Strand von Warrington ein Meer von &ldquo;Glibbereiern&rdquo;(?). Eine Google-Bildersuche brachte mehrere Ergebnisse, aber eine Seestachelbeere könnte es sein. Was mich aber ein wenig wundert ist das kleine, blaue &ldquo;Spermium&rdquo; im Inneren.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+        
+    
 <div style="max-width: 2100px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190320_174252.jpg" 
@@ -746,9 +1435,31 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Die 7 Nächte vergingen wie im Flug, aber es war sehr entspannend. Am nunmehr 145. Tag unserer Weltreise ging es dann weiter in Richtung der Region <em>Catlins</em>, die ich <a href="/post/rtw-catlins-neuseeland/">separat</a> noch beschreiben werde. Der 145. Tag bedeutet auch, dass wir am 21. März 2019 den 143. Tag und somit Halbzeit unserer Weltreise feierten. Die Zeit rennt!</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -908,9 +1619,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

@@ -25,6 +25,7 @@
         <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -116,7 +117,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -129,7 +130,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -198,9 +199,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -221,6 +219,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -388,6 +389,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -491,11 +496,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -515,11 +520,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -551,9 +556,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 29. Nov 2018</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 6 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 29. Nov 2018</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 6 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/galapagos">galapagos</a>, <a href="https://blog.networkchallenge.de/tags/ecuador">ecuador</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/galapagos/">galapagos</a>, <a href="https://blog.networkchallenge.de/tags/ecuador/">ecuador</a>
 </div> 
     
 </div>
@@ -576,7 +581,9 @@ amp-web-push-widget button.subscribe {
         <div class="content relative">
           
           <article>
-          <p>Die Insel Santa Cruz ist die wohl touristischste Insel aller Galapagosinseln. In der &ldquo;Haupstadt&rdquo; Puerto Ayora findet sich ein Tourenanbieter neben dem anderen. Es ergeben sich hier Möglichkeiten für Mehrtagestouren zu anderen Inseln oder auch Inselumfahrungen auf mehr oder weniger luxuriösen Booten. Alle versprechen natürlich, die ultimative Vielfalt an Tieren (Hammerhaie, Delfine, Pinguine &hellip;). Wir haben uns letztendlich für zwei Eintagestouren entschieden, da wir unsere Unterkunft schon bezahlt hatten.</p>
+          
+
+<p>Die Insel Santa Cruz ist die wohl touristischste Insel aller Galapagosinseln. In der &ldquo;Haupstadt&rdquo; Puerto Ayora findet sich ein Tourenanbieter neben dem anderen. Es ergeben sich hier Möglichkeiten für Mehrtagestouren zu anderen Inseln oder auch Inselumfahrungen auf mehr oder weniger luxuriösen Booten. Alle versprechen natürlich, die ultimative Vielfalt an Tieren (Hammerhaie, Delfine, Pinguine &hellip;). Wir haben uns letztendlich für zwei Eintagestouren entschieden, da wir unsere Unterkunft schon bezahlt hatten.</p>
 
 <h2 id="bootstour-zu-daphne-und-pinzón">Bootstour zu Daphne und Pinzón</h2>
 
@@ -586,6 +593,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Als wir dann für 30 bis 40 Minuten im Wasser waren war es dann tatsächlich auch die letzten zehn Minuten unangenehm kalt. Aber die vielen Tiere im Wasser konnten von der Kälte ablenken. Am Boden konnten wir direkt Weißspitzenriffhaie sehen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/GOPR4113.JPG" 
@@ -602,10 +684,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Neben den vielen Fischen gab es auch Seelöwen zu bewundern, die in sicherer Distanz auf den Felsen lagen.</p>
 
 <p>Nach dem Stopp ging es für über eine Stunde weiter zur Insel <em>Pinzón</em>. Dort ging es wieder ins Wasser. Geführt vom Guide schnorchelten wir an der Steinküste entlang bis in eine kleine Bucht. Dort war das Wasser keine 2m tief, allerdings war dadurch auch die Sicht wesentlich schlechter. Zu bewundern gab es auch hier Meeresschildkröten und zahlreiche Fische.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/GOPR4155.JPG" 
@@ -622,6 +781,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/GOPR4147.JPG" 
@@ -638,6 +874,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/GOPR4135.JPG" 
@@ -654,8 +967,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der Guide hatte uns dann auch an einer Stelle eine Gruppe kleiner Weißspitzenriffhaie gezeigt, die völlig unbeeindruckt von uns im Flachwasser schlummerten. Wir konnten diese aus knapp 1 bis 2 Metern Entfernung &ldquo;hautnah&rdquo; erleben.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/G0184187_1541967634257_high.jpg" 
@@ -672,6 +1062,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Am Interessantesten war dann aber ein Seelöwe, der aufgeregt in der Bucht von einem Strand zum anderen hin und her schwamm und dabei laut brüllte. Für ihn war es auch völlig normal, zwischen den Schnorchlern hindurchzuschwimmen, was uns dann auch in die Lage versetzte, bis auf wenige Meter an ihn heranzukommen und mit ihm zu schwimmen.</p>
 
 <p>Nach dem Wasserspaziergang gab es auf dem Boot auch einen Mittagssnack, natürlich Reis mit Hähnchen.</p>
@@ -682,15 +1074,90 @@ amp-web-push-widget button.subscribe {
 
 <p>Da dies der interessanteste Schnorchelausflug war kam auch &ldquo;ein wenig&rdquo; Videomaterial zusammen.</p>
 
-<p><amp-youtube
+<amp-youtube
     data-videoid="_Aniu99rZqg"
     layout="responsive"
-    width="480" height="270"></amp-youtube></p>
+    width="480" height="270"></amp-youtube>
 
 <h2 id="isla-seymour-norte">Isla Seymour Norte</h2>
 
 <p>Der zweite Tagesausflug war zur Insel <em>North Seymour</em>. Hier wurden wir mit einem Shuttlebus von der Unterkunft abgeholt, um auch wieder zum Hafen im Norden transportiert zu werden. Dort ging es diesmal auf ein größeres Schiff mit 14 anderen Touristen. Die Insel wird als Vogelparadies angepriesen und in der Tat konnten wir bei dem einstündigen Landgang Unmengen Vögel sehen. Die meisten Vögel waren die Fregattenvögel, deren Männchen einen roten Beutel an ihrem Hals aufblähen können, um natürlich die Weibchen zu beeindrucken. Jetzt im November ist meines Wissens nach zwar nicht die Hauptbrutzeit, aber wir sahen einige Jungvögel mit ihrem gerupften Gefieder.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_105353-01.jpeg" 
@@ -707,6 +1174,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_121555.jpg" 
@@ -723,6 +1267,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_113017.jpg" 
@@ -739,6 +1360,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_111401.jpg" 
@@ -755,6 +1453,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_110054.jpg" 
@@ -771,6 +1546,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_104633.jpg" 
@@ -787,8 +1639,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Als weitere Besonderheit gelten die Blaufußtölpel, ich würde sie jetzt als eine Art Möwe mit blauen Füßen bezeichnen. Von denen hat man dort allerdings nicht wie erhofft Unmengen, sondern nur eine Hand voll gesehen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_120320.jpg" 
@@ -805,8 +1734,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Neben den Vögeln gab es noch eine Vielzahl an Leguanen, die sich auf der Insel abseits der Menschen frei entwickeln können.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_110639.jpg" 
@@ -823,6 +1829,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20181112_104434.jpg" 
@@ -839,8 +1922,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Nach dem Ausflug auf die Insel gab es auf dem Boot gebratenes Fischfilet mit Reis. Danach fuhr das Boot wieder zurück nach Santa Cruz und zum dortigen Strand <em>Las Bachas</em> für eine Strandwanderung und Schnorcheltrip. An Land gingen wir mit unserem Guide zu einer kleinen Lagune und konnten ein paar wenige Flamingos sehen. Auf dem Weg zur Lagune, an einem bestimmten Strandabschnitt, wieß der Guide noch darauf hin, dass sich hier an dieser Stelle Stachelrochen im Wasser befinden. Diese haben wir nur aus sicherer Distanz als dunkle Flecken im Wasser gesehen. Der darauf folgende Schnorchelausflug in einer &ldquo;sicheren&rdquo; Bucht brachte leider keine Besonderheiten zu Tage, da das Wasser größtenteils sehr trüb war. Wie so oft sahen wir aber trotzdem teilweise riesige Papageienfische.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/G0284445.JPG" 
@@ -857,6 +2017,8 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Nach dem Stopp ging es dann zurück in den Hafen von Baltra, womit die Tagestour ein Ende fand. Am Ende waren es $165 pro Person, die angeblich auf Grund der hohen Nachfrage und der teureren Schiffsklasse zustande kamen.</p>
 
 <h2 id="fazit">Fazit</h2>
@@ -871,15 +2033,35 @@ amp-web-push-widget button.subscribe {
 
 <p>Nichtsdestotrotz sollte man mindestens einmal auf Santa Cruz die Tortuga Bay besuchen, da man dort kostenlos bzw. für wenig Geld mit Kayak den Tieren sehr nah sein kann. Zusätzlich hatten wir auf der North Seymour-Tour noch zwei Engländer kennengelernt. Jenny postet immer wieder auf Instagram ihre tollen Bilder und dort habe ich auch festgestellt, dass wir auf Santa Cruz einen Ausflug in den <em>Bellavista Cloud Forest</em> hätten machen müssen, da man dort unfassbar vielen Kolibris unglaublich nah sein kann, wie dieses Foto zeigt.</p>
 
-<p><amp-instagram
+<amp-instagram
     data-shortcode="BqqPgzTF1AN"
     data-captioned
     width="400"
     height="400"
     layout="responsive">
-</amp-instagram></p>
+</amp-instagram>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -1039,9 +2221,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>

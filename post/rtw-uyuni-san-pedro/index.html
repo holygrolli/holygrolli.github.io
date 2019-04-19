@@ -21,6 +21,7 @@
         <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         
         
+        
 
         <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
         <script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
@@ -112,7 +113,7 @@ a:focus, a:hover {
     color: #0085A1;
 }
 
-article p a, .consentPopup a {
+article:not([class='post-preview']) a, .consentPopup a {
     text-decoration: underline;
 }
 
@@ -125,7 +126,7 @@ hr {
 hr.small {
     max-width: 100px;
     margin: 15px auto;
-	border-color: #fff;
+	border-color: #eeeeee;
 	border-width: 4px;
 }
 
@@ -194,9 +195,6 @@ article figcaption {
 
 @media (min-width:64.06rem)
 {
-    .avatar {
-        max-width: 190px;
-    }
     .contentwrapper {
         padding-right: 340px;
         overflow: hidden;
@@ -217,6 +215,9 @@ article figcaption {
     }
     .intro-header .page-heading,.intro-header .post-heading,.intro-header .site-heading{padding:150px 0}.intro-header .page-heading h1,.intro-header .site-heading h1{font-size:80px}.intro-header .page-heading .title,.intro-header .site-heading .title{margin: 0}
 }
+.avatar {
+        max-width: 190px;
+    }
 
 .pagination {
   display: inline-block;
@@ -386,6 +387,10 @@ amp-web-push-widget button.subscribe {
         margin-right: auto;
     }
 
+    article table { width: 100%; border-collapse: collapse;font-size: 75%; margin-bottom: 20px;}
+    article table td {border: 1px solid gray; padding: 0px 5px 0px 5px;}
+    article table tr:nth-child(even) {background: #CCC}
+    article table tr:nth-child(odd) {background: #FFF}
 </style>
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
         
@@ -489,11 +494,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset right m0 p0 flex justify-center nowrap">
               
               <li class="ampstart-nav-item ">
-                  <a href="/rtw" class="text-decoration-none block">Weltreise</a>
+                  <a href="/rtw/" class="text-decoration-none block">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item ">
-                  <a href="/about" class="text-decoration-none block">Über</a>
+                  <a href="/about/" class="text-decoration-none block">Über</a>
               </li>
               
               <li class="ampstart-nav-item ">
@@ -513,11 +518,11 @@ amp-web-push-widget button.subscribe {
           <ul class="list-reset m0 p0 ampstart-label">
               
               <li class="ampstart-nav-item">
-                  <a href="/rtw">Weltreise</a>
+                  <a href="/rtw/">Weltreise</a>
               </li>
               
               <li class="ampstart-nav-item">
-                  <a href="/about">Über</a>
+                  <a href="/about/">Über</a>
               </li>
               
               <li class="ampstart-nav-item">
@@ -549,9 +554,9 @@ amp-web-push-widget button.subscribe {
  <br>
             
     </div>
-    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 15. Jan 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 6 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise">reise</a></div>
+    <div class="col mr2"><i class="fa fa-calendar" aria-hidden="true"></i> 15. Jan 2019</div><div class="col mr2"><i class="fa fa-clock-o" aria-hidden="true"></i> ca. 6 Minuten</div><div class="col mr2"><i class="fa fa-folder-o" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/categories/reise/">reise</a></div>
 
-    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw">rtw</a>, <a href="https://blog.networkchallenge.de/tags/bolivien">bolivien</a>, <a href="https://blog.networkchallenge.de/tags/uyuni">uyuni</a>, <a href="https://blog.networkchallenge.de/tags/sanpedro">sanpedro</a>
+    <div class="col mr2"><i class="fa fa-tags" aria-hidden="true"></i> <a href="https://blog.networkchallenge.de/tags/rtw/">rtw</a>, <a href="https://blog.networkchallenge.de/tags/bolivien/">bolivien</a>, <a href="https://blog.networkchallenge.de/tags/uyuni/">uyuni</a>, <a href="https://blog.networkchallenge.de/tags/sanpedro/">sanpedro</a>
 </div> 
     
 </div>
@@ -574,7 +579,9 @@ amp-web-push-widget button.subscribe {
         <div class="content relative">
           
           <article>
-          <p>Nachdem ich in <a href="/post/rtw-salar-de-uyuni/">Teil 1</a> über die größte Salzwüste der Welt und den finanziellen Teil der Tour berichtet habe geht es nun weiter in den Süden von Bolivien.</p>
+          
+
+<p>Nachdem ich in <a href="/post/rtw-salar-de-uyuni/">Teil 1</a> über die größte Salzwüste der Welt und den finanziellen Teil der Tour berichtet habe geht es nun weiter in den Süden von Bolivien.</p>
 
 <h2 id="uyuni-eisenbahnfriedhof">Uyuni Eisenbahnfriedhof</h2>
 
@@ -582,6 +589,81 @@ amp-web-push-widget button.subscribe {
 
 <p>Hier befinden sich auf alten Gleisen abgestellte Lokomotiven aus der goldenen Zeit des Bergbaus. In den 1940er Jahren brach aber das Bergbaugeschäft so stark zusammen, dass für die vielen Eisenbahnen keine Verwendung mehr bestand. Das Ergebnis ist ein Eisenbahnfriedhof in der Wüste vor den Toren von Uyuni.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_092416.jpg" 
@@ -598,6 +680,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/DJI_1546781394000.jpg" 
@@ -614,10 +773,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <h2 id="reserva-nacional-de-fauna-andina-eduardo-avaroa">Reserva Nacional de Fauna Andina Eduardo Avaroa</h2>
 
 <p>Nach dem kurzen Stopp ging es weiter in den Südwesten. Grobes Ziel war der Nationalpark <em>Reserva Nacional de Fauna Andina Eduardo Avaroa</em>. Auf dem Weg dahin sollten wir mehrere Lagunen mit Flamingos sehen, den bolivianische Hochebene durchqueren und aktive Vulkane sehen. Wirklich gewußt haben wir aber nicht, was auf uns zukam. Nicht weit nach Uyuni wurde die sandige Hauptstraße in die Berge immer staubiger und mehr zu einem Feldweg.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_124740.jpg" 
@@ -634,8 +870,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Die Fotostopps umfassten dabei immer wieder anders aussehende Felsen sowohl im Vordergrund, wie auch ständig wechselnde Berge in der Ferne.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_130737.jpg" 
@@ -652,8 +965,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Die meisten der Lagunen unterwegs waren stark salzhaltig. Daran störten sich die Flamingos aber überhaupt nicht. Hier die ersten Flamingos, die wir auf der Hochebene in der <em>Laguna Hedionda</em> zu Gesicht bekamen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_153601.jpg" 
@@ -670,8 +1060,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Hier gab es auch eine kleine, abgeschiedene Übernachtungsmöglichkeit. Dazu gehörte auch ein Internethäuschen, angebunden über Satellit, als exklusive Einrichtung.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_154134.jpg" 
@@ -688,8 +1155,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Je weiter wir in den Süden vordrungen, umso weniger Straße war die Straße hier. Google Maps verzeichnet hier nur noch einen grauen Weg. Openstreetmap hat tatsächlich eine Straße, die eine ausgebaute Straße vermuten lässt, aber die Realität war nicht einmal ein Feldweg:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_161741.jpg" 
@@ -706,8 +1250,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Hier fragte man sich wirklich, wie unser Fahrer Marco hier navigieren konnte. Aber als lokaler Experte hatte er keine Probleme. Noch weniger Probleme machte die &ldquo;Straße&rdquo; seinem Toyota Land Cruiser, der butterweich mit 60 bis 80 km/h über die Piste glitt. Interessant wurde es immer dann, wenn mehrere Spuren parallel gingen. Hier sucht sich jeder Fahrer einfach die für ihn passende Spur aus.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_171415.jpg" 
@@ -724,8 +1345,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Kurz vor dem Ende des Tages hielten wir noch an dem <a href="https://goo.gl/maps/2JU39skBiBp">Rock Tree</a>, einem Stein, der gut vom Wind bearbeitet wurde. Marco zur Folge wurden alle umliegenden Steine durch einen Vulkanausbruch hingespuckt.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_171806.jpg" 
@@ -742,8 +1440,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Der letzte Stopp nach dieser holprigen Fahrt war die <a href="https://goo.gl/maps/eWTPqQkjVT32">Laguna Colorada</a>, mit 60 km² die größte Lagune im Nationalpark und Heimat vieler tausender Flamingos. Diese ernähren sich von den rotgefärbten Algen hier im See, die der Lagune auch den Namen gaben.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190106_175348.jpg" 
@@ -760,10 +1535,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Die Lagune ist auch der Punkt an dem die Eintrittsgebühr für den Park in Höhe von 150 Bolivianos fällig wird, dieser war im Tourpreis nicht enthalten. Danach ging es dann nur noch wenige Minuten weiter zu unserer Unterkunft. Am See gibt es mehrere Camps, in denen man übernachten kann. Überraschenderweise war die Unterkunft erstaunlich wohnlich. Ein großes Haus mit Zimmern mit eigenem Bad, angrenzend an einen großen Essensraum. Das gesamte Gebäude war gut beheizt, so dass die nächtlichen Außentemperaturen knapp oberhalb vom Gefrierpunkt kein Problem waren. Abends gab es auch circa 2 Stunden Strom für die Steckdose und für das Licht im Zimmer. Mehr als ich tatsächlich erwartet habe, aber wahrscheinlich ein Privilig, welches wir uns mit dem höheren Tourpreis erkauft hatten.</p>
 
 <p>Am nächsten Tag hatten wir durch unsere individuelle Touranpassung bis kurz nach dem Mittag Zeit. Nach dem Frühstück ging es noch einmal zu anderen Seite der Laguna Colorado. Die Sonne stand so gut, dass wir die schöne Reflexion des Berges im Wasser erleben konnten.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190107_081453-01.jpeg" 
@@ -780,6 +1632,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190107_081931.jpg" 
@@ -796,8 +1725,78 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Hätten wir eine Standardtour gehabt, hätten wir dafür keine Zeit gehabt und wären schon fast an der Grenze gewesen. Von der Laguna ging es weiter Richtung Grenze zu Chile und damit auch weiter in Richtung der Berge, die die beiden Länder trennen. Entlang der Grenze zwischen Bolivien und Chile ist nahezu jeder große Berg ein Vulkan, einfach unvorstellbar. Hier stellten wir auch unseren ultimativen Höhenrekord auf: knapp über 5000m Höhe:</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+        
+    
 <div style="max-width: 2100px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190107_093914.jpg" 
@@ -814,8 +1813,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>In kurzer Entfernung war noch der Geysir <em>Sol de la Manana</em>. Der aktive Vulkan drückt hier ständig mächtige Gase nach draußen. Das war nichts für schwache Nasen.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190107_095535.jpg" 
@@ -832,6 +1908,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190107_100258.jpg" 
@@ -848,6 +2001,83 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190107_100323.jpg" 
@@ -864,8 +2094,85 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Marco, unser unglaublicher Fahrer, hatte auch hier noch die Idee für ein witziges Fotomotiv.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190107_100531.jpg" 
@@ -882,10 +2189,87 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Kurz vor der chilenischen Grenze und somit vor dem Ende Nationalparks kamen wir noch direkt an den beiden Seen <em>Laguna Verde</em> und <em>Laguna Blanca</em> vorbei. Im Gegensatz zur Laguna Blanca ist das Wasser in der Laguna Verde für Menschen giftig, kein Ort zum Baden.</p>
 
 <p>Pünktlich um 13 Uhr setzte uns Marco an der Grenze ab. Diese bestand nur aus zwei winzigen Häuschen mitten in der Pampa. Keine sichtbare Grenze weit und breit. Leider hatte der Grenzposten Mittagspause, aber dies war überhaupt kein Problem. Ein paar nette Worte von Marco und die beiden Grenzer kassierten von uns noch die Ausreisegebühr von 15 Bolivianos pro Person. Mit ein paar netten Worten verabschiedeten uns die bei beiden Grenzbeamten und wir mussten auch Marco verabschieden. Er hatte sich die letzten drei Tage wunderbar um uns gekümmert und war um keinen Witz verlegen. Eine wunderbare Zeit und wirklich jeden Cent wert, den die Tour gekostet hat.</p>
 
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+        
+            
+                
+            
+        
+    
+        
+            
+                
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+    
+        
+        
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+            
+                
+                    
+                
+                
+            
+        
+    
 <div style="max-width: 3200px;" class="imgwrapper">   
 <figure>
     <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190107_130530.jpg" 
@@ -902,11 +2286,33 @@ amp-web-push-widget button.subscribe {
 </figure>
 </div> 
 
+
+
 <p>Direkt hinter dem Grenzhäuschen und der imaginären Grenze wartete schon unsere nächste Fahrgelegenheit mit dem Fahrer aus Chile. Plötzlich gab es auch eine echte Straße. Wir fuhren einige Kilometer bis wir an einem Blechkasten ankamen, der an eine Bergstation in den Alpen erinnerte. Dies war das Einreisebüro für Chile. Hier mussten wir auf die Abfertigung warten und das zog sich hin, denn drin standen fünf andere Autos, Teil einer großen Reisegruppe. Als wir dann endlich ebenso einfahren durften, realisierten wir auch, wieso das so alles so lange dauerte. Die Teilnehmer mussten ihr gesamtes Gepäck offenlegen, welches auch die gesamten Nahrungsmittelvorräte umfasste. Für eine Selbstversorgergruppe mit Grills und Dachzelten schon eine Katastrophe. Vor allem weil die chilenischen Grenzer kein Auge zudrückten. Auf der einen Seite kann man den Campern einen Vorwurf machen, sich nicht ordentlich informiert zu haben (vor allem im Fall einer langen Machete), aber ich finde, dass Chile es ein wenig übertreibt. Hier wird an einer Landesgrenze totale Abgrenzung betrieben, dass ja kein bolivianisches Pflanzenprodukt nach Chile einreist. Auf meine Frage an unseren Fahrer, was passiert, wenn ein wildes Tier den <em>illegalen</em> Grenzübertritt wagt gab es nur Schulterzucken.</p>
 
 <p>Nach der kompletten Durchsuchung unserer Gepäcks waren wir vergleichsweise schnell wieder draußen und offiziell in Chile eingereist. Nun ging es von über 4000 Metern eine halbe Stunde nur noch bergab nach San Pedro de Atacama, runter auf 2500 Meter und unsere drei Tage Abenteuer fernab der Zivilisation waren plötzlich beendet.</p>
 
           </article>
+
+          <hr>
+          <amp-ad media="(min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              layout="fixed-height"
+              height="280"
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="9740719223">
+          </amp-ad>
+          <amp-ad media="not all and (min-width:64.06rem)"
+              data-block-on-consent="_till_accepted"
+              width="100vw" height=320
+              type="adsense"
+              data-ad-client="ca-pub-4404883883603593"
+              data-ad-slot="7221177726"
+              data-auto-format="rspv"
+              data-full-width>
+              <div overflow></div>
+          </amp-ad>
           
         </div>
             <div class="sidebar relative">
@@ -1066,9 +2472,9 @@ amp-web-push-widget button.subscribe {
                         
                       </ul>
                       <p class="center ampstart-small-text">
-                        <a href="https://blog.networkchallenge.de/impressum" title="Impressum">Impressum</a>
-                        <br><a href="https://blog.networkchallenge.de/privacypolicy" title="Datenschutzerklärung">Datenschutzerklärung</a>
-                        <br>Copyright © <a href="https://blog.networkchallenge.de/about ">Andreas Groll</a> 2019</p>
+                        <a href="https://blog.networkchallenge.de/impressum/" title="Impressum">Impressum</a>
+                        <br><a href="https://blog.networkchallenge.de/privacypolicy/" title="Datenschutzerklärung">Datenschutzerklärung</a>
+                        <br>Copyright © <a href="https://blog.networkchallenge.de/about/ ">Andreas Groll</a> 2019</p>
                     </div>
             </div>
         </footer>
