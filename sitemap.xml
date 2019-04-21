@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/rtw-tasman-district-neuseeland/</loc>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/google-cloud-run-ausprobiert/</loc>
     <lastmod>2019-04-19T20:50:00+12:00</lastmod>
   </url>
@@ -368,6 +373,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/abel-tasman/</loc>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/categories/allgemein/</loc>
     <lastmod>2019-01-08T12:48:47-03:00</lastmod>
     <priority>0</priority>
@@ -453,13 +464,19 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/chile/</loc>
     <lastmod>2019-02-18T21:37:39+13:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/collingwood/</loc>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -644,6 +661,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/motueka/</loc>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/mount-cook/</loc>
     <lastmod>2019-04-15T16:00:00+12:00</lastmod>
     <priority>0</priority>
@@ -711,7 +734,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -735,7 +758,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/reise/</loc>
-    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -753,7 +776,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-04-18T16:00:00+12:00</lastmod>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -795,7 +818,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/</loc>
-    <lastmod>2018-12-24T15:31:33-04:00</lastmod>
+    <lastmod>2019-04-21T20:31:51+12:00</lastmod>
     <priority>0</priority>
   </url>
   
