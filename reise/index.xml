@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reisen on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/reise/</link>
+    <description>Recent content in Reisen on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2018</copyright>
+    <lastBuildDate>Sun, 28 Apr 2019 15:00:00 +0930</lastBuildDate>
+    
+	<atom:link href="https://blog.networkchallenge.de/reise/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

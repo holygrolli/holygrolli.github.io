@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/reise/land/neuseeland/</loc>
+    <lastmod>2019-04-28T15:00:00+09:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/reise/</loc>
+    <lastmod>2019-04-28T15:00:00+09:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-letzte-station-auckland/</loc>
     <lastmod>2019-04-27T12:48:10+09:30</lastmod>
   </url>
@@ -474,7 +484,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-04-27T12:48:10+09:30</lastmod>
+    <lastmod>2019-04-28T15:00:00+09:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -638,6 +648,11 @@
     <loc>https://blog.networkchallenge.de/tags/lufthansa/</loc>
     <lastmod>2018-10-30T14:55:15+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/reise/land/</loc>
+    <lastmod>2019-04-28T15:00:00+09:30</lastmod>
   </url>
   
   <url>
