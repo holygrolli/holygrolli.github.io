@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Thu, 13 Dec 2018 19:50:11 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 23:14:13 +0930</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/tags/handy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Garmin Benach&amp;shy;richtigungen optimieren</title>
+      <link>https://blog.networkchallenge.de/post/garmin-spielstand-benachrichtigung/</link>
+      <pubDate>Sun, 05 May 2019 23:14:13 +0930</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/garmin-spielstand-benachrichtigung/</guid>
+      <description>Ich bin nun seit Jahren ein Freund der smarten Sportuhren von Garmin. Auch wenn meine letzte Garmin-Uhr letztes Jahr pünktlich nach zwei Jahren den Geist aufgegeben hat, gibt es für mich keine Alternative.
+Eine Sache störte mich aber seit einer Ewigkeit gewaltig: Ich lasse mich von der Google-App über Spielstände im Fußball benachrichtigen, nur leider schneidet Garmin die Benachrichtigungen sehr ungünstig ab, so dass man mindestens immer mit der anderen Hand die Benachrichtung antippen muss, um Details zu erfahren.</description>
+    </item>
     
     <item>
       <title>Microsoft Unternehmens&amp;shy;portal auf Huawei-Telefonen</title>

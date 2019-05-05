@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/post/garmin-spielstand-benachrichtigung/</loc>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/post/rtw-adelaide/</loc>
     <lastmod>2019-05-04T16:45:11+09:30</lastmod>
   </url>
@@ -434,7 +439,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/android/</loc>
-    <lastmod>2018-12-13T19:50:11-05:00</lastmod>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -506,7 +511,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-05-04T16:45:11+09:30</lastmod>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -613,6 +618,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/garmin/</loc>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/gastbeitrag/</loc>
     <lastmod>2019-01-08T12:48:47-03:00</lastmod>
     <priority>0</priority>
@@ -625,6 +636,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/google/</loc>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/graalvm/</loc>
     <lastmod>2019-04-19T20:50:00+12:00</lastmod>
     <priority>0</priority>
@@ -632,7 +649,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/handy/</loc>
-    <lastmod>2018-12-13T19:50:11-05:00</lastmod>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -799,7 +816,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/post/</loc>
-    <lastmod>2019-05-04T16:45:11+09:30</lastmod>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -888,6 +905,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/tasker/</loc>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/te-anau/</loc>
     <lastmod>2019-04-12T17:18:16+12:00</lastmod>
     <priority>0</priority>
@@ -895,7 +918,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/categories/tech/</loc>
-    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -907,7 +930,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/tutorial/</loc>
-    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <lastmod>2019-05-05T23:14:13+09:30</lastmod>
     <priority>0</priority>
   </url>
   
