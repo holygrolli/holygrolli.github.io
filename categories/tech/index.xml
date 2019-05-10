@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Sun, 05 May 2019 23:14:13 +0930</lastBuildDate>
+    <lastBuildDate>Sat, 11 May 2019 00:12:45 +1000</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Garmin inReach Mini im Test</title>
+      <link>https://blog.networkchallenge.de/post/test-garmin-inreach-mini/</link>
+      <pubDate>Sat, 11 May 2019 00:12:45 +1000</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/post/test-garmin-inreach-mini/</guid>
+      <description>Nach meinem Langzeittest mit meiner Alpina Sonnenbrille möchte ich nun etwas zu einem weiteren Stück Ausrüstung auf der Weltreise schreiben. Das Garmin inReach Mini ist ein Satellitenkommunikationsgerät, das überall auf der Welt (unter freiem Himmel) Empfang hat und somit auch ohne Mobilfunknetz auskommt.
+Einsatzzweck Wofür braucht man ein Satellitenkommunikationsgerät? Das ist sicher die erste Frage die einem durch den Kopf schießt, wenn man von seiner Weltreiseausrüstung spricht. Wie eingangs erwähnt funktioniert das Gerät weltweit ohne Mobilfunktnetz.</description>
+    </item>
     
     <item>
       <title>Garmin Benach&amp;shy;richtigungen optimieren</title>
