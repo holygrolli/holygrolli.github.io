@@ -14,40 +14,40 @@
     
     <item>
       <title>Garmin Benach&amp;shy;richtigungen optimieren</title>
-      <link>https://blog.networkchallenge.de/post/garmin-spielstand-benachrichtigung/</link>
+      <link>https://blog.networkchallenge.de/tech/garmin-spielstand-benachrichtigung/</link>
       <pubDate>Sun, 05 May 2019 23:14:13 +0930</pubDate>
       
-      <guid>https://blog.networkchallenge.de/post/garmin-spielstand-benachrichtigung/</guid>
+      <guid>https://blog.networkchallenge.de/tech/garmin-spielstand-benachrichtigung/</guid>
       <description>Ich bin nun seit Jahren ein Freund der smarten Sportuhren von Garmin. Auch wenn meine letzte Garmin-Uhr letztes Jahr pünktlich nach zwei Jahren den Geist aufgegeben hat, gibt es für mich keine Alternative.
 Eine Sache störte mich aber seit einer Ewigkeit gewaltig: Ich lasse mich von der Google-App über Spielstände im Fußball benachrichtigen, nur leider schneidet Garmin die Benachrichtigungen sehr ungünstig ab, so dass man mindestens immer mit der anderen Hand die Benachrichtung antippen muss, um Details zu erfahren.</description>
     </item>
     
     <item>
       <title>Microsoft Unternehmens&amp;shy;portal auf Huawei-Telefonen</title>
-      <link>https://blog.networkchallenge.de/post/unternehmensportal-auf-huawei/</link>
+      <link>https://blog.networkchallenge.de/tech/unternehmensportal-auf-huawei/</link>
       <pubDate>Thu, 13 Dec 2018 19:50:11 -0500</pubDate>
       
-      <guid>https://blog.networkchallenge.de/post/unternehmensportal-auf-huawei/</guid>
+      <guid>https://blog.networkchallenge.de/tech/unternehmensportal-auf-huawei/</guid>
       <description>Mein privates Telefon synchronisierte seit ein paar Tagen keine Mails mehr. Für die Synchronisation müssen alle Geräte explizit den Sicherheitsrichtlinien der Firma entsprechen. Trotz der Erfüllung dieser Anforderungen wollte partout keine Mail mehr synchronisiert werden, vielmehr informierte mich immer wieder eine automatische Mail, dass ich doch das Unternehmensportal (früher Microsoft Intune bzw. Company Portal) installieren soll &amp;hellip; cleverer Tipp&amp;hellip;
 Nach einer kurzen Rücksprache mit den Firmenadmins hat sich herausgestellt, dass die Geräteprofile heimlich auf Android for Work umgestellt wurden, was bedeutete, dass das bisherige Profil meines Geräts einfach nicht mehr funktionieren konnte.</description>
     </item>
     
     <item>
       <title>Kontaktloses Bezahlen mit dem Moto G6</title>
-      <link>https://blog.networkchallenge.de/post/moto_g6_und_glase/</link>
+      <link>https://blog.networkchallenge.de/tech/moto_g6_und_glase/</link>
       <pubDate>Tue, 28 Aug 2018 20:02:00 +0200</pubDate>
       
-      <guid>https://blog.networkchallenge.de/post/moto_g6_und_glase/</guid>
+      <guid>https://blog.networkchallenge.de/tech/moto_g6_und_glase/</guid>
       <description>Völlig überrascht war ich, als ich am Wochenende mal wieder mein &amp;ldquo;neues&amp;rdquo; Motorolola G6 prüfte, ob es endlich Zahlungen mit Glase (ehemals Seqr) leisten kann.
 Dafür nehme ich ein anderes NFC-fähiges Smartphone und teste mit einer gängigen Kreditkartenlese-App, ob Glase endlich eine Kreditkarte simulieren kann. Als ich es damals nach dem Kauf (im Mai) schon getestet hatte, wurde nämlich nicht per NFC eine Mastercard emuliert. Wie meine Recherchen damals ergaben, muss Mastercard jedes Device einzeln zertifizieren.</description>
     </item>
     
     <item>
       <title>Moto G6 - ein kurzer (Foto-) Erfahrungsbericht</title>
-      <link>https://blog.networkchallenge.de/post/moto_g6/</link>
+      <link>https://blog.networkchallenge.de/tech/moto_g6/</link>
       <pubDate>Sun, 27 May 2018 14:52:00 +0200</pubDate>
       
-      <guid>https://blog.networkchallenge.de/post/moto_g6/</guid>
+      <guid>https://blog.networkchallenge.de/tech/moto_g6/</guid>
       <description>Nach über einem Jahr mit meinem Motorola G5 Plus, welches ich schon (erfolgreich) an mehrere Verwandte und Bekannte empfohlen habe, habe ich auf den Erscheinungstermin des Moto G6 in der Special Edition bei Amazon gewartet. Special Edition deshalb, weil die Version mit 4 GB RAM und 64 GB Speicher exklusiv bei Amazon verkauft wird, und das für nur 40 Euro mehr.
 Nüchtern betrachtet muss ich zugeben, dass keines der Features für ein Upgrade sprechen würde, aber im Vergleich zu den Verschlimmbesserungen beim G5s Plus (Phablet-Size) sind diesmal wirklich einige Verbesserungen vorzufinden.</description>
     </item>

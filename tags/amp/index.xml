@@ -14,10 +14,10 @@
     
     <item>
       <title>Umstellung auf AMP</title>
-      <link>https://blog.networkchallenge.de/post/umstellung-auf-amp/</link>
+      <link>https://blog.networkchallenge.de/tech/umstellung-auf-amp/</link>
       <pubDate>Mon, 01 Apr 2019 20:20:40 +1300</pubDate>
       
-      <guid>https://blog.networkchallenge.de/post/umstellung-auf-amp/</guid>
+      <guid>https://blog.networkchallenge.de/tech/umstellung-auf-amp/</guid>
       <description>Die letzten Tage ohne Internet habe ich an einem nun schon Wochen dauernden Projekt verbracht: AMP. AMP steht für Accelerated Mobile Pages und wurde von Google ins Leben gerufen, um das Web schneller zu machen. Die genauen Details dazu erspare ich euch, da man darüber auch geteilter Meinung sein kann.
 Nachdem ich nun Ewigkeiten mit Anpassungen des Designs und der Integration der AMP-Standards verbracht habe, konnte ich nun auch einmal ein paar vorläufige Tests mit den Pagespeed Insights machen.</description>
     </item>

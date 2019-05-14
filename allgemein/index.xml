@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Allgemein on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/allgemein/</link>
+    <description>Recent content in Allgemein on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2018</copyright>
+    <lastBuildDate>Tue, 08 Jan 2019 12:48:47 -0300</lastBuildDate>
+    
+	<atom:link href="https://blog.networkchallenge.de/allgemein/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Der Globale Pakt für sichere, geordnete und reguläre Migration</title>
+      <link>https://blog.networkchallenge.de/allgemein/migrationspakt-was-steckt-dahinter/</link>
+      <pubDate>Tue, 08 Jan 2019 12:48:47 -0300</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/allgemein/migrationspakt-was-steckt-dahinter/</guid>
+      <description>Im neuen Jahr 2019 eröffne ich die Blogrunde mit einer Art Gastbeitrag. Katrin hat sich mit dem unfangreichen Thema des heiß diskutierten Globalen Migrationspakts der Vereinten Nationen beschäftigt. Da das Thema nur schwer in einen Blogbeitrag passt, gibt es hier den Artikel in Form eines PDF-Gastbeitrags.
+In den Medien wurde das Thema leider nicht so ernsthaft diskutiert, wie man es sich eigentlich wünschen würde. Auf den verschiedenen Plattformen gibt es immer wieder sehr unsachliche Beiträge zu diesem Thema.</description>
+    </item>
+    
+    <item>
+      <title>Die Zucchini-Preise</title>
+      <link>https://blog.networkchallenge.de/allgemein/zucchini_preise_im_winter_2017/</link>
+      <pubDate>Tue, 31 Jan 2017 17:00:49 +0100</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/allgemein/zucchini_preise_im_winter_2017/</guid>
+      <description>Mir ist schon letzte Woche im Discounter aufgefallen, dass die Zucchini-Preise unerwartet hoch sind. Dabei habe ich mich gefragt, wie es dazu kommt. Schließlich kostet Fleisch ja weiterhin unverschämt wenig. Und für 5,99 Euro pro Kilo Zucchini bekommt man wahrscheinlich 3 Kilo Hack. Wenn ich dachte, dass der Preis im Discounter schon hoch war, wurde ich beim Supermarkt um die Ecke gleich eines besseren belehrt, dort kostete das Kilo gleich 7,99 Euro.</description>
+    </item>
+    
+    <item>
+      <title>Erster Post und wo ist Wordpress</title>
+      <link>https://blog.networkchallenge.de/allgemein/erster_post/</link>
+      <pubDate>Tue, 17 Jan 2017 20:59:17 +0100</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/allgemein/erster_post/</guid>
+      <description>Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf Blogger gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist.
+Nun starte ich einen neuen Versuch mit metalsmith, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte).</description>
+    </item>
+    
+    <item>
+      <title>Markdown Cheatsheet</title>
+      <link>https://blog.networkchallenge.de/allgemein/markdown_cheatsheet/</link>
+      <pubDate>Thu, 12 Jan 2017 20:59:17 +0100</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/allgemein/markdown_cheatsheet/</guid>
+      <description>Based on Markdown Cheatsheet.
+This is intended as a quick reference and showcase. For more complete info, see John Gruber&amp;rsquo;s original spec and the Github-flavored Markdown info page.
+Note that there is also a Cheatsheet specific to Markdown Here if that&amp;rsquo;s what you&amp;rsquo;re looking for. You can also check out more Markdown tools.
+Table of Contents Headers
+Emphasis
+Lists
+Links
+Images
+Code and Syntax Highlighting
+Tables
+Blockquotes
+Inline HTML</description>
+    </item>
+    
+  </channel>
+</rss>

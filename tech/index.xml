@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tech/</link>
+    <description>Recent content in Tech on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2018</copyright>
+    <lastBuildDate>Sun, 05 May 2019 23:14:13 +0930</lastBuildDate>
+    
+	<atom:link href="https://blog.networkchallenge.de/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Garmin Benach&amp;shy;richtigungen optimieren</title>
+      <link>https://blog.networkchallenge.de/tech/garmin-spielstand-benachrichtigung/</link>
+      <pubDate>Sun, 05 May 2019 23:14:13 +0930</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/garmin-spielstand-benachrichtigung/</guid>
+      <description>Ich bin nun seit Jahren ein Freund der smarten Sportuhren von Garmin. Auch wenn meine letzte Garmin-Uhr letztes Jahr pünktlich nach zwei Jahren den Geist aufgegeben hat, gibt es für mich keine Alternative.
+Eine Sache störte mich aber seit einer Ewigkeit gewaltig: Ich lasse mich von der Google-App über Spielstände im Fußball benachrichtigen, nur leider schneidet Garmin die Benachrichtigungen sehr ungünstig ab, so dass man mindestens immer mit der anderen Hand die Benachrichtung antippen muss, um Details zu erfahren.</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Run ausprobiert</title>
+      <link>https://blog.networkchallenge.de/tech/google-cloud-run-ausprobiert/</link>
+      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/google-cloud-run-ausprobiert/</guid>
+      <description>Abstract Ich befasse mich mit einem Java-Microservice, welches bei Google Cloud Run deployed wird und betrachte es als Alternative zu AWS Lambda. Dabei gehe ich auch auf das Thema Kaltstartzeit der Container ein und befasse mich in diesem Kontext auch mit den Vorteilen der GraalVM.
+Google Cloud Next 2019 Dieses Jahr hat Google auf der eigenen Cloud-Messe Cloud Next wieder einige interessante Dinge vorgestellt, darunter Google Cloud Run. Cloud Run ermöglicht den Betrieb von Containern als HTTP-Endpunkte nur für die Zeit eines Requests.</description>
+    </item>
+    
+    <item>
+      <title>Umstellung auf AMP</title>
+      <link>https://blog.networkchallenge.de/tech/umstellung-auf-amp/</link>
+      <pubDate>Mon, 01 Apr 2019 20:20:40 +1300</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/umstellung-auf-amp/</guid>
+      <description>Die letzten Tage ohne Internet habe ich an einem nun schon Wochen dauernden Projekt verbracht: AMP. AMP steht für Accelerated Mobile Pages und wurde von Google ins Leben gerufen, um das Web schneller zu machen. Die genauen Details dazu erspare ich euch, da man darüber auch geteilter Meinung sein kann.
+Nachdem ich nun Ewigkeiten mit Anpassungen des Designs und der Integration der AMP-Standards verbracht habe, konnte ich nun auch einmal ein paar vorläufige Tests mit den Pagespeed Insights machen.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Unternehmens&amp;shy;portal auf Huawei-Telefonen</title>
+      <link>https://blog.networkchallenge.de/tech/unternehmensportal-auf-huawei/</link>
+      <pubDate>Thu, 13 Dec 2018 19:50:11 -0500</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/unternehmensportal-auf-huawei/</guid>
+      <description>Mein privates Telefon synchronisierte seit ein paar Tagen keine Mails mehr. Für die Synchronisation müssen alle Geräte explizit den Sicherheitsrichtlinien der Firma entsprechen. Trotz der Erfüllung dieser Anforderungen wollte partout keine Mail mehr synchronisiert werden, vielmehr informierte mich immer wieder eine automatische Mail, dass ich doch das Unternehmensportal (früher Microsoft Intune bzw. Company Portal) installieren soll &amp;hellip; cleverer Tipp&amp;hellip;
+Nach einer kurzen Rücksprache mit den Firmenadmins hat sich herausgestellt, dass die Geräteprofile heimlich auf Android for Work umgestellt wurden, was bedeutete, dass das bisherige Profil meines Geräts einfach nicht mehr funktionieren konnte.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB-Cluster Verbindung durch Firewall</title>
+      <link>https://blog.networkchallenge.de/tech/mongodb_verbindung_hinter_firewall/</link>
+      <pubDate>Sun, 23 Sep 2018 15:52:41 +0200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/mongodb_verbindung_hinter_firewall/</guid>
+      <description>Auf Arbeit stand ich vor dem Problem, auf einem MongoDB Atlas-Cluster einen Dump einspielen zu müssen. Dafür ist aber die Benutzung der Kommandozeilenwerkzeuge mongodump und mongorestore unabdingbar. Die Herausforderung war aber eine, die mich regelmäßig quält: das Sicherheitsbedürfnis des Unternehmens steht an oberster Stelle und wir müssen somit immer über den Unternehmens-Proxy oder dedizierte Jumphosts gehen, die für bestimmte Verbindungen freigeschaltet sind.
+Bei der Verbindung zu einem Replica Set steht man vor der Herausforderung, dass der Client eine Verbindung zu allen Nodes machen will und bekommt dabei die Serveradressen von der Gegenseite mitgeteilt.</description>
+    </item>
+    
+    <item>
+      <title>Kontaktloses Bezahlen mit dem Moto G6</title>
+      <link>https://blog.networkchallenge.de/tech/moto_g6_und_glase/</link>
+      <pubDate>Tue, 28 Aug 2018 20:02:00 +0200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/moto_g6_und_glase/</guid>
+      <description>Völlig überrascht war ich, als ich am Wochenende mal wieder mein &amp;ldquo;neues&amp;rdquo; Motorolola G6 prüfte, ob es endlich Zahlungen mit Glase (ehemals Seqr) leisten kann.
+Dafür nehme ich ein anderes NFC-fähiges Smartphone und teste mit einer gängigen Kreditkartenlese-App, ob Glase endlich eine Kreditkarte simulieren kann. Als ich es damals nach dem Kauf (im Mai) schon getestet hatte, wurde nämlich nicht per NFC eine Mastercard emuliert. Wie meine Recherchen damals ergaben, muss Mastercard jedes Device einzeln zertifizieren.</description>
+    </item>
+    
+    <item>
+      <title>URLs einer Website testen</title>
+      <link>https://blog.networkchallenge.de/tech/website_url_test/</link>
+      <pubDate>Sun, 19 Aug 2018 13:27:00 +0200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/website_url_test/</guid>
+      <description>Aktuell hatte ich ein Problem mit einem Webprojekt. Einige Website-Resouren wurden sporadisch, ohne erkennbares Muster, nicht geladen. Um ein eventuelles Muster (oder eben nicht) zu erkennen, musste ein paar Hilfsmittel her.
+Inventar erstellen Zuerst musste eine Url-Liste erstellt werden, mit allen zu prüfenden Resourcen. Dafür kommt wget zum Einsatz. Mit folgendem Befehlt lassen sich alle Urls von einer Hauptseite ermitteln:
+wget --spider --force-html -r -l1 https://blog.networkchallenge.de 2&amp;gt;output.log  Das Output dieses Vorgangs verarbeiten wir nun weiter (es enthält viel mehr als die gesuchten URLs), um die finale Url-Liste zu erzeugen:</description>
+    </item>
+    
+    <item>
+      <title>Moto G6 - ein kurzer (Foto-) Erfahrungsbericht</title>
+      <link>https://blog.networkchallenge.de/tech/moto_g6/</link>
+      <pubDate>Sun, 27 May 2018 14:52:00 +0200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/moto_g6/</guid>
+      <description>Nach über einem Jahr mit meinem Motorola G5 Plus, welches ich schon (erfolgreich) an mehrere Verwandte und Bekannte empfohlen habe, habe ich auf den Erscheinungstermin des Moto G6 in der Special Edition bei Amazon gewartet. Special Edition deshalb, weil die Version mit 4 GB RAM und 64 GB Speicher exklusiv bei Amazon verkauft wird, und das für nur 40 Euro mehr.
+Nüchtern betrachtet muss ich zugeben, dass keines der Features für ein Upgrade sprechen würde, aber im Vergleich zu den Verschlimmbesserungen beim G5s Plus (Phablet-Size) sind diesmal wirklich einige Verbesserungen vorzufinden.</description>
+    </item>
+    
+    <item>
+      <title>Hugo auf einem Android Tablet</title>
+      <link>https://blog.networkchallenge.de/tech/hugo_on_android/</link>
+      <pubDate>Fri, 29 Dec 2017 13:18:51 +0530</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/hugo_on_android/</guid>
+      <description>Gerade beginnt Woche 3 in Sri Lanka und während wir auf unseren Fahrer warten habe ich 2 Stunden Zeit zum Basteln. Durch Zufall bin ich gestern auf die Android-App termux gestoßen. Damit bekommt man eine minimale Linuxinstallation auf sein Gerät und kann Pakete mittels apt nachinstallieren.
+Zuerst installiert man mit apt install wget das vollständige wget-Paket (default ist nur eine abgespeckte Busybox-Version), dann lädt man sich das Linux ARM Paket von Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Automatische Docker-Mounts in Windows</title>
+      <link>https://blog.networkchallenge.de/tech/automatische-docker-mounts-win/</link>
+      <pubDate>Wed, 22 Feb 2017 09:22:51 +0100</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/automatische-docker-mounts-win/</guid>
+      <description>Standardmäßig wird bei der Installation der Docker Toolbox die freie Virtualisierungssoftware VirtualBox installiert. Um nun im Docker-Container auf Dateien des Windows-Hosts zuzugreifen, wird standardmäßig der Pfad /c/Users im Gastsystem gemountet. Dies ist aber nicht optimal, da man als Windows-Nutzer oft mit Leerzeichen in Pfaden geplagt ist und auch sonst eher z.B. mit einem anderen Arbeitsverzeichnis z.B. c:\dev arbeitet.
+Damit dies nun bei jedem Start der Docker-Machine verfügbar ist, müssen ein paar manuelle Handgriffe getätigt werden.</description>
+    </item>
+    
+  </channel>
+</rss>
