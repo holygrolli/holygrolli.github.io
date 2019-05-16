@@ -105,7 +105,7 @@
     <item>
       <title>Blog</title>
       <link>https://blog.networkchallenge.de/tags/blog/</link>
-      <pubDate>Mon, 01 Apr 2019 20:20:40 +1300</pubDate>
+      <pubDate>Thu, 16 May 2019 23:32:05 +1000</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/blog/</guid>
       <description></description>
@@ -204,7 +204,7 @@
     <item>
       <title>Devops</title>
       <link>https://blog.networkchallenge.de/tags/devops/</link>
-      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      <pubDate>Thu, 16 May 2019 23:32:05 +1000</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/devops/</guid>
       <description></description>
@@ -366,7 +366,7 @@
     <item>
       <title>Hugo</title>
       <link>https://blog.networkchallenge.de/tags/hugo/</link>
-      <pubDate>Mon, 01 Apr 2019 20:20:40 +1300</pubDate>
+      <pubDate>Thu, 16 May 2019 23:32:05 +1000</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/hugo/</guid>
       <description></description>
@@ -378,6 +378,15 @@
       <pubDate>Fri, 22 Feb 2019 12:29:41 +1300</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/iguazu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jenkins</title>
+      <link>https://blog.networkchallenge.de/tags/jenkins/</link>
+      <pubDate>Thu, 16 May 2019 23:32:05 +1000</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/jenkins/</guid>
       <description></description>
     </item>
     
