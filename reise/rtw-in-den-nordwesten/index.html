@@ -42,29 +42,63 @@
               
                 {
                   "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "Blog",
-                    "@id": "https://blog.networkchallenge.de/"
-                  },
-                  "headline": "Fahrt an die Nordwestküste",
-                  "datePublished": "2019-04-17T19:18&#43;1200",
-                  "dateModified": "2019-04-17T19:18&#43;1200 ",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Andreas Groll"
-                  },
-                   "publisher": {
-                    "@type": "Organization",
-                    "name": "ChaosBlog",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                  "@graph": [
+                    {
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "Blog",
+                        "@id": "https://blog.networkchallenge.de/"
+                      },
+                      "id": "https://blog.networkchallenge.de/reise/rtw-in-den-nordwesten/",
+                      "headline": "Fahrt an die Nordwestküste",
+                      "datePublished": "2019-04-17T19:18&#43;1200",
+                      "dateModified": "2019-04-17T19:18&#43;1200 ",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Andreas Groll"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "ChaosBlog",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                        }
+                      },
+                      "description": "Vom Mount Cook National Park im großen Bogen an die Nordwestküste der Südinsel",
+                      "image": 
+                        "https://imgs.networkchallenge.de/1600x/IMG_20190409_134831.jpg"
+                    },
+                    {
+                      "@type": "BreadcrumbList",
+                      "itemListElement":
+                      [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/",
+   "name": "Reisen"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/rtw-in-den-nordwesten/",
+   "name": "Fahrt an die Nordwestküste"
+   }
+ }]
                     }
-                  },
-                  "description": "Vom Mount Cook National Park im großen Bogen an die Nordwestküste der Südinsel",
-                  "image": 
-                    "https://imgs.networkchallenge.de/1600x/IMG_20190409_134831.jpg"
+                  ]
                 }
                 </script>
             

@@ -42,29 +42,63 @@
               
                 {
                   "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "Blog",
-                    "@id": "https://blog.networkchallenge.de/"
-                  },
-                  "headline": "Aguas Calientes und Machu Picchu",
-                  "datePublished": "2018-12-18T18:43-0400",
-                  "dateModified": "2018-12-18T18:43-0400 ",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Andreas Groll"
-                  },
-                   "publisher": {
-                    "@type": "Organization",
-                    "name": "ChaosBlog",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                  "@graph": [
+                    {
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "Blog",
+                        "@id": "https://blog.networkchallenge.de/"
+                      },
+                      "id": "https://blog.networkchallenge.de/reise/rtw-machu-picchu/",
+                      "headline": "Aguas Calientes und Machu Picchu",
+                      "datePublished": "2018-12-18T18:43-0400",
+                      "dateModified": "2018-12-18T18:43-0400 ",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Andreas Groll"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "ChaosBlog",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                        }
+                      },
+                      "description": "Zwei erlebnisreiche Tage für An- und Abreise und den Besuch des Machu Picchu",
+                      "image": 
+                        "https://imgs.networkchallenge.de/1600x/IMG_20181127_134551.jpg"
+                    },
+                    {
+                      "@type": "BreadcrumbList",
+                      "itemListElement":
+                      [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/",
+   "name": "Reisen"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/rtw-machu-picchu/",
+   "name": "Aguas Calientes und Machu Picchu"
+   }
+ }]
                     }
-                  },
-                  "description": "Zwei erlebnisreiche Tage für An- und Abreise und den Besuch des Machu Picchu",
-                  "image": 
-                    "https://imgs.networkchallenge.de/1600x/IMG_20181127_134551.jpg"
+                  ]
                 }
                 </script>
             

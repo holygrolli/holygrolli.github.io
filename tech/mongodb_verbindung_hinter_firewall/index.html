@@ -36,29 +36,63 @@
               
                 {
                   "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "Blog",
-                    "@id": "https://blog.networkchallenge.de/"
-                  },
-                  "headline": "MongoDB-Cluster Verbindung durch Firewall",
-                  "datePublished": "2018-09-23T15:52&#43;0200",
-                  "dateModified": "2018-09-23T15:52&#43;0200 ",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Andreas Groll"
-                  },
-                   "publisher": {
-                    "@type": "Organization",
-                    "name": "ChaosBlog",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                  "@graph": [
+                    {
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "Blog",
+                        "@id": "https://blog.networkchallenge.de/"
+                      },
+                      "id": "https://blog.networkchallenge.de/tech/mongodb_verbindung_hinter_firewall/",
+                      "headline": "MongoDB-Cluster Verbindung durch Firewall",
+                      "datePublished": "2018-09-23T15:52&#43;0200",
+                      "dateModified": "2018-09-23T15:52&#43;0200 ",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Andreas Groll"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "ChaosBlog",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                        }
+                      },
+                      "description": "Wie erreicht man ein MongoDB-Cluster, wenn die Firewall dazwischen liegt und man das CLI für Dumps benutzen möchte.",
+                      "image": 
+                        "https://imgs.networkchallenge.de/1600x/home-bg.jpg"
+                    },
+                    {
+                      "@type": "BreadcrumbList",
+                      "itemListElement":
+                      [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/tech/",
+   "name": "Tech"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/tech/mongodb_verbindung_hinter_firewall/",
+   "name": "MongoDB-Cluster Verbindung durch Firewall"
+   }
+ }]
                     }
-                  },
-                  "description": "Wie erreicht man ein MongoDB-Cluster, wenn die Firewall dazwischen liegt und man das CLI für Dumps benutzen möchte.",
-                  "image": 
-                    "https://imgs.networkchallenge.de/1600x/home-bg.jpg"
+                  ]
                 }
                 </script>
             

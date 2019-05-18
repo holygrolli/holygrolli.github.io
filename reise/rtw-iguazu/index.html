@@ -42,29 +42,63 @@
               
                 {
                   "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "Blog",
-                    "@id": "https://blog.networkchallenge.de/"
-                  },
-                  "headline": "Puerto Iguazú, Argentinien",
-                  "datePublished": "2019-02-22T12:29&#43;1300",
-                  "dateModified": "2019-02-22T12:29&#43;1300 ",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Andreas Groll"
-                  },
-                   "publisher": {
-                    "@type": "Organization",
-                    "name": "ChaosBlog",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                  "@graph": [
+                    {
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "Blog",
+                        "@id": "https://blog.networkchallenge.de/"
+                      },
+                      "id": "https://blog.networkchallenge.de/reise/rtw-iguazu/",
+                      "headline": "Puerto Iguazú, Argentinien",
+                      "datePublished": "2019-02-22T12:29&#43;1300",
+                      "dateModified": "2019-02-22T12:29&#43;1300 ",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Andreas Groll"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "ChaosBlog",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                        }
+                      },
+                      "description": "Von Patagonien an die Grenze zu Brasilien und Paraguay, um die Iguazú-Wasserfälle zu sehen",
+                      "image": 
+                        "https://imgs.networkchallenge.de/1600x/IMG_20190210_164047.jpg"
+                    },
+                    {
+                      "@type": "BreadcrumbList",
+                      "itemListElement":
+                      [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/",
+   "name": "Reisen"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/rtw-iguazu/",
+   "name": "Puerto Iguazú, Argentinien"
+   }
+ }]
                     }
-                  },
-                  "description": "Von Patagonien an die Grenze zu Brasilien und Paraguay, um die Iguazú-Wasserfälle zu sehen",
-                  "image": 
-                    "https://imgs.networkchallenge.de/1600x/IMG_20190210_164047.jpg"
+                  ]
                 }
                 </script>
             

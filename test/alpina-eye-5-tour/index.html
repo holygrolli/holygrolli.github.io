@@ -42,29 +42,63 @@
               
                 {
                   "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "Blog",
-                    "@id": "https://blog.networkchallenge.de/"
-                  },
-                  "headline": "Alpina Eye-5 Tour im Langzeittest",
-                  "datePublished": "2018-12-25T11:54-0400",
-                  "dateModified": "2018-12-25T11:54-0400 ",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Andreas Groll"
-                  },
-                   "publisher": {
-                    "@type": "Organization",
-                    "name": "ChaosBlog",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                  "@graph": [
+                    {
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "Blog",
+                        "@id": "https://blog.networkchallenge.de/"
+                      },
+                      "id": "https://blog.networkchallenge.de/test/alpina-eye-5-tour/",
+                      "headline": "Alpina Eye-5 Tour im Langzeittest",
+                      "datePublished": "2018-12-25T11:54-0400",
+                      "dateModified": "2018-12-25T11:54-0400 ",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Andreas Groll"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "ChaosBlog",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                        }
+                      },
+                      "description": "Die Sportbrille Alpina Eye-5 Tour VLM+ für 5 Monate im Einsatz - die enttäuschende Erfahrung",
+                      "image": 
+                        "https://imgs.networkchallenge.de/1600x/IMG_20180715_133601834.jpg"
+                    },
+                    {
+                      "@type": "BreadcrumbList",
+                      "itemListElement":
+                      [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/test/",
+   "name": "Tests"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/test/alpina-eye-5-tour/",
+   "name": "Alpina Eye-5 Tour im Langzeittest"
+   }
+ }]
                     }
-                  },
-                  "description": "Die Sportbrille Alpina Eye-5 Tour VLM+ für 5 Monate im Einsatz - die enttäuschende Erfahrung",
-                  "image": 
-                    "https://imgs.networkchallenge.de/1600x/IMG_20180715_133601834.jpg"
+                  ]
                 }
                 </script>
             

@@ -33,17 +33,43 @@
             <script type="application/ld+json">
                 {
                     "@context": "http://schema.org",
-                    "@type": "WebPage",
-                    "name": "Weltreise",
-                    "description": "Alles zu unserer Reise um die Welt",
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "ChaosBlog",
-                        "logo": {
-                          "@type": "ImageObject",
-                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
-                        }
+                    "@graph": [
+                      {
+                        "@type": "WebPage",
+                        "name": "Weltreise",
+                        "id": "https://blog.networkchallenge.de/rtw/",
+                        "description": "Alles zu unserer Reise um die Welt",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "ChaosBlog",
+                            "logo": {
+                              "@type": "ImageObject",
+                              "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                            }
+                          }
+                      },
+                      {
+                        "@type": "BreadcrumbList",
+                        "itemListElement":
+                        [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/rtw/",
+   "name": "Weltreise"
+   }
+ }]
                       }
+                    ]
                 }
                 </script>
             

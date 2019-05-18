@@ -42,29 +42,63 @@
               
                 {
                   "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "Blog",
-                    "@id": "https://blog.networkchallenge.de/"
-                  },
-                  "headline": "Die Reiseroute steht fest",
-                  "datePublished": "2018-09-23T09:31&#43;0200",
-                  "dateModified": "2018-09-23T09:31&#43;0200 ",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Andreas Groll"
-                  },
-                   "publisher": {
-                    "@type": "Organization",
-                    "name": "ChaosBlog",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                  "@graph": [
+                    {
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "Blog",
+                        "@id": "https://blog.networkchallenge.de/"
+                      },
+                      "id": "https://blog.networkchallenge.de/reise/rtw-reiseroute_steht/",
+                      "headline": "Die Reiseroute steht fest",
+                      "datePublished": "2018-09-23T09:31&#43;0200",
+                      "dateModified": "2018-09-23T09:31&#43;0200 ",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Andreas Groll"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "ChaosBlog",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                        }
+                      },
+                      "description": "Nach langer Optimierung steht nun endlich die komplette Route für die Weltreise fest.",
+                      "image": 
+                        "https://imgs.networkchallenge.de/1600x/2018-09-17_rtw.png"
+                    },
+                    {
+                      "@type": "BreadcrumbList",
+                      "itemListElement":
+                      [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/",
+   "name": "Reisen"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/rtw-reiseroute_steht/",
+   "name": "Die Reiseroute steht fest"
+   }
+ }]
                     }
-                  },
-                  "description": "Nach langer Optimierung steht nun endlich die komplette Route für die Weltreise fest.",
-                  "image": 
-                    "https://imgs.networkchallenge.de/1600x/2018-09-17_rtw.png"
+                  ]
                 }
                 </script>
             

@@ -42,29 +42,63 @@
               
                 {
                   "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "Blog",
-                    "@id": "https://blog.networkchallenge.de/"
-                  },
-                  "headline": "La Paz, Bolivien",
-                  "datePublished": "2019-01-09T10:18-0300",
-                  "dateModified": "2019-01-09T10:18-0300 ",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Andreas Groll"
-                  },
-                   "publisher": {
-                    "@type": "Organization",
-                    "name": "ChaosBlog",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                  "@graph": [
+                    {
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "Blog",
+                        "@id": "https://blog.networkchallenge.de/"
+                      },
+                      "id": "https://blog.networkchallenge.de/reise/rtw-la-paz/",
+                      "headline": "La Paz, Bolivien",
+                      "datePublished": "2019-01-09T10:18-0300",
+                      "dateModified": "2019-01-09T10:18-0300 ",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Andreas Groll"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "ChaosBlog",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                        }
+                      },
+                      "description": "Über Silvester in La Paz: Besuch des Hexenmarkts, Stadtrundgang, Street Art und kulinarische Empfehlungen",
+                      "image": 
+                        "https://imgs.networkchallenge.de/1600x/IMG_20190101_141015.jpg"
+                    },
+                    {
+                      "@type": "BreadcrumbList",
+                      "itemListElement":
+                      [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/",
+   "name": "Reisen"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/rtw-la-paz/",
+   "name": "La Paz, Bolivien"
+   }
+ }]
                     }
-                  },
-                  "description": "Über Silvester in La Paz: Besuch des Hexenmarkts, Stadtrundgang, Street Art und kulinarische Empfehlungen",
-                  "image": 
-                    "https://imgs.networkchallenge.de/1600x/IMG_20190101_141015.jpg"
+                  ]
                 }
                 </script>
             

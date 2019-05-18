@@ -33,17 +33,51 @@
             <script type="application/ld+json">
                 {
                     "@context": "http://schema.org",
-                    "@type": "WebPage",
-                    "name": "Persönliches DOK-Festival-Programm zusammenstellen",
-                    "description": "Das Programm des DOK-Festivals wurde heute veröffentlicht. Wie stellt man sich sein persönliches Programm zusammen?",
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "ChaosBlog",
-                        "logo": {
-                          "@type": "ImageObject",
-                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
-                        }
+                    "@graph": [
+                      {
+                        "@type": "WebPage",
+                        "name": "Persönliches DOK-Festival-Programm zusammenstellen",
+                        "id": "https://blog.networkchallenge.de/projekte/e2c-update-dok2018/",
+                        "description": "Das Programm des DOK-Festivals wurde heute veröffentlicht. Wie stellt man sich sein persönliches Programm zusammen?",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "ChaosBlog",
+                            "logo": {
+                              "@type": "ImageObject",
+                              "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                            }
+                          }
+                      },
+                      {
+                        "@type": "BreadcrumbList",
+                        "itemListElement":
+                        [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/projekte/",
+   "name": "Projekte"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/projekte/e2c-update-dok2018/",
+   "name": "Persönliches DOK-Festival-Programm zusammenstellen"
+   }
+ }]
                       }
+                    ]
                 }
                 </script>
             

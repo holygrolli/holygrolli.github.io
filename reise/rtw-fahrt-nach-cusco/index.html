@@ -42,29 +42,63 @@
               
                 {
                   "@context": "http://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "Blog",
-                    "@id": "https://blog.networkchallenge.de/"
-                  },
-                  "headline": "500km durch die Anden nach Cusco",
-                  "datePublished": "2018-12-18T14:00-0400",
-                  "dateModified": "2018-12-18T14:00-0400 ",
-                  "author": {
-                    "@type": "Person",
-                    "name": "Andreas Groll"
-                  },
-                   "publisher": {
-                    "@type": "Organization",
-                    "name": "ChaosBlog",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                  "@graph": [
+                    {
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "Blog",
+                        "@id": "https://blog.networkchallenge.de/"
+                      },
+                      "id": "https://blog.networkchallenge.de/reise/rtw-fahrt-nach-cusco/",
+                      "headline": "500km durch die Anden nach Cusco",
+                      "datePublished": "2018-12-18T14:00-0400",
+                      "dateModified": "2018-12-18T14:00-0400 ",
+                      "author": {
+                        "@type": "Person",
+                        "name": "Andreas Groll"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "ChaosBlog",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://blog.networkchallenge.de/img/chaosblog.png "
+                        }
+                      },
+                      "description": "Von Arequipa durch das Hochland in die Inkahauptstadt Cusco",
+                      "image": 
+                        "https://imgs.networkchallenge.de/1600x/IMG_20181125_073110.jpg"
+                    },
+                    {
+                      "@type": "BreadcrumbList",
+                      "itemListElement":
+                      [{
+  "@type": "ListItem",
+  "position":1,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/",
+   "name": "ChaosBlog"
+   }
+ },{
+  "@type": "ListItem",
+  "position":2,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/",
+   "name": "Reisen"
+   }
+ },{
+  "@type": "ListItem",
+  "position":3,
+  "item":
+  {
+   "@id": "https://blog.networkchallenge.de/reise/rtw-fahrt-nach-cusco/",
+   "name": "500km durch die Anden nach Cusco"
+   }
+ }]
                     }
-                  },
-                  "description": "Von Arequipa durch das Hochland in die Inkahauptstadt Cusco",
-                  "image": 
-                    "https://imgs.networkchallenge.de/1600x/IMG_20181125_073110.jpg"
+                  ]
                 }
                 </script>
             
