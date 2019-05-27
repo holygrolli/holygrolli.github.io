@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/reise/rtw-great-ocean-road/</loc>
+    <lastmod>2019-05-27T21:00:00+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/reise/land/chile/</loc>
     <lastmod>2019-05-25T15:12:32+10:00</lastmod>
   </url>
@@ -496,7 +501,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/australien/</loc>
-    <lastmod>2019-05-24T20:45:56+10:00</lastmod>
+    <lastmod>2019-05-27T21:00:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -538,7 +543,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-05-25T15:12:32+10:00</lastmod>
+    <lastmod>2019-05-27T21:00:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -890,7 +895,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-05-24T20:45:56+10:00</lastmod>
+    <lastmod>2019-05-27T21:00:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -971,6 +976,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/torquay/</loc>
+    <lastmod>2019-05-27T21:00:00+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/tutorial/</loc>
     <lastmod>2019-05-05T23:14:13+09:30</lastmod>
     <priority>0</priority>
@@ -996,7 +1007,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/victoria/</loc>
-    <lastmod>2019-05-24T20:45:56+10:00</lastmod>
+    <lastmod>2019-05-27T21:00:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1025,7 +1036,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/warrnambool/</loc>
-    <lastmod>2019-05-14T01:00:00+10:00</lastmod>
+    <lastmod>2019-05-27T21:00:00+10:00</lastmod>
     <priority>0</priority>
   </url>
   
