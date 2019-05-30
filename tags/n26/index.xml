@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Revolut on ChaosBlog</title>
-    <link>https://blog.networkchallenge.de/tags/revolut/</link>
-    <description>Recent content in Revolut on ChaosBlog</description>
+    <title>N26 on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/n26/</link>
+    <description>Recent content in N26 on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Thu, 30 May 2019 21:25:08 +1000</lastBuildDate>
     
-	<atom:link href="https://blog.networkchallenge.de/tags/revolut/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/tags/n26/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <guid>https://blog.networkchallenge.de/test/revolut-kreditkarte/</guid>
       <description>Vor kurzem habe ich geschrieben, wie überrascht ich war, dass ich nun in Deutschland mit Garmin Pay (und der hinterlegten Keditkarte von Revolut) bezahlen kann. Das habe ich zum Anlass genommen, mich endlich, nach über 200 Tagen auf Weltreise, mit den tatsächlichen Kosten beim Zahlen in Fremdwährung zu beschäftigen. Aber der Reihe nach!
  Revolut funktioniert mit Garmin Pay  Revolut? Revolut ist ein englisches FinTech, was in letzter Zeit stark gehyped wurde, allerdings auch bezüglich Arbeitsbedingungen und im Bezug auf zu schwacher Geldwäscheprävention in der Kritik stand.</description>
-    </item>
-    
-    <item>
-      <title>Garmin Pay mit Revolut nutzen</title>
-      <link>https://blog.networkchallenge.de/tech/garmin-pay-revolut/</link>
-      <pubDate>Tue, 28 May 2019 18:33:45 +1000</pubDate>
-      
-      <guid>https://blog.networkchallenge.de/tech/garmin-pay-revolut/</guid>
-      <description>Vor kurzem hat mir mein Freund Dirk stolz berichtet, dass er mit seiner neuen Garmin Vivoactive 3 Music nun überall kontaktlos mit der Uhr bezahlen kann. Dafür musste er nur sein Garmin Pay mit dem Dienst VIMpay verknüpfen. Ich dachte mir nur, dass ich dieses Szenario VIMpay mit Garmin Pay schon kenne, da es doch letztes Jahr zum Launch von Garmin Pay so zur Verfügung stand. VIMpay als zusätzlicher Dienstleister, wo ich ein Prepaid-Konto manuell aufladen muss, kam für mich aber nicht auch noch in Frage.</description>
     </item>
     
   </channel>

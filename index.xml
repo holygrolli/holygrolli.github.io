@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Tue, 28 May 2019 18:33:45 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2019 21:25:08 +1000</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Erfahrungsbericht zu Revolut</title>
+      <link>https://blog.networkchallenge.de/test/revolut-kreditkarte/</link>
+      <pubDate>Thu, 30 May 2019 21:25:08 +1000</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/test/revolut-kreditkarte/</guid>
+      <description>Vor kurzem habe ich geschrieben, wie überrascht ich war, dass ich nun in Deutschland mit Garmin Pay (und der hinterlegten Keditkarte von Revolut) bezahlen kann. Das habe ich zum Anlass genommen, mich endlich, nach über 200 Tagen auf Weltreise, mit den tatsächlichen Kosten beim Zahlen in Fremdwährung zu beschäftigen. Aber der Reihe nach!
+ Revolut funktioniert mit Garmin Pay  Revolut? Revolut ist ein englisches FinTech, was in letzter Zeit stark gehyped wurde, allerdings auch bezüglich Arbeitsbedingungen und im Bezug auf zu schwacher Geldwäscheprävention in der Kritik stand.</description>
+    </item>
     
     <item>
       <title>Garmin Pay mit Revolut nutzen</title>
