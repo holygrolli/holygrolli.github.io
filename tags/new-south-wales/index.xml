@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Melbourne on ChaosBlog</title>
-    <link>https://blog.networkchallenge.de/tags/melbourne/</link>
-    <description>Recent content in Melbourne on ChaosBlog</description>
+    <title>New South Wales on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/new-south-wales/</link>
+    <description>Recent content in New South Wales on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Mon, 10 Jun 2019 18:22:36 +1000</lastBuildDate>
     
-	<atom:link href="https://blog.networkchallenge.de/tags/melbourne/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/tags/new-south-wales/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://blog.networkchallenge.de/reise/rtw-melbourne-sydney-teil-1/</guid>
       <description>Nach unseren Tagen in Melbourne und der anschließenden freien Übernachtung kurz vor Phillip Island haben wir am Tag 1 nach Melbourne (oder der 205. Tag der Weltreise) noch einen kurzen Abstecher nach Phillip Island gemacht, um uns die Strände anzuschauen und unsere Vorräte aufzufrischen. Wir sind bis zum Shelley Beach fast am westlichsten Punkt der Insel gefahren. Kurz davor gibt es in Phillip Island Nature Parks zum Sonnenuntergang eine weitere (kostenpflichtige) Möglichkeit, Pinguine zu sehen.</description>
-    </item>
-    
-    <item>
-      <title>Melbourne, Australien</title>
-      <link>https://blog.networkchallenge.de/reise/rtw-melbourne/</link>
-      <pubDate>Tue, 04 Jun 2019 14:53:51 +1000</pubDate>
-      
-      <guid>https://blog.networkchallenge.de/reise/rtw-melbourne/</guid>
-      <description>Übernachtung im Holidaypark Nach unserem letzten Strandtag ging es noch am Nachmittag nach Melbourne. Erst kurz nach Sonnenuntergang kamen wir an unserem Holidaypark. Dieser war von der Lage her optimal, da direkt vor der Tür der Bus in die Innenstadt fuhr. Knapp 50 Dollar wollte man für eine Nacht von uns, zum Glück gab es mit der G&amp;rsquo;Day-Mitgliedskarte noch 10% Rabatt. Leider war der Park alternativlos, alle anderen Optionen zu weit weg und ohne Busanbindung.</description>
     </item>
     
   </channel>
