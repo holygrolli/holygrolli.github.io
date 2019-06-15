@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Sat, 15 Jun 2019 00:31:19 +1000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jun 2019 00:31:19 +1000</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Divi Theme beschleunigen</title>
       <link>https://blog.networkchallenge.de/tech/wordpress-divi-speedup/</link>
-      <pubDate>Sat, 15 Jun 2019 00:31:19 +1000</pubDate>
+      <pubDate>Sun, 16 Jun 2019 00:31:19 +1000</pubDate>
       
       <guid>https://blog.networkchallenge.de/tech/wordpress-divi-speedup/</guid>
       <description>Früher (!!!) habe ich selbst mal den Blog mit Wordpress betrieben und bin wegen der ständigen Updates, Sicherheitslücken und Administrationsbedarfs gezielt auf Hugo, einen sogenannten Static Site Generator umgestiegen. Nebenbei habe ich mich vor wenigen Monaten noch auf mobile first konzentriert. Dadurch hat sich die Geschwindigkeit nicht nur spürbar, sondern auch messbar verbessert.
