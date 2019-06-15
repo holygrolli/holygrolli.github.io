@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Thu, 16 May 2019 23:32:05 +1000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2019 00:31:19 +1000</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Divi Theme beschleunigen</title>
+      <link>https://blog.networkchallenge.de/tech/wordpress-divi-speedup/</link>
+      <pubDate>Sat, 15 Jun 2019 00:31:19 +1000</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/wordpress-divi-speedup/</guid>
+      <description>Früher (!!!) habe ich selbst mal den Blog mit Wordpress betrieben und bin wegen der ständigen Updates, Sicherheitslücken und Administrationsbedarfs gezielt auf Hugo, einen sogenannten Static Site Generator umgestiegen. Nebenbei habe ich mich vor wenigen Monaten noch auf mobile first konzentriert. Dadurch hat sich die Geschwindigkeit nicht nur spürbar, sondern auch messbar verbessert.
+Nichtsdestotrotz musste ich mich doch wieder mit Wordpress beschäftigen, da Katrin als Einstieg ihren Blog auch mit Wordpress betreibt.</description>
+    </item>
     
     <item>
       <title>Jenkins-Pipeline einmal in der Zukunft ausführen</title>
@@ -40,6 +50,36 @@ Nachdem ich nun Ewigkeiten mit Anpassungen des Designs und der Integration der A
       <guid>https://blog.networkchallenge.de/tech/hugo_on_android/</guid>
       <description>Gerade beginnt Woche 3 in Sri Lanka und während wir auf unseren Fahrer warten habe ich 2 Stunden Zeit zum Basteln. Durch Zufall bin ich gestern auf die Android-App termux gestoßen. Damit bekommt man eine minimale Linuxinstallation auf sein Gerät und kann Pakete mittels apt nachinstallieren.
 Zuerst installiert man mit apt install wget das vollständige wget-Paket (default ist nur eine abgespeckte Busybox-Version), dann lädt man sich das Linux ARM Paket von Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Erster Post und wo ist Wordpress</title>
+      <link>https://blog.networkchallenge.de/allgemein/erster_post/</link>
+      <pubDate>Tue, 17 Jan 2017 20:59:17 +0100</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/allgemein/erster_post/</guid>
+      <description>Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf Blogger gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist.
+Nun starte ich einen neuen Versuch mit Hugo, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte).</description>
+    </item>
+    
+    <item>
+      <title>Markdown Cheatsheet</title>
+      <link>https://blog.networkchallenge.de/allgemein/markdown_cheatsheet/</link>
+      <pubDate>Thu, 12 Jan 2017 20:59:17 +0100</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/allgemein/markdown_cheatsheet/</guid>
+      <description>Based on Markdown Cheatsheet.
+This is intended as a quick reference and showcase. For more complete info, see John Gruber&amp;rsquo;s original spec and the Github-flavored Markdown info page.
+Note that there is also a Cheatsheet specific to Markdown Here if that&amp;rsquo;s what you&amp;rsquo;re looking for. You can also check out more Markdown tools.
+Table of Contents Headers
+Emphasis
+Lists
+Links
+Images
+Code and Syntax Highlighting
+Tables
+Blockquotes
+Inline HTML</description>
     </item>
     
   </channel>

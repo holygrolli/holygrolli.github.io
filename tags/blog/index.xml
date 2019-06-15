@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Thu, 16 May 2019 23:32:05 +1000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2019 00:31:19 +1000</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Divi Theme beschleunigen</title>
+      <link>https://blog.networkchallenge.de/tech/wordpress-divi-speedup/</link>
+      <pubDate>Sat, 15 Jun 2019 00:31:19 +1000</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/wordpress-divi-speedup/</guid>
+      <description>Früher (!!!) habe ich selbst mal den Blog mit Wordpress betrieben und bin wegen der ständigen Updates, Sicherheitslücken und Administrationsbedarfs gezielt auf Hugo, einen sogenannten Static Site Generator umgestiegen. Nebenbei habe ich mich vor wenigen Monaten noch auf mobile first konzentriert. Dadurch hat sich die Geschwindigkeit nicht nur spürbar, sondern auch messbar verbessert.
+Nichtsdestotrotz musste ich mich doch wieder mit Wordpress beschäftigen, da Katrin als Einstieg ihren Blog auch mit Wordpress betreibt.</description>
+    </item>
     
     <item>
       <title>Jenkins-Pipeline einmal in der Zukunft ausführen</title>
@@ -39,7 +49,7 @@ Nachdem ich nun Ewigkeiten mit Anpassungen des Designs und der Integration der A
       
       <guid>https://blog.networkchallenge.de/allgemein/erster_post/</guid>
       <description>Der erste Post ist eigentlich kein erster Post. Über die Jahre hinweg habe ich immer wieder mal gebloggt. Zuerst noch regelmäßig mit Wordpress, dann aufgrund des Administrationsaufwands (ständig Updates einspielen) habe ich dann den Umzug auf Blogger gewagt und nur selten etwas geschrieben. Irgendwo dazwischen lag der Versuch aktiv auf Google+ zu sein, was leider auch im Sande verlaufen ist.
-Nun starte ich einen neuen Versuch mit metalsmith, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte).</description>
+Nun starte ich einen neuen Versuch mit Hugo, da mich die Technik reizt und augenscheinlich ein geringerer Administrationsbedarf besteht (bestehen könnte).</description>
     </item>
     
   </channel>
