@@ -252,17 +252,15 @@
 
 <p>Eine Sache störte mich aber seit einer Ewigkeit gewaltig: Ich lasse mich von der Google-App über Spielstände im Fußball benachrichtigen, nur leider schneidet Garmin die Benachrichtigungen sehr ungünstig ab, so dass man mindestens immer mit der anderen Hand die Benachrichtung antippen muss, um Details zu erfahren. In den meisten Fällen reicht das aber nicht, die wichtige Information, der Spielstand bleibt trotzdem verborgen.</p>
 
-<div style="max-width: 3200px;" class="imgwrapper">   
-<figure>
-    <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190414_180108.jpg" 
+<div style="max-width: 3200px;" class="imgwrapper">
+<figure><amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190414_180108.jpg" 
         layout="responsive" width="3968"
         height="2976" alt="Abgeschnittene Liste der Benachrichtungen"srcset="https://imgs.networkchallenge.de/800x/IMG_20190414_180108.jpg 800w, https://imgs.networkchallenge.de/400x/IMG_20190414_180108.jpg 400w, https://imgs.networkchallenge.de/1600x/IMG_20190414_180108.jpg 1600w, https://imgs.networkchallenge.de/2100x/IMG_20190414_180108.jpg 2100w, https://imgs.networkchallenge.de/3200x/IMG_20190414_180108.jpg 3200w">
     </amp-img><figcaption class="image">Abgeschnittene Liste der Benachrichtungen</figcaption></figure>
 </div>
 
-<div style="max-width: 3200px;" class="imgwrapper">   
-<figure>
-    <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190414_180114.jpg" 
+<div style="max-width: 3200px;" class="imgwrapper">
+<figure><amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190414_180114.jpg" 
         layout="responsive" width="3968"
         height="2976" alt="Auch in den Details keine Chance auf das Ergebnis"srcset="https://imgs.networkchallenge.de/800x/IMG_20190414_180114.jpg 800w, https://imgs.networkchallenge.de/400x/IMG_20190414_180114.jpg 400w, https://imgs.networkchallenge.de/1600x/IMG_20190414_180114.jpg 1600w, https://imgs.networkchallenge.de/2100x/IMG_20190414_180114.jpg 2100w, https://imgs.networkchallenge.de/3200x/IMG_20190414_180114.jpg 3200w">
     </amp-img><figcaption class="image">Auch in den Details keine Chance auf das Ergebnis</figcaption></figure>
@@ -291,17 +289,15 @@
 
 <p>Danach muss noch ein Task konfiguriert werden, der auf dieses Ereignis reagiert. Der Task prüft zunächst, ob der Titel tatsächlich dem Ergebnismuster eines Spielstands entspricht. Danach werden die beiden Zahlen extrahiert (Variablen <em>stand1</em> und <em>stand2</em>). Damit hätten wir eigentlich schon alle notwendigen Informationen. Da aber die Benachrichtigungen von Google alle paar Minuten erscheinen, würde dieses Ereignis zu einer Menge neuer Benachrichtigungen führen. Daher wird nun mit den begrenzten zur Verfügung stehenden Mitteln getrickst. Ich nehme mir einfach den ersten Team-Namen, der sich pro Spiel nicht ändert, erzeuge daraus einen md5-Hash und speichere das in der Variable <em>newid</em>. Dann lösche ich alle Buchstaben aus dem md5, um daraus eine Zahl zu machen. Ich gehe bewusst das Risiko ein, dass der md5 auch absolut keine Zahlen enthalten könnte, das ist aber sehr unwahrscheinlich. Diese Zahl wird nun abschließend in der neuen Benachrichtigung von <em>AutoNotification</em> benutzt, um eventuell bestehende Benachrichtigungen zu aktualisieren.</p>
 
-<div style="max-width: 3200px;" class="imgwrapper">   
-<figure>
-    <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190414_180126.jpg" 
+<div style="max-width: 3200px;" class="imgwrapper">
+<figure><amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190414_180126.jpg" 
         layout="responsive" width="3968"
         height="2976" alt="Neue, vollständige Benachrichtigung in der Liste"srcset="https://imgs.networkchallenge.de/800x/IMG_20190414_180126.jpg 800w, https://imgs.networkchallenge.de/400x/IMG_20190414_180126.jpg 400w, https://imgs.networkchallenge.de/1600x/IMG_20190414_180126.jpg 1600w, https://imgs.networkchallenge.de/2100x/IMG_20190414_180126.jpg 2100w, https://imgs.networkchallenge.de/3200x/IMG_20190414_180126.jpg 3200w">
     </amp-img><figcaption class="image">Neue, vollständige Benachrichtigung in der Liste</figcaption></figure>
 </div>
 
-<div style="max-width: 3200px;" class="imgwrapper">   
-<figure>
-    <amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190414_180134.jpg" 
+<div style="max-width: 3200px;" class="imgwrapper">
+<figure><amp-img lightbox="postgallery" src="https://imgs.networkchallenge.de/800x/IMG_20190414_180134.jpg" 
         layout="responsive" width="3968"
         height="2976" alt="Die Details sind nun auch vollständig"srcset="https://imgs.networkchallenge.de/800x/IMG_20190414_180134.jpg 800w, https://imgs.networkchallenge.de/400x/IMG_20190414_180134.jpg 400w, https://imgs.networkchallenge.de/1600x/IMG_20190414_180134.jpg 1600w, https://imgs.networkchallenge.de/2100x/IMG_20190414_180134.jpg 2100w, https://imgs.networkchallenge.de/3200x/IMG_20190414_180134.jpg 3200w">
     </amp-img><figcaption class="image">Die Details sind nun auch vollständig</figcaption></figure>
