@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Malacca on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/malacca/</link>
+    <description>Recent content in Malacca on ChaosBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <copyright>Copyright © ChaosBlog 2018</copyright>
+    <lastBuildDate>Thu, 11 Jul 2019 22:42:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.networkchallenge.de/tags/malacca/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Malacca City, Malaysia</title>
+      <link>https://blog.networkchallenge.de/reise/rtw-malacca/</link>
+      <pubDate>Thu, 11 Jul 2019 22:42:32 +0800</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/reise/rtw-malacca/</guid>
+      <description>Mit dem Bus nach Malacca Am 245. Tag unserer Weltreise ging es Vormittags zur Busstation Queen Street. Dies war die von unserem Hotel nächste Station, um über die Grenze nach Malaysia zu kommen. Anstatt für einen teureren Expressbus von Singapur nach Malacca entschieden wir uns, die Strecke mit unterschiedlichen Anbietern zu fahren. Wir hatten vorab gelesen, dass schlimmstenfalls der Bus an der Grenze nicht auf einen wartet und dann mit dem Gepäck weg ist.</description>
+    </item>
+    
+  </channel>
+</rss>
