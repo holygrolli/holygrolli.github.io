@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/reise/rtw-kuala-lumpur/</loc>
+    <lastmod>2019-07-19T23:55:58+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/reise/rtw-malacca/</loc>
     <lastmod>2019-07-11T22:42:32+08:00</lastmod>
   </url>
@@ -429,7 +434,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/rtw/</loc>
-    <lastmod>2019-07-11T22:42:32+08:00</lastmod>
+    <lastmod>2019-07-19T23:55:58+08:00</lastmod>
   </url>
   
   <url>
@@ -625,7 +630,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-07-11T22:42:32+08:00</lastmod>
+    <lastmod>2019-07-19T23:55:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -804,6 +809,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/kuala-lumpur/</loc>
+    <lastmod>2019-07-19T23:55:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/la-paz/</loc>
     <lastmod>2019-01-09T10:18:00-03:00</lastmod>
     <priority>0</priority>
@@ -834,13 +845,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/malacca/</loc>
-    <lastmod>2019-07-11T22:42:32+08:00</lastmod>
+    <lastmod>2019-07-19T23:55:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/malaysia/</loc>
-    <lastmod>2019-07-11T22:42:32+08:00</lastmod>
+    <lastmod>2019-07-19T23:55:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1019,7 +1030,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/rtw/</loc>
-    <lastmod>2019-07-11T22:42:32+08:00</lastmod>
+    <lastmod>2019-07-19T23:55:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1043,7 +1054,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/singapur/</loc>
-    <lastmod>2019-07-11T22:42:32+08:00</lastmod>
+    <lastmod>2019-07-19T23:55:58+08:00</lastmod>
     <priority>0</priority>
   </url>
   

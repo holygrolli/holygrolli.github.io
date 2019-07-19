@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Malacca on ChaosBlog</title>
-    <link>https://blog.networkchallenge.de/tags/malacca/</link>
-    <description>Recent content in Malacca on ChaosBlog</description>
+    <title>Kuala Lumpur on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/kuala-lumpur/</link>
+    <description>Recent content in Kuala Lumpur on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Fri, 19 Jul 2019 23:55:58 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.networkchallenge.de/tags/malacca/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/tags/kuala-lumpur/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://blog.networkchallenge.de/reise/rtw-kuala-lumpur/</guid>
       <description>Mit dem Bus nach Kuala Lumpur Nach den Tagen in Malacca ging es am 249. Tag der Weltreise wieder mit dem Bus weiter. Wir hatten uns dafür entschieden, die verbleibenden Tage in Malaysia mit der Hauptstadt Kuala Lumpur zu füllen. Dafür buchten wir am selben Morgen noch ein Onlineticket bei busonlineticket.com und konnten uns so wieder bei dem Betreiber KKKL Express zwei Sitzplätze aussuchen und mit PayPal weniger als 8€ für zwei Personen bezahlen.</description>
-    </item>
-    
-    <item>
-      <title>Malacca City, Malaysia</title>
-      <link>https://blog.networkchallenge.de/reise/rtw-malacca/</link>
-      <pubDate>Thu, 11 Jul 2019 22:42:32 +0800</pubDate>
-      
-      <guid>https://blog.networkchallenge.de/reise/rtw-malacca/</guid>
-      <description>Mit dem Bus nach Malacca Am 245. Tag unserer Weltreise ging es Vormittags zur Busstation Queen Street. Dies war die von unserem Hotel nächste Station, um über die Grenze nach Malaysia zu kommen. Anstatt für einen teureren Expressbus von Singapur nach Malacca entschieden wir uns, die Strecke mit unterschiedlichen Anbietern zu fahren. Wir hatten vorab gelesen, dass schlimmstenfalls der Bus an der Grenze nicht auf einen wartet und dann mit dem Gepäck weg ist.</description>
     </item>
     
   </channel>
