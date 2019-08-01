@@ -240,7 +240,7 @@
     <item>
       <title>Devops</title>
       <link>https://blog.networkchallenge.de/tags/devops/</link>
-      <pubDate>Thu, 16 May 2019 23:32:05 +1000</pubDate>
+      <pubDate>Thu, 01 Aug 2019 16:00:00 +0800</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/devops/</guid>
       <description></description>
@@ -249,7 +249,7 @@
     <item>
       <title>Docker</title>
       <link>https://blog.networkchallenge.de/tags/docker/</link>
-      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      <pubDate>Thu, 01 Aug 2019 16:00:00 +0800</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/docker/</guid>
       <description></description>
@@ -357,7 +357,7 @@
     <item>
       <title>Gcp</title>
       <link>https://blog.networkchallenge.de/tags/gcp/</link>
-      <pubDate>Fri, 19 Apr 2019 20:50:00 +1200</pubDate>
+      <pubDate>Thu, 01 Aug 2019 16:00:00 +0800</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/gcp/</guid>
       <description></description>
@@ -441,6 +441,15 @@
       <pubDate>Thu, 16 May 2019 23:32:05 +1000</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K8s</title>
+      <link>https://blog.networkchallenge.de/tags/k8s/</link>
+      <pubDate>Thu, 01 Aug 2019 16:00:00 +0800</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/k8s/</guid>
       <description></description>
     </item>
     
@@ -711,6 +720,15 @@
       <pubDate>Sun, 23 Dec 2018 17:57:47 -0400</pubDate>
       
       <guid>https://blog.networkchallenge.de/tags/puno/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quarkus</title>
+      <link>https://blog.networkchallenge.de/tags/quarkus/</link>
+      <pubDate>Thu, 01 Aug 2019 16:00:00 +0800</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tags/quarkus/</guid>
       <description></description>
     </item>
     

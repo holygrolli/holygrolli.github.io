@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.networkchallenge.de/tech/k8s-einstieg-in-canary-deployments/</loc>
+    <lastmod>2019-08-01T16:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/reise/rtw-ubud/</loc>
     <lastmod>2019-07-29T10:20:00+08:00</lastmod>
   </url>
@@ -657,7 +662,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/</loc>
-    <lastmod>2019-07-29T10:20:00+08:00</lastmod>
+    <lastmod>2019-08-01T16:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -699,13 +704,13 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/devops/</loc>
-    <lastmod>2019-05-16T23:32:05+10:00</lastmod>
+    <lastmod>2019-08-01T16:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/docker/</loc>
-    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <lastmod>2019-08-01T16:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -777,7 +782,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tags/gcp/</loc>
-    <lastmod>2019-04-19T20:50:00+12:00</lastmod>
+    <lastmod>2019-08-01T16:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -832,6 +837,12 @@
   <url>
     <loc>https://blog.networkchallenge.de/tags/jenkins/</loc>
     <lastmod>2019-05-16T23:32:05+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.networkchallenge.de/tags/k8s/</loc>
+    <lastmod>2019-08-01T16:00:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1026,6 +1037,12 @@
   </url>
   
   <url>
+    <loc>https://blog.networkchallenge.de/tags/quarkus/</loc>
+    <lastmod>2019-08-01T16:00:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.networkchallenge.de/tags/queensland/</loc>
     <lastmod>2019-07-03T19:37:53+08:00</lastmod>
     <priority>0</priority>
@@ -1141,7 +1158,7 @@
   
   <url>
     <loc>https://blog.networkchallenge.de/tech/</loc>
-    <lastmod>2019-06-16T00:31:19+10:00</lastmod>
+    <lastmod>2019-08-01T16:00:00+08:00</lastmod>
   </url>
   
   <url>

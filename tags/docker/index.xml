@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Fri, 19 Apr 2019 20:50:00 +1200</lastBuildDate>
+    <lastBuildDate>Thu, 01 Aug 2019 16:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Einstieg in Canary Deployments</title>
+      <link>https://blog.networkchallenge.de/tech/k8s-einstieg-in-canary-deployments/</link>
+      <pubDate>Thu, 01 Aug 2019 16:00:00 +0800</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/k8s-einstieg-in-canary-deployments/</guid>
+      <description>Abstract Dieser Beitrag hat das Ziel, alle notwendigen Schritte aufzuzeigen, mit denen man eine DevOps-Pipeline in einem Kubernetes-Cluster aufbaut. Grundlegend basiert dies auf der sehr ausführlichen Anleitung in der GCP-Doku. Dabei wurde das Beispiel erweitert, um ein realistischeres Anwendungsszenario abzudecken: eine moderne Anwendung mit zugrundeliegender Microservices-Architektur die mit Canary-Deployments zu schnellen Production-Deployments führt und dabei die Gesamtqualität der Anwendung nur in einem kontrollierten Rahmen gefährdet. Dabei zeige ich die Herausforderungen auf, vor die uns ein klassisches Kubernetes-Cluster stellt.</description>
+    </item>
     
     <item>
       <title>Google Cloud Run ausprobiert</title>
