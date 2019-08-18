@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on ChaosBlog</title>
-    <link>https://blog.networkchallenge.de/tags/android/</link>
-    <description>Recent content in Android on ChaosBlog</description>
+    <title>Huawei on ChaosBlog</title>
+    <link>https://blog.networkchallenge.de/tags/huawei/</link>
+    <description>Recent content in Huawei on ChaosBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
     <lastBuildDate>Sun, 18 Aug 2019 08:21:46 +0200</lastBuildDate>
     
-	<atom:link href="https://blog.networkchallenge.de/tags/android/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.networkchallenge.de/tags/huawei/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>https://blog.networkchallenge.de/tech/unternehmensportal-auf-huawei-update-1/</guid>
       <description>Nach den Problemen bei Firmware-Updates und den verknüpften Arbeitsprofilen habe ich nun auf meinem Huawei Mate 10 Pro die neueste Version EMUI 9.1.0 und konkret Version 9.1.0.300 (C432E4R1P11) erhalten. Die Spannung war groß, ob ich wieder mein Android for Work und damit das Microsoft Unternehmensportal erneut neu einrichten musste. Völlig (positiv) überraschend konnte ich nach der Aktualisierung problemlos mein Arbeitsprofil weiternutzen. Hoffentlich hat man jetzt eine dauerhafte Lösung bei Huawei gefunden.</description>
-    </item>
-    
-    <item>
-      <title>Garmin Benach&amp;shy;richtigungen optimieren</title>
-      <link>https://blog.networkchallenge.de/tech/garmin-spielstand-benachrichtigung/</link>
-      <pubDate>Sun, 05 May 2019 23:14:13 +0930</pubDate>
-      
-      <guid>https://blog.networkchallenge.de/tech/garmin-spielstand-benachrichtigung/</guid>
-      <description>Ich bin nun seit Jahren ein Freund der smarten Sportuhren von Garmin. Auch wenn meine letzte Garmin-Uhr letztes Jahr pünktlich nach zwei Jahren den Geist aufgegeben hat, gibt es für mich keine Alternative.
-Eine Sache störte mich aber seit einer Ewigkeit gewaltig: Ich lasse mich von der Google-App über Spielstände im Fußball benachrichtigen, nur leider schneidet Garmin die Benachrichtigungen sehr ungünstig ab, so dass man mindestens immer mit der anderen Hand die Benachrichtung antippen muss, um Details zu erfahren.</description>
     </item>
     
     <item>

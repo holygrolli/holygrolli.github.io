@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>Copyright © ChaosBlog 2018</copyright>
-    <lastBuildDate>Fri, 09 Aug 2019 19:37:22 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2019 08:21:46 +0200</lastBuildDate>
     
 	<atom:link href="https://blog.networkchallenge.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Neues Huawei-Update und Microsoft Unternehmens&amp;shy;portal</title>
+      <link>https://blog.networkchallenge.de/tech/unternehmensportal-auf-huawei-update-1/</link>
+      <pubDate>Sun, 18 Aug 2019 08:21:46 +0200</pubDate>
+      
+      <guid>https://blog.networkchallenge.de/tech/unternehmensportal-auf-huawei-update-1/</guid>
+      <description>Nach den Problemen bei Firmware-Updates und den verknüpften Arbeitsprofilen habe ich nun auf meinem Huawei Mate 10 Pro die neueste Version EMUI 9.1.0 und konkret Version 9.1.0.300 (C432E4R1P11) erhalten. Die Spannung war groß, ob ich wieder mein Android for Work und damit das Microsoft Unternehmensportal erneut neu einrichten musste. Völlig (positiv) überraschend konnte ich nach der Aktualisierung problemlos mein Arbeitsprofil weiternutzen. Hoffentlich hat man jetzt eine dauerhafte Lösung bei Huawei gefunden.</description>
+    </item>
     
     <item>
       <title>Pecuta, Bali</title>
